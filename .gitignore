@@ -89,6 +89,10 @@ PROJECT/
 !outputs/distinction_strategy/04_offline_demo/
 !outputs/distinction_strategy/04_offline_demo/**
 
+# Wave 5B examiner presentation decks
+!outputs/distinction_strategy/05_presentation_deck/
+!outputs/distinction_strategy/05_presentation_deck/**
+
 # Explicitly keep secrets and bulk artefacts out
 .env
 .env.*

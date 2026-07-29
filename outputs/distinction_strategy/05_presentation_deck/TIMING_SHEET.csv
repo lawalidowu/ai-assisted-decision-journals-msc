@@ -1,0 +1,23 @@
+deck,slide_id,title,seconds,mm_ss
+primary_15min,S01,Generated text is not authoritative evidence,45,0:45
+primary_15min,S02,"Inquiry transcripts hide decisions in long, mixed discourse",60,1:00
+primary_15min,S03,Aim: traceable candidates under human oversight,75,1:15
+primary_15min,S04,"Generation, checks, human review and source stay separate",90,1:30
+primary_15min,S05,"Evaluation is layered, not a single accuracy number",90,1:30
+primary_15min,S06,Traceable candidates are common; journal-ready ones are not,120,2:00
+primary_15min,S07,Quote support ≠ journal membership (phase1-082),120,2:00
+primary_15min,S08,"Alignment, faithfulness failure and interpretive mapping",90,1:30
+primary_15min,S09,Contribution is governance of the AI–source–human route,60,1:00
+primary_15min,S10,"Claims stay bounded to one case, one model, one reviewer",75,1:15
+primary_15min,S11,Next steps are replication and multi-reviewer checks,45,0:45
+primary_15min,S12,Make the route from source to interpretation inspectable,60,1:00
+primary_15min,TOTAL,,930,
+fallback_10min,S01,Generated text is not authoritative evidence,40,0:40
+fallback_10min,S02,"Inquiry transcripts hide decisions in long, mixed discourse",55,0:55
+fallback_10min,S03,Aim: traceable candidates under human oversight,55,0:55
+fallback_10min,S04,"Generation, checks, human review and source stay separate",70,1:10
+fallback_10min,S06,Traceable candidates are common; journal-ready ones are not,100,1:40
+fallback_10min,S07,Quote support ≠ journal membership (phase1-082),110,1:50
+fallback_10min,S09,Contribution is governance of the AI–source–human route,55,0:55
+fallback_10min,S12,Make the route from source to interpretation inspectable,115,1:55
+fallback_10min,TOTAL,,600,

@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-07-29T18:08:22.041657+00:00",
+  "tool": "PowerPoint COM 16",
+  "primary": {
+    "pdf": true,
+    "png_count": 12,
+    "errors": []
+  },
+  "fallback": {
+    "pdf": true,
+    "png_count": 8,
+    "errors": []
+  }
+}

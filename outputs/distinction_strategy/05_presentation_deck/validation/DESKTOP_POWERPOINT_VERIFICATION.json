@@ -1,0 +1,43 @@
+{
+  "created_at_utc": "2026-07-29T18:26:48.442233+00:00",
+  "tool": "Microsoft PowerPoint COM + PyMuPDF",
+  "primary_pptx": {
+    "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_15min_12slides.pptx",
+    "expected_slides": 12,
+    "opened_without_repair": true,
+    "slide_count": 12,
+    "hidden_slides": [],
+    "notes_present": true,
+    "centrepiece_082": true,
+    "missing_media": [],
+    "slideshow_ok": true,
+    "errors": []
+  },
+  "fallback_pptx": {
+    "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_10min_8slides.pptx",
+    "expected_slides": 8,
+    "opened_without_repair": true,
+    "slide_count": 8,
+    "hidden_slides": [],
+    "notes_present": true,
+    "centrepiece_082": true,
+    "missing_media": [],
+    "slideshow_ok": true,
+    "errors": []
+  },
+  "primary_pdf": {
+    "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_15min_12slides.pdf",
+    "page_count": 12,
+    "expected_pages": 12,
+    "blank_pages": [],
+    "ok": true
+  },
+  "fallback_pdf": {
+    "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_10min_8slides.pdf",
+    "page_count": 8,
+    "expected_pages": 8,
+    "blank_pages": [],
+    "ok": true
+  },
+  "result": "PASS"
+}
