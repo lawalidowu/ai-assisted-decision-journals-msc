@@ -68,8 +68,22 @@ PROJECT/
 !outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_EXECUTIVE_SUMMARY.md
 !outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_JEE_SUMMARY.csv
 !outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_DQ_SUMMARY.csv
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_TRACEABILITY_HUMAN_CLASSIFICATION.csv
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/crosstabs/
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/crosstabs/AUDIT_E_jee_vs_dq_mapped.csv
 !outputs/framework_mapping/run_20260727_094015_post60_coding_consistency_audit/
 !outputs/framework_mapping/run_20260727_094015_post60_coding_consistency_audit/CONSISTENCY_CORRECTED_REFERENCE.csv
+
+# Wave 3 examiner reproducibility package
+!outputs/distinction_strategy/
+!outputs/distinction_strategy/03_reproducibility_package/
+!outputs/distinction_strategy/03_reproducibility_package/**
+!outputs/distinction_strategy/03_reproducibility_package/demos/
+!outputs/distinction_strategy/03_reproducibility_package/demos/**
+!outputs/distinction_strategy/03_reproducibility_package/validation/
+!outputs/distinction_strategy/03_reproducibility_package/validation/**
+!outputs/distinction_strategy/03_reproducibility_package/docs_copy/
+!outputs/distinction_strategy/03_reproducibility_package/docs_copy/**
 
 # Explicitly keep secrets and bulk artefacts out
 .env

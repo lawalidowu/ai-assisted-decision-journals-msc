@@ -1,0 +1,18 @@
+{
+  "title": "Distinction Strategy Wave 3 examiner reproducibility package",
+  "package_dir": "outputs/distinction_strategy/03_reproducibility_package",
+  "docs_dir": "docs/examiner_evidence",
+  "created_at_utc": "2026-07-29T16:15:59.125629+00:00",
+  "demo_ids": {
+    "yes_high": "phase1-016",
+    "no_high": "phase1-082",
+    "faithfulness": "phase1-090",
+    "jee_dq": "phase1-246"
+  },
+  "sha256sums": "outputs/distinction_strategy/03_reproducibility_package/SHA256SUMS",
+  "notes": [
+    "Does not duplicate large analytical trees; references tracked paths by hash.",
+    "LLM regeneration is not expected to be byte-identical.",
+    "reviewer_name fields intentionally omitted from demo snapshots."
+  ]
+}
