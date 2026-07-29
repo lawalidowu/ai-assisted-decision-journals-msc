@@ -1,0 +1,30 @@
+{
+  "title": "AI-assisted decision journaling from public inquiry transcripts: a UK COVID-19 Inquiry case study",
+  "author": "Akeeb Idowu Lawal",
+  "wave": "distinction_wave2_final_integrity_fixes",
+  "branch": "distinction/final-integrity-fixes",
+  "baseline_commit": "72e9fc4e7b8d4979fb3de9a63a9e8350056aed28",
+  "baseline_tag": "baseline-wave6c-corrected-2026-07-28",
+  "physical_pages": 77,
+  "displayed_pages": 77,
+  "body_words": 14558,
+  "markdown_body_words": 14558,
+  "word_count_match": true,
+  "abstract_words": 291,
+  "figures": 5,
+  "tables_total": 27,
+  "lot_entries": 16,
+  "references": 28,
+  "docx": "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx",
+  "pdf": "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf",
+  "docx_sha256": "a829ff6d0b4a778f2a276f9fff45af05dbc47fa268f3a9b0b131a87099b0a2e2",
+  "pdf_sha256": "40c123b9743277d9083d3b66eb855e0fa7a57101017d08a7d8a2d94558a63519",
+  "pdf_mb": 1.195,
+  "size_compliant": true,
+  "issues_fixed": [
+    "I-01",
+    "I-02"
+  ],
+  "protected_baseline_package_untouched": "outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package",
+  "created_at_utc": "2026-07-29T14:39:59.685010+00:00"
+}

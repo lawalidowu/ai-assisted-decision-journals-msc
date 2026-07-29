@@ -59,7 +59,7 @@ A simple keyword baseline on the same six excerpts recovered 1/6 of the manual d
 
 The eight Phase 1 extraction runs were merged into the fixed reference dataset used for all later review and analysis. Stable identifiers range from phase1-001 to phase1-414. Corpus totals are those already reported in Section 4.2; they are not repeated here.
 
-Non-destructive review flags were applied using the rules defined in Chapter 3 Section 3.6. In the fixed reference dataset, 36/414 entries were flagged: 4 procedural and 32 possible duplicate, with some entries carrying both flags. No rows were deleted. Flag counts mark review need and are not performance scores. Procedural flags also illustrate why journal validity and evidence strength must be rated separately: a hearing adjournment can be quote-supported while still failing the journal definition.
+Non-destructive review flags were applied using the rules defined in Chapter 3 Section 3.6. In the fixed reference dataset, 36/414 entries were flagged: 4 procedural and 32 possible duplicate. No rows were deleted. Flag counts mark review need and are not performance scores. Procedural flags also illustrate why journal validity and evidence strength must be rated separately: a hearing adjournment can be quote-supported while still failing the journal definition.
 
 ---
 

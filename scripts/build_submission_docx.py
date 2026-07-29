@@ -72,8 +72,10 @@ DECLARATION_TEXT = (
 INSTRUCTION_LINE = re.compile(r"^<")
 SAMPLE_CHAPTER = re.compile(r"^Introduction$", re.I)
 TOC_STYLE_PREFIX = "toc "
+# Template / foreign-author / placeholder leaks only.
+# "Joint External Evaluation" is a legitimate WHO / IHR domain phrase used in this
+# dissertation's JEE methodology and must NOT be treated as a leak.
 LEAK_TERMS = (
-    "Joint External Evaluation",
     "Jesutomiwa",
     "Kanojia",
     "<Technical CHAPTER>",
