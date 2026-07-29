@@ -1,0 +1,29 @@
+{
+  "note": "Supplemental GRACE scores (corpus sample, not triangulation excerpts). Author review recommended.",
+  "items": [
+    {
+      "run_id": "run_20260609_071809_module2_2023-12-13",
+      "llm_item_id": 12,
+      "decision_summary": "NPCC four Es approach issued March 2020",
+      "grace": {
+        "interpretability": 4,
+        "actionability": 4,
+        "nuance": 3,
+        "redundancy": 5,
+        "reflexive_note": "Clear recalled policy guidance; historical COBR-era measure cited in testimony."
+      }
+    },
+    {
+      "run_id": "run_20260609_071809_module2_2023-12-13",
+      "llm_item_id": 45,
+      "decision_summary": "Enforcement as last resort after engage/explain/encourage",
+      "grace": {
+        "interpretability": 4,
+        "actionability": 3,
+        "nuance": 4,
+        "redundancy": 4,
+        "reflexive_note": "Preserves qualification (last resort) — better nuance than typical excerpt false positives."
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "description": "Canonical Phase 1 inquiry extraction runs (8 transcripts, 414 decisions). Do not glob outputs/ \u2014 duplicate dev runs exist.",
+  "expected_totals": {
+    "decisions": 414,
+    "traceability_pass": 351,
+    "traceability_fail": 63
+  },
+  "runs": [
+    {
+      "run_id": "run_20260608_005512_module2_2023-11-28",
+      "label": "module2_2023-11-28",
+      "hearing_date": "2023-11-28",
+      "slug": "transcript-of-module-2-public-hearing-on-28-november-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_014425_module2_2023-11-30",
+      "label": "module2_2023-11-30",
+      "hearing_date": "2023-11-30",
+      "slug": "transcript-of-module-2-public-hearing-on-30-november-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_014914_module2_2023-12-01",
+      "label": "module2_2023-12-01",
+      "hearing_date": "2023-12-01",
+      "slug": "transcript-of-module-2-public-hearing-on-01-december-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_070847_module2_2023-12-07",
+      "label": "module2_2023-12-07",
+      "hearing_date": "2023-12-07",
+      "slug": "transcript-of-module-2-public-hearing-on-07-december-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_071309_module2_2023-12-11",
+      "label": "module2_2023-12-11",
+      "hearing_date": "2023-12-11",
+      "slug": "transcript-of-module-2-public-hearing-on-11-december-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_071809_module2_2023-12-13",
+      "label": "module2_2023-12-13",
+      "hearing_date": "2023-12-13",
+      "slug": "transcript-of-module-2-public-hearing-on-13-december-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_072425_module2_2023-12-14",
+      "label": "module2_2023-12-14",
+      "hearing_date": "2023-12-14",
+      "slug": "transcript-of-module-2-public-hearing-on-14-december-2023",
+      "source_document_type": "transcript"
+    },
+    {
+      "run_id": "run_20260609_072813_module2_2024-05-23",
+      "label": "module2_2024-05-23",
+      "hearing_date": "2024-05-23",
+      "slug": "transcript-of-module-2-public-hearing-on-23-may-2024",
+      "source_document_type": "transcript"
+    }
+  ]
+}

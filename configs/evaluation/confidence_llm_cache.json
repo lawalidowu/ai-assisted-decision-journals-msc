@@ -1,0 +1,252 @@
+{
+  "phase1-016": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly states that COBR decided to close schools from the 20th, directly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-015": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly supports the decision text by directly mentioning household isolation for 14 days and reduced contact advice for individuals over 70.",
+    "llm_error": null
+  },
+  "phase1-031": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly confirms the agreement on an ambitious package of measures aimed at preventing transmission in disproportionately impacted groups.",
+    "llm_error": null
+  },
+  "phase1-032": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating that departments were asked for a more ambitious package to prevent disproportionate impacts from COVID-19 for people with disabilities.",
+    "llm_error": null
+  },
+  "phase1-064": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating that an earlier lockdown was necessary.",
+    "llm_error": null
+  },
+  "phase1-065": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly states the implementation of a whole legal lockdown on the 23rd, directly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-066": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision text with clear alignment in wording.",
+    "llm_error": null
+  },
+  "phase1-067": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly states the need to close schools, clearly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-068": {
+    "llm_confidence": "medium",
+    "llm_reasoning": "The quote suggests taking comprehensive action but is somewhat vague and requires inference.",
+    "llm_error": null
+  },
+  "phase1-069": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating the intention to go the full measure and pull every lever available.",
+    "llm_error": null
+  },
+  "phase1-083": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly states the action of asking health leaders to make the case for a second national lockdown, clearly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-084": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly indicates the action of gathering support for public health, directly aligning with the decision.",
+    "llm_error": null
+  },
+  "sample_13": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly confirms the commissioning of both a rapid review and a full review as stated in the decision.",
+    "llm_error": null
+  },
+  "phase1-090": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly references the commissioning of further work and reports through Kemi Badenoch.",
+    "llm_error": null
+  },
+  "sample_15": {
+    "llm_confidence": "low",
+    "llm_reasoning": "The quote is missing and does not support the decision text.",
+    "llm_error": null
+  },
+  "phase1-082": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly states the hearing will resume at 10 am, directly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-113": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly confirms the time and date of the hearing.",
+    "llm_error": null
+  },
+  "phase1-114": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly restates the decision with no need for inference.",
+    "llm_error": null
+  },
+  "phase1-414": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly restates the decision text with no need for inference.",
+    "llm_error": null
+  },
+  "phase1-384": {
+    "llm_confidence": "medium",
+    "llm_reasoning": "The quote discusses measures related to organisational resilience but does not explicitly confirm the implementation of those measures.",
+    "llm_error": null
+  },
+  "phase1-210": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly supports the decision by stating that only published documents may be referred to in written submissions.",
+    "llm_error": null
+  },
+  "phase1-252": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision text with identical wording.",
+    "llm_error": null
+  },
+  "phase1-270": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by reiterating Johnson's acknowledgment of the damaging effects of school closures on children, especially those from lower income backgrounds.",
+    "llm_error": null
+  },
+  "phase1-383": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote explicitly mentions the clarification of roles and responsibilities within the Covid Taskforce.",
+    "llm_error": null
+  },
+  "phase1-253": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision text with identical wording.",
+    "llm_error": null
+  },
+  "phase1-398": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly confirms the Prime Minister's decision to implement a mixture of options instead of a circuit-breaker.",
+    "llm_error": null
+  },
+  "phase1-007": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly states that countermeasures were ordered on 12 March, directly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-159": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly states the decision for non-essential retail to shut on the 20th.",
+    "llm_error": null
+  },
+  "phase1-171": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly confirms the significant difference mentioned in the decision.",
+    "llm_error": null
+  },
+  "phase1-274": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by emphasizing the need for enforceability of children's rights through statutory measures.",
+    "llm_error": null
+  },
+  "phase1-259": {
+    "llm_confidence": "medium",
+    "llm_reasoning": "The quote indicates concerns about the perception of devolved administrations' involvement, which relates to the decision but requires some inference.",
+    "llm_error": null
+  },
+  "phase1-221": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote explicitly states the expectation for robust scrutiny similar to that of the UK Government, directly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-382": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly states a recommendation for a change in leadership around Covid, clearly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-267": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by confirming Johnson's recognition of the damaging effects of school closures on children, especially those from lower income backgrounds.",
+    "llm_error": null
+  },
+  "phase1-247": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly reiterates the decision text regarding the absence of communication on Long Covid.",
+    "llm_error": null
+  },
+  "phase1-174": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating the same guidance changes regarding acceptable distances.",
+    "llm_error": null
+  },
+  "phase1-345": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly restates the decision text, providing clear support.",
+    "llm_error": null
+  },
+  "phase1-248": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly restates the decision text, providing clear support.",
+    "llm_error": null
+  },
+  "phase1-393": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly states that the recommendation was to develop the shielding programme, clearly supporting the decision.",
+    "llm_error": null
+  },
+  "phase1-372": {
+    "llm_confidence": "medium",
+    "llm_reasoning": "The quote indicates effort in setting up data streams but does not explicitly connect to understanding the needs of socially vulnerable people.",
+    "llm_error": null
+  },
+  "phase1-003": {
+    "llm_confidence": "medium",
+    "llm_reasoning": "The quote suggests a need for broader coordination but does not explicitly support the Cabinet Office's role.",
+    "llm_error": null
+  },
+  "phase1-059": {
+    "llm_confidence": "low",
+    "llm_reasoning": "The quote does not directly support the need to ramp up testing.",
+    "llm_error": null
+  },
+  "phase1-014": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating the request for an improved analytical function.",
+    "llm_error": null
+  },
+  "phase1-292": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating that such guidance should not be shared in advance.",
+    "llm_error": null
+  },
+  "phase1-057": {
+    "llm_confidence": "medium",
+    "llm_reasoning": "The quote indicates a request for work to commence but does not explicitly confirm the commissioning of an action plan.",
+    "llm_error": null
+  },
+  "phase1-238": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly restates the decision text with no need for inference.",
+    "llm_error": null
+  },
+  "phase1-101": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly confirms the acknowledgment of systemic racism in the NHS.",
+    "llm_error": null
+  },
+  "phase1-054": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote directly supports the decision by stating the need for the Prime Minister to chair a COBR meeting.",
+    "llm_error": null
+  },
+  "phase1-110": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly confirms the agreement to put together a campaign on Long Covid on the specified date.",
+    "llm_error": null
+  },
+  "phase1-169": {
+    "llm_confidence": "high",
+    "llm_reasoning": "The quote clearly supports the decision text by emphasizing the rapid amendment of the approval process.",
+    "llm_error": null
+  }
+}

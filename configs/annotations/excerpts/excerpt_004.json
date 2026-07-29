@@ -1,0 +1,97 @@
+{
+  "excerpt_id": "excerpt_004",
+  "transcript_slug": "transcript-of-module-2-public-hearing-on-30-november-2023",
+  "source_file": "data/processed/inquiry/document/transcript-of-module-2-public-hearing-on-30-november-2023.txt",
+  "char_start": 21739,
+  "char_end": 24495,
+  "word_count": 449,
+  "excerpt_text": "--A.Yeah.Q.-- as the cross-government machine ramps up --A.Yeah.Q.-- as the scale of the crisis is finally understood andsteps had to be taken, to what extent had the DHSC goton top of co-ordinating or promoting or suggesting thesorts of countermeasures and infection control measuresthat ultimately were at the heart of the government'sresponse?A.Well, so by -- from the end of February, when thePrime Minister took the chair at COBR, which was 1 2 3 4 5 6 7 8 910111213141516171819202122232425 19 symbolically very important, when the Chancellor of theDuchy of Lancaster got stuck in -- and you heard fromhim how he came to a COBR, was alarmed, asked some verygood questions, followed that up with me, and from --and you might think that I was unhappy to receive thatemail and those questions. On the contrary, I wasdelighted, and he -- and after a discussion about wherewe were up to, he became a very, very strong ally indriving action all the way through the crisis. So fromearly March it shifted and it became a whole-governmenteffort.Of course in March/April the department continued tohave to do much, much, much more, and increasingamounts, and so we were -- we were under enormouspressure and enormous stress. We brought in moreresources, basically from wherever we could find them,and did everything that we could. But it was --you know, that ramp-up was extremely difficult.LADY HALLETT: Mr Hancock, I'm sorry to interrupt, couldI just ask you to rewind, I didn't realise Mr Keith wasmoving on.Going back to the time before the end of February,and I appreciate that you say central government shouldhave got involved earlier, apart from the fact thatother government departments would have done some of the 1 2 3 4 5 6 7 8 910111213141516171819202122232425 20 work that you felt your department had to, was anythingnot done? I appreciate you shouldn't have been doingit, you say, but was anything not done because centralgovernment wasn't involved earlier?A.Well, I think that for the future the plans for whatNPIs to put in place, for instance, that isn't a HealthDepartment thing. And once we got the structuresproperly set up, it wasn't a Health Department thing, itwas a Cabinet Office thing, quite rightly.So it was -- it was in mid to late February that theSAGE system got going on designing NPIs, and we also didsome work on that in the department, especially in thearea of the legals that were needed.That sort of work, you know, hopefully for next timewill already be on the books. You know, we shouldalready have published legal draft legislation --published draft legislation that is ready in case itneeds to be enacted.Back then we had, thankfully, thanks to thepreparation work, one of the areas of preparation workthat went well,",
+  "selection_rationale": "Procedural / decision-language segment (fallback anchor).",
+  "llm_run": "outputs/run_20260609_014425_module2_2023-11-30",
+  "seed_llm_items": [
+    {
+      "llm_item_id": 32,
+      "decision": "The Chancellor of the Duchy of Lancaster should actively participate in COBR meetings.",
+      "source_quote": "the Chancellor of the Duchy of Lancaster got stuck in -- and you heard from him how he came to a COBR, was alarmed, asked some very good questions",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 33,
+      "decision": "The government response should be a whole-government effort.",
+      "source_quote": "it became a whole-government effort.",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 34,
+      "decision": "Central government should have been involved earlier in the planning for non-pharmaceutical interventions (NPIs).",
+      "source_quote": "Well, I think that for the future the plans for what NPIs to put in place, for instance, that isn't a Health Department thing.",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 35,
+      "decision": "Legal draft legislation should be published and ready for future emergencies.",
+      "source_quote": "You know, we should already have published legal draft legislation -- published draft legislation that is ready in case it needs to be enacted.",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 36,
+      "decision": "Legal draft legislation should be published and scrutinised in advance of future emergencies.",
+      "source_quote": "We should already have published legal draft legislation -- published draft legislation that is ready in case it needs to be enacted.",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 37,
+      "decision": "Preparation work for future emergencies should include having a draft Bill ready.",
+      "source_quote": "Back then we had, thankfully, thanks to the preparation work, one of the areas of preparation work that went well, we had a draft Bill.",
+      "traceability_ok": null
+    }
+  ],
+  "manual_decisions": [],
+  "comparisons": [
+    {
+      "manual_id": null,
+      "llm_item_id": 32,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: narrative about Gove at COBR — not a recorded decision or agreement.",
+      "semantic_grounding": "no"
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 33,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: descriptive ('whole-government effort') — not a formal agreed action.",
+      "semantic_grounding": "no"
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 34,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: retrospective lesson / structural point — not a pandemic decision.",
+      "semantic_grounding": "no"
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 35,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: future recommendation ('should publish draft legislation') — not an agreed measure.",
+      "semantic_grounding": "no"
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 36,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: duplicate future recommendation (items 35–36).",
+      "semantic_grounding": "no"
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 37,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: past preparation described ('draft Bill') — not a decision event in excerpt.",
+      "semantic_grounding": "no"
+    }
+  ],
+  "annotated_at": "2026-05-22",
+  "author_review_notes": "Author read: none. Retrospective narrative (COBR chair, whole-government shift), chair's hypothetical question, and future NPI/legislation recommendations — no agreed pandemic decisions with quotable decision statements.",
+  "_instructions": "Label manual_decisions before filling comparisons. See docs/ANNOTATION_RUBRIC.md."
+}

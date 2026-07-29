@@ -1,0 +1,80 @@
+{
+  "excerpt_id": "excerpt_006",
+  "transcript_slug": "transcript-of-module-2-public-hearing-on-01-december-2023",
+  "source_file": "data/processed/inquiry/document/transcript-of-module-2-public-hearing-on-01-december-2023.txt",
+  "char_start": 26169,
+  "char_end": 28883,
+  "word_count": 449,
+  "excerpt_text": "by which SAGE and other bodies from Aprilonwards looked at this issue.Did you also commission work through Public HealthEngland? There was a rapid review, I think, on 12 May,then a full review on 31 May. And then did you alsocontribute to the decision that further work and thereports be ultimately commissioned throughKemi Badenoch?A.Yes. I was particularly struck by the death of thefirst four NHS doctors, three of whom were froman ethnic minority background. I was acutely aware ofthe disproportionate impact on those from ethnicminority backgrounds, especially amongst the wider NHSworkforce as well, not just the doctors and nurses butalso more broadly, including porters and other staff whodo vital work and often are very closely in contact withpatients.So this is something that I was worried about fromearly in the pandemic. I'd in fact worked on thisbefore the pandemic, including raising the issues ofdiscrimination within the NHS, and there was -- therewas work under way on a particularly difficult issuethat came up in NHSBT. So there was a wide range of 1 2 3 4 5 6 7 8 910111213141516171819202122232425 24 work on this, I was aware of it from the start and I wasvery glad when Kemi was tasked by the Prime Minister tolead and really get to the bottom of this.MR KEITH: Forgive me one moment.My Lady, those are all the questions for Mr Hancock.LADY HALLETT: Thank you very much.Ms Morris, are you going first?Questions from MS MORRIS KC MS MORRIS: Thank you, my Lady.Mr Hancock, I ask questions on behalf of CovidBereaved Families for Justice UK and Covid BereavedFamilies for Justice Northern Ireland, who sit behindme, and together we represent over 7,000 bereavedfamilies, bereaved by Covid, many who sit behind me, andmany of whom have lost families in care homes.So my questions are centred at high level on thedecision on 19 March to discharge untested hospitalpatients into those care homes.Yesterday you accepted in evidence that on15 May 2020 in a press conference, you said that, \"Rightfrom the start, we've tried to throw a protective ringaround ... care homes\". So the context of my questionsis to probe with you your claim that you had taken thosesteps right from the start or at all?A.Yes. Yes. 1 2 3 4 5 6 7 8 910111213141516171819202122232425 UK Covid-19 Inquiry 1 December 2023 (6) Pages 21 - 24 25 Q.So I'm going to take you through some of the key datesat the start of the pandemic and examine what was knownor ought to have been known by you and your departmentand how that informed the decisions that were made on19 March. Okay?Can we first have on screen, please, INQ000049363,page 2.This is the minutes of an adult social carecoronavirus meeting.Thank you. It's \"Action #3\",",
+  "selection_rationale": "Procedural / decision-language segment (fallback anchor).",
+  "llm_run": "outputs/run_20260609_014914_module2_2023-12-01",
+  "seed_llm_items": [
+    {
+      "llm_item_id": 39,
+      "decision": "A rapid review and a full review on the disparities faced by ethnic minority healthcare workers were commissioned.",
+      "source_quote": "There was a rapid review, I think, on 12 May, then a full review on 31 May.",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 40,
+      "decision": "Kemi was tasked by the Prime Minister to lead on addressing discrimination within the NHS.",
+      "source_quote": "I was very glad when Kemi was tasked by the Prime Minister to lead and really get to the bottom of this.",
+      "traceability_ok": null
+    }
+  ],
+  "manual_decisions": [
+    {
+      "manual_id": "m1",
+      "decision": "A rapid review (12 May) and a full review (31 May) on ethnic minority disparities were commissioned through Public Health England.",
+      "evidence": "Counsel states dates; Hancock confirms in response to commissioning question.",
+      "source_location": "counsel_question",
+      "source_quote": "There was a rapid review, I think, on 12 May, then a full review on 31 May",
+      "is_formal_decision": false,
+      "notes": "Historical commissioning (2020) discussed in Dec 2023 hearing."
+    },
+    {
+      "manual_id": "m2",
+      "decision": "Further work and reports on ethnic minority disparities were commissioned through Kemi Badenoch; the Prime Minister tasked her to lead this work.",
+      "evidence": "Counsel asks if Hancock contributed to commissioning decision; Hancock confirms Yes and states PM tasked Kemi.",
+      "source_location": "witness_answer",
+      "source_quote": "Kemi was tasked by the Prime Minister to lead and really get to the bottom of this",
+      "is_formal_decision": false,
+      "notes": "Combines commissioning-through-Badenoch (counsel question) with PM direction (witness statement)."
+    },
+    {
+      "manual_id": "m3",
+      "decision": "On 19 March 2020, a decision was made to discharge untested hospital patients into care homes.",
+      "evidence": "Morris KC states this as the decision under examination; excerpt ends before meeting minutes Action #3 is read.",
+      "source_location": "counsel_question",
+      "source_quote": "the decision on 19 March to discharge untested hospital patients into those care homes",
+      "is_formal_decision": false,
+      "notes": "Counsel framing of historical policy decision — primary minute evidence not included in this excerpt (cuts at 'Action #3')."
+    }
+  ],
+  "comparisons": [
+    {
+      "manual_id": "m1",
+      "llm_item_id": 39,
+      "triangulation": "agreement",
+      "triangulation_notes": "Same PHE rapid/full review commissioning.",
+      "semantic_grounding": "yes"
+    },
+    {
+      "manual_id": "m2",
+      "llm_item_id": 40,
+      "triangulation": "agreement",
+      "triangulation_notes": "PM tasking Kemi matches m2.",
+      "semantic_grounding": "yes"
+    },
+    {
+      "manual_id": "m3",
+      "llm_item_id": null,
+      "triangulation": "silence",
+      "triangulation_notes": "Manual only: 19 March care home discharge cited by Morris KC.",
+      "semantic_grounding": "partial"
+    }
+  ],
+  "annotated_at": "2026-05-22",
+  "author_review_notes": "Author identified: PHE reviews May 2020; Kemi/PM commissioning task; 19 March discharge as counsel-stated decision (minutes not yet in excerpt).",
+  "_instructions": "Label manual_decisions before filling comparisons. See docs/ANNOTATION_RUBRIC.md."
+}

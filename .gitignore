@@ -1,0 +1,70 @@
+# Environment and secrets
+.env
+.venv/
+venv/
+dissertation/Scripts/
+dissertation/Lib/
+dissertation/Include/
+dissertation/pyvenv.cfg
+**/pyvenv.cfg
+
+# Data and outputs (keep structure via .gitkeep)
+data/raw/**
+data/processed/**
+outputs/**
+!data/manifests/**
+!data/manifests/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/.gitkeep
+!data/raw/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Accidental venv path folders
+2/
+PROJECT/
+
+# === Baseline freeze exceptions (Wave 1) ===
+# Allow selected examiner-facing freeze artefacts under otherwise-ignored outputs/
+!outputs/figures/
+!outputs/figures/conceptual_framework.png
+!outputs/figures/phase1_cluster_sizes.png
+!outputs/figures/phase1_cluster_composition.png
+!outputs/dissertation_integration/
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/FINAL_SHA256SUMS.txt
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/FINAL_SUBMISSION_MANIFEST.json
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/SUBMISSION_PACKAGE_README.md
+!outputs/dissertation_integration/run_20260728_141045_wave6c_final_submission_package/APPENDIX_A_COORDINATE_FIX_REBUILD.json
+!outputs/framework_mapping/
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_MANIFEST.json
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_EXECUTIVE_SUMMARY.md
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_JEE_SUMMARY.csv
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_DQ_SUMMARY.csv
+!outputs/framework_mapping/run_20260727_094015_post60_coding_consistency_audit/
+!outputs/framework_mapping/run_20260727_094015_post60_coding_consistency_audit/CONSISTENCY_CORRECTED_REFERENCE.csv
+
+# Explicitly keep secrets and bulk artefacts out
+.env
+.env.*
+!.env.example
+data/manifests/phase1_embedding_cache.json
+_baseline_approved_filelist.txt
+

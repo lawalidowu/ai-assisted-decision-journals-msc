@@ -1,0 +1,82 @@
+{
+  "excerpt_id": "excerpt_002",
+  "transcript_slug": "transcript-of-module-2-public-hearing-on-28-november-2023",
+  "source_file": "data/processed/inquiry/document/transcript-of-module-2-public-hearing-on-28-november-2023.txt",
+  "char_start": 229233,
+  "char_end": 232162,
+  "word_count": 449,
+  "excerpt_text": "wasemployed frequently to mean England or Great Britain orthe UK. There wasn't clarity in the UK Government'shandling of this matter. My Lady, I've got no further questions. 1 2 3 4 5 6 7 8 910111213141516171819202122232425 UK Covid-19 Inquiry 28 November 2023 (47) Pages 185 - 188 189 A.Can I just say that --LADY HALLETT: I think you have answered that question,thank you very much, Mr Gove. Thank you, Ms Mitchell. Right, Mr Friedman. Don't worry about turning your back, Mr Gove,because we need your voice into the microphone.Questions from MR FRIEDMAN KC MR FRIEDMAN: Thank you, my Lady. Secretary of State, I act for four national disabledpeople's organisations. Can I ask you to look at INQ000083917, please. It is an email from the Covid-19 Taskforce to,amongst others, Emran Mian and Helen Dickinson, but it'scopied to, and I'm going to summarise, departments likethe Minister for Disabled People, people from theEquality Hub and Disability Unit and, about a quarter ofthe way down, Michael Gove Mailbox, private secretary.Do you see your address?A.I do.Q.It's 5 November 2020. And just on the second page,under the heading \"Context\" it reads: \"At the 29 October meeting of COVID-O, the committeeagreed to an ambitious package of measures to preventtransmission to and within groups that have been 1 2 3 4 5 6 7 8 910111213141516171819202122232425 190 disproportionately impacted by COVID-19, focusing inparticular on ethnic minority communities. The PrimeMinister and CDL also asked departments, in slower time,for a more ambitious package that can preventdisproportionate impacts from COVID-19 for people withdisabilities.\"The question is, why did the Covid Taskforceindicate to the key decision-makes as of 5 November thatthe PM and CDL had acknowledged that the ambitiouspackage for disabled people could be developed ina slower time to that which had been developed andalready agreed for other disproportionately affectedpeople?A.I think Counsel to the Inquiry earlier drew attention tothe fact that I'd written a letter chastising, if that'sthe right word, other government departments for nothaving risen to the challenge of doing everythingpossible for those groups. I think it would have beenthe case that we could have implemented, or wereimplementing, some of the measures that would mitigatethe impact on ethnic minority communities because theywere simply more ready to deliver. My recollectionwould be that more work was required in order to makesure that the additional policies necessary for thoseliving with disabilities were also ready for delivery. 1 2 3 4 5 6 7 8 910111213141516171819202122232425 191 So I don't think it's about a hierarchy of need, I thinkit's about the preparedness of policy.Q.Just on that letter, I don't need to bring it up, butit's the October 2020 letter, the terrible missedopportunity chastisement where you told the chair thisafternoon you wanted everybody to raise their",
+  "selection_rationale": "Anchored on LLM item 32 (traceability_ok=True). Review whether this is a formal decision vs testimony.",
+  "llm_run": "outputs/run_20260608_005512_module2_2023-11-28",
+  "seed_llm_items": [
+    {
+      "llm_item_id": 31,
+      "decision": "An ambitious package of measures to prevent transmission to and within groups disproportionately impacted by COVID-19 was agreed upon.",
+      "source_quote": "At the 29 October meeting of COVID-O, the committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "traceability_ok": false
+    },
+    {
+      "llm_item_id": 32,
+      "decision": "Departments were asked for a more ambitious package to prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "source_quote": "The Prime Minister and CDL also asked departments, in slower time, for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "traceability_ok": true
+    }
+  ],
+  "manual_decisions": [
+    {
+      "manual_id": "m1",
+      "decision": "At the 29 October 2020 COVID-O meeting, the committee agreed to an ambitious package of measures to prevent transmission among disproportionately impacted groups, focusing on ethnic minority communities.",
+      "evidence": "Quoted from email Context block (INQ000083917) read into the hearing.",
+      "source_location": "email_context",
+      "source_quote": "At the 29 October meeting of COVID-O, the committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "is_formal_decision": false,
+      "notes": "Historical COVID-O agreement (Oct 2020) cited via Taskforce email — not an inquiry-day ruling."
+    },
+    {
+      "manual_id": "m2",
+      "decision": "The Prime Minister and CDL asked departments to develop a more ambitious package (on a slower timeline) to prevent disproportionate COVID-19 impacts on people with disabilities.",
+      "evidence": "Quoted from same email Context block; Friedman KC questions why Taskforce reported slower timeline for disabled people.",
+      "source_location": "email_context",
+      "source_quote": "The Prime Minister and CDL also asked departments, in slower time, for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "is_formal_decision": false,
+      "notes": "Authoritative direction recalled in email. Gove's chastising letter (Oct 2020) is witness explanation of preparedness — not recorded as a separate decision entry."
+    }
+  ],
+  "comparisons": [
+    {
+      "manual_id": "m1",
+      "llm_item_id": 31,
+      "llm_decision_summary": "Ambitious package for disproportionately impacted groups agreed at COVID-O",
+      "triangulation": "agreement",
+      "triangulation_notes": "Same COVID-O agreement; LLM item 31 in full run (traceability failed on long quote).",
+      "traceability_ok_system": false,
+      "semantic_grounding": "yes",
+      "grace": {
+        "interpretability": 4,
+        "actionability": 4,
+        "nuance": 3,
+        "redundancy": 5,
+        "reflexive_note": "Substance correct; mechanical traceability failed on PDF-normalised text."
+      }
+    },
+    {
+      "manual_id": "m2",
+      "llm_item_id": 32,
+      "llm_decision_summary": "Departments asked for disabled-people package",
+      "triangulation": "agreement",
+      "triangulation_notes": "Direct match on PM/CDL ask to departments.",
+      "traceability_ok_system": true,
+      "semantic_grounding": "yes",
+      "grace": {
+        "interpretability": 5,
+        "actionability": 4,
+        "nuance": 4,
+        "redundancy": 5,
+        "reflexive_note": "Clear quote-backed extraction."
+      }
+    }
+  ],
+  "annotated_at": "2026-05-22",
+  "author_review_notes": "Re-read 2026-05-22: two decisions from email Context; excluded counsel paraphrase of Taskforce email and Gove letter testimony as separate decisions.",
+  "_instructions": "Label manual_decisions before filling comparisons. See docs/ANNOTATION_RUBRIC.md."
+}

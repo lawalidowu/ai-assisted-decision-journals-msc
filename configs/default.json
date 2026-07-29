@@ -1,0 +1,7 @@
+{
+  "model": "gpt-4o-mini",
+  "temperature": 0,
+  "chunk_size": 7,
+  "chunk_overlap": 2,
+  "benchmark_runs": 3
+}

@@ -1,0 +1,1145 @@
+{
+  "generated_at": "2026-06-22T11:33:14.157526+00:00",
+  "source": "configs/evaluation/confidence_validation_sample.json",
+  "model": "gpt-4o-mini",
+  "n_rated": 50,
+  "metrics": {
+    "rule_vs_human_b": {
+      "n": 50,
+      "exact_agreement": 0.8,
+      "weighted_kappa": 0.4813,
+      "confusion": {
+        "low": {
+          "low": 1,
+          "medium": 0,
+          "high": 0
+        },
+        "medium": {
+          "low": 0,
+          "medium": 5,
+          "high": 7
+        },
+        "high": {
+          "low": 0,
+          "medium": 3,
+          "high": 34
+        }
+      }
+    },
+    "llm_vs_human_b": {
+      "n": 50,
+      "exact_agreement": 0.76,
+      "weighted_kappa": 0.3927,
+      "confusion": {
+        "low": {
+          "low": 1,
+          "medium": 0,
+          "high": 0
+        },
+        "medium": {
+          "low": 1,
+          "medium": 3,
+          "high": 8
+        },
+        "high": {
+          "low": 0,
+          "medium": 3,
+          "high": 34
+        }
+      }
+    },
+    "rule_vs_llm": {
+      "n": 50,
+      "exact_agreement": 0.88,
+      "weighted_kappa": 0.6479,
+      "confusion": {
+        "low": {
+          "low": 1,
+          "medium": 0,
+          "high": 0
+        },
+        "medium": {
+          "low": 1,
+          "medium": 4,
+          "high": 3
+        },
+        "high": {
+          "low": 0,
+          "medium": 2,
+          "high": 39
+        }
+      }
+    }
+  },
+  "calibration_a": {
+    "rule_confidence": {
+      "high": {
+        "no": 0.6098,
+        "unclear": 0.1463,
+        "yes": 0.2439,
+        "n": 41
+      },
+      "low": {
+        "no": 1.0,
+        "n": 1
+      },
+      "medium": {
+        "no": 0.875,
+        "yes": 0.125,
+        "n": 8
+      }
+    },
+    "llm_confidence": {
+      "high": {
+        "no": 0.619,
+        "unclear": 0.1429,
+        "yes": 0.2381,
+        "n": 42
+      },
+      "low": {
+        "no": 1.0,
+        "n": 2
+      },
+      "medium": {
+        "no": 0.8333,
+        "yes": 0.1667,
+        "n": 6
+      }
+    }
+  },
+  "traceability_rule": {
+    "high": {
+      "pass": 26,
+      "fail": 15
+    },
+    "medium": {
+      "fail": 2,
+      "na": 1,
+      "pass": 5
+    },
+    "low": {
+      "na": 1
+    }
+  },
+  "traceability_llm": {
+    "high": {
+      "pass": 27,
+      "fail": 14,
+      "na": 1
+    },
+    "medium": {
+      "fail": 3,
+      "pass": 3
+    },
+    "low": {
+      "na": 1,
+      "pass": 1
+    }
+  },
+  "human_axb": {
+    "A=yes|pred=high": 11,
+    "A=no|pred=high": 21,
+    "A=no|pred=medium": 11,
+    "A=no|pred=low": 1,
+    "A=unclear|pred=high": 5,
+    "A=unclear|pred=medium": 1
+  },
+  "items": [
+    {
+      "sample_index": 1,
+      "journal_id": "phase1-016",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly states that COBR decided to close schools from the 20th, directly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 2,
+      "journal_id": "phase1-015",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly supports the decision text by directly mentioning household isolation for 14 days and reduced contact advice for individuals over 70.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 3,
+      "journal_id": "phase1-031",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly confirms the agreement on an ambitious package of measures aimed at preventing transmission in disproportionately impacted groups.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 4,
+      "journal_id": "phase1-032",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating that departments were asked for a more ambitious package to prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 5,
+      "journal_id": "phase1-064",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating that an earlier lockdown was necessary.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 6,
+      "journal_id": "phase1-065",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly states the implementation of a whole legal lockdown on the 23rd, directly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 7,
+      "journal_id": "phase1-066",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision text with clear alignment in wording.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 8,
+      "journal_id": "phase1-067",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly states the need to close schools, clearly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 9,
+      "journal_id": "phase1-068",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        }
+      },
+      "llm_confidence": "medium",
+      "llm_reasoning": "The quote suggests taking comprehensive action but is somewhat vague and requires inference.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 10,
+      "journal_id": "phase1-069",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating the intention to go the full measure and pull every lever available.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 11,
+      "journal_id": "phase1-083",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly states the action of asking health leaders to make the case for a second national lockdown, clearly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 12,
+      "journal_id": "phase1-084",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly indicates the action of gathering support for public health, directly aligning with the decision.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 13,
+      "journal_id": null,
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        }
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly confirms the commissioning of both a rapid review and a full review as stated in the decision.",
+      "llm_error": null,
+      "traceability_ok": null,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 14,
+      "journal_id": "phase1-090",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly references the commissioning of further work and reports through Kemi Badenoch.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 15,
+      "journal_id": null,
+      "human_valid_decision": "no",
+      "human_confidence": "low",
+      "rule_confidence": "low",
+      "rule_details": {
+        "points": 0,
+        "checks": {
+          "quote_readable": false,
+          "quote_supports_decision": false
+        }
+      },
+      "llm_confidence": "low",
+      "llm_reasoning": "The quote is missing and does not support the decision text.",
+      "llm_error": null,
+      "traceability_ok": null,
+      "stratum": "triangulation"
+    },
+    {
+      "sample_index": 16,
+      "journal_id": "phase1-082",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly states the hearing will resume at 10 am, directly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 17,
+      "journal_id": "phase1-113",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly confirms the time and date of the hearing.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 18,
+      "journal_id": "phase1-114",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly restates the decision with no need for inference.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 19,
+      "journal_id": "phase1-414",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly restates the decision text with no need for inference.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 20,
+      "journal_id": "phase1-384",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "medium",
+      "llm_reasoning": "The quote discusses measures related to organisational resilience but does not explicitly confirm the implementation of those measures.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 21,
+      "journal_id": "phase1-210",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly supports the decision by stating that only published documents may be referred to in written submissions.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 22,
+      "journal_id": "phase1-252",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision text with identical wording.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 23,
+      "journal_id": "phase1-270",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by reiterating Johnson's acknowledgment of the damaging effects of school closures on children, especially those from lower income backgrounds.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 24,
+      "journal_id": "phase1-383",
+      "human_valid_decision": "unclear",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote explicitly mentions the clarification of roles and responsibilities within the Covid Taskforce.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 25,
+      "journal_id": "phase1-253",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision text with identical wording.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "flagged"
+    },
+    {
+      "sample_index": 26,
+      "journal_id": "phase1-398",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly confirms the Prime Minister's decision to implement a mixture of options instead of a circuit-breaker.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 27,
+      "journal_id": "phase1-007",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        }
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly states that countermeasures were ordered on 12 March, directly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 28,
+      "journal_id": "phase1-159",
+      "human_valid_decision": "yes",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly states the decision for non-essential retail to shut on the 20th.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 29,
+      "journal_id": "phase1-171",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly confirms the significant difference mentioned in the decision.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 30,
+      "journal_id": "phase1-274",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by emphasizing the need for enforceability of children's rights through statutory measures.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 31,
+      "journal_id": "phase1-259",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "medium",
+      "llm_reasoning": "The quote indicates concerns about the perception of devolved administrations' involvement, which relates to the decision but requires some inference.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 32,
+      "journal_id": "phase1-221",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote explicitly states the expectation for robust scrutiny similar to that of the UK Government, directly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 33,
+      "journal_id": "phase1-382",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly states a recommendation for a change in leadership around Covid, clearly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 34,
+      "journal_id": "phase1-267",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by confirming Johnson's recognition of the damaging effects of school closures on children, especially those from lower income backgrounds.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 35,
+      "journal_id": "phase1-247",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_note": "high_support_despite_trace_fail"
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly reiterates the decision text regarding the absence of communication on Long Covid.",
+      "llm_error": null,
+      "traceability_ok": false,
+      "stratum": "traceability_fail"
+    },
+    {
+      "sample_index": 36,
+      "journal_id": "phase1-174",
+      "human_valid_decision": "unclear",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating the same guidance changes regarding acceptable distances.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 37,
+      "journal_id": "phase1-345",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly restates the decision text, providing clear support.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 38,
+      "journal_id": "phase1-248",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly restates the decision text, providing clear support.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 39,
+      "journal_id": "phase1-393",
+      "human_valid_decision": "unclear",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly states that the recommendation was to develop the shielding programme, clearly supporting the decision.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 40,
+      "journal_id": "phase1-372",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "medium",
+      "llm_reasoning": "The quote indicates effort in setting up data streams but does not explicitly connect to understanding the needs of socially vulnerable people.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 41,
+      "journal_id": "phase1-003",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "medium",
+      "llm_reasoning": "The quote suggests a need for broader coordination but does not explicitly support the Cabinet Office's role.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 42,
+      "journal_id": "phase1-059",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "low",
+      "llm_reasoning": "The quote does not directly support the need to ramp up testing.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 43,
+      "journal_id": "phase1-014",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating the request for an improved analytical function.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 44,
+      "journal_id": "phase1-292",
+      "human_valid_decision": "unclear",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating that such guidance should not be shared in advance.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 45,
+      "journal_id": "phase1-057",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "medium",
+      "rule_details": {
+        "points": 1,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": false
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "medium",
+      "llm_reasoning": "The quote indicates a request for work to commence but does not explicitly confirm the commissioning of an action plan.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 46,
+      "journal_id": "phase1-238",
+      "human_valid_decision": "no",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly restates the decision text with no need for inference.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 47,
+      "journal_id": "phase1-101",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly confirms the acknowledgment of systemic racism in the NHS.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 48,
+      "journal_id": "phase1-054",
+      "human_valid_decision": "no",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote directly supports the decision by stating the need for the Prime Minister to chair a COBR meeting.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 49,
+      "journal_id": "phase1-110",
+      "human_valid_decision": "unclear",
+      "human_confidence": "high",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly confirms the agreement to put together a campaign on Long Covid on the specified date.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    },
+    {
+      "sample_index": 50,
+      "journal_id": "phase1-169",
+      "human_valid_decision": "unclear",
+      "human_confidence": "medium",
+      "rule_confidence": "high",
+      "rule_details": {
+        "points": 2,
+        "checks": {
+          "quote_readable": true,
+          "quote_supports_decision": true
+        },
+        "traceability_ok": true
+      },
+      "llm_confidence": "high",
+      "llm_reasoning": "The quote clearly supports the decision text by emphasizing the rapid amendment of the approval process.",
+      "llm_error": null,
+      "traceability_ok": true,
+      "stratum": "random_unflagged_traceable"
+    }
+  ]
+}

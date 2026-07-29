@@ -1,0 +1,994 @@
+{
+  "description": "Structural reliability mini-test — automated checklist on repeated extractions",
+  "generated_at": "2026-06-22T21:10:01.787913+00:00",
+  "model": "gpt-4o-mini",
+  "temperature": 0.3,
+  "runs_per_chunk": 5,
+  "production_note": "Phase 1 corpus extraction used temperature=0 for reproducibility.",
+  "checklist": [
+    "valid_json_parse",
+    "valid_json_list",
+    "all_items_have_required_fields",
+    "all_decisions_non_empty",
+    "all_source_quotes_non_empty",
+    "all_source_locations_valid",
+    "all_items_traceable"
+  ],
+  "summary": {
+    "total_outputs": 50,
+    "structural_pass_count": 49,
+    "structural_consistency_rate": 0.98,
+    "check_failure_counts": {
+      "all_items_traceable": 1
+    },
+    "failure_tag_counts": {
+      "item_2: source_quote_not_found_in_text": 1
+    },
+    "per_chunk": [
+      {
+        "chunk_id": "tri_excerpt_001",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "tri_excerpt_002",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "tri_excerpt_003",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "tri_excerpt_004",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "tri_excerpt_005",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "tri_excerpt_006",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "val_closing_252",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "val_procedural_082",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "val_trace_fail_384",
+        "runs": 5,
+        "passes": 5,
+        "consistency_rate": 1.0
+      },
+      {
+        "chunk_id": "val_wrong_artefact_067",
+        "runs": 5,
+        "passes": 4,
+        "consistency_rate": 0.8
+      }
+    ]
+  },
+  "runs": [
+    {
+      "chunk_id": "tri_excerpt_001",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_001",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_001",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_001",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_001",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_002",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_002",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_002",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_002",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_002",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_003",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_003",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_003",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_003",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_003",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_004",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_004",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_004",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_004",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_004",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_005",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_005",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_005",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_005",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_005",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_006",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_006",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_006",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_006",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "tri_excerpt_006",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_procedural_082",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_procedural_082",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_procedural_082",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_procedural_082",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_procedural_082",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 0,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_closing_252",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 1,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_closing_252",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 1,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_closing_252",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 1,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_closing_252",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 1,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_closing_252",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 1,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_wrong_artefact_067",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_wrong_artefact_067",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": false
+      },
+      "failures": [
+        "item_2: source_quote_not_found_in_text"
+      ],
+      "structural_pass": false
+    },
+    {
+      "chunk_id": "val_wrong_artefact_067",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_wrong_artefact_067",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_wrong_artefact_067",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 2,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_trace_fail_384",
+      "run_index": 1,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 3,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_trace_fail_384",
+      "run_index": 2,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 3,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_trace_fail_384",
+      "run_index": 3,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 4,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_trace_fail_384",
+      "run_index": 4,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 3,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    },
+    {
+      "chunk_id": "val_trace_fail_384",
+      "run_index": 5,
+      "model": "gpt-4o-mini",
+      "temperature": 0.3,
+      "item_count": 4,
+      "checks": {
+        "valid_json_parse": true,
+        "valid_json_list": true,
+        "all_items_have_required_fields": true,
+        "all_decisions_non_empty": true,
+        "all_source_quotes_non_empty": true,
+        "all_source_locations_valid": true,
+        "all_items_traceable": true
+      },
+      "failures": [],
+      "structural_pass": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "excerpt_id": "excerpt_003",
+  "transcript_slug": "transcript-of-module-2-public-hearing-on-30-november-2023",
+  "source_file": "data/processed/inquiry/document/transcript-of-module-2-public-hearing-on-30-november-2023.txt",
+  "char_start": 0,
+  "char_end": 1382,
+  "word_count": 232,
+  "excerpt_text": "1 Thursday, 30 November 2023 (10.00 am) LADY HALLETT: Mr Keith.MR KEITH: Good morning, my Lady. Today's witness isMatt Hancock.MR MATT HANCOCK (affirmed) Questions from LEAD COUNSEL TO THE INQUIRY LADY HALLETT: Mr Hancock, may I give you the same apologyI've given other witnesses we have had to call back.I'm sorry the modular structure means we have to keepimposing on you, but thank you for coming.THE WITNESS: Not at all.MR KEITH: Could you give your full name.A.Yes, I am Matthew John David Hancock.Q.Mr Hancock, you are the MP for West Suffolk, and ofcourse we have received evidence in Module 1 from youthat you were Paymaster General and Minister for theCabinet Office from May 2015 to July 2016, and then youserved as Secretary of State for Health and Social Carefrom 9 July 2018, when you took over fromJeremy Hunt MP, and you served in that post to26 June 2021 when you resigned?A.That's right.Q.Thank you for the provision of a further statement. Youobviously provided a great deal of information for the 1 2 3 4 5 6 7 8 910111213141516171819202122232425 2 purposes of Module 1, and you gave evidence, and youhave further assisted by providing a lengthy statement,176 pages, which we can see there on the screen, andalso a supplementary statement -- you were good enoughto respond to a number of additional areas thatthe Inquiry put to you.I just want to put into place,",
+  "selection_rationale": "Procedural / decision-language segment (fallback anchor).",
+  "llm_run": "outputs/run_20260609_014425_module2_2023-11-30",
+  "seed_llm_items": [],
+  "manual_decisions": [],
+  "comparisons": [],
+  "annotated_at": "2026-05-22",
+  "author_review_notes": "Author read: none. Opening procedural — witness sworn in, biography, statement references only; no policy agreements or directions.",
+  "_instructions": "Label manual_decisions before filling comparisons. See docs/ANNOTATION_RUBRIC.md."
+}

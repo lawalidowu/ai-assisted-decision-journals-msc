@@ -1,0 +1,72 @@
+{
+  "excerpt_id": "excerpt_001",
+  "transcript_slug": "transcript-of-module-2-public-hearing-on-28-november-2023",
+  "source_file": "data/processed/inquiry/document/transcript-of-module-2-public-hearing-on-28-november-2023.txt",
+  "char_start": 83955,
+  "char_end": 86750,
+  "word_count": 449,
+  "excerpt_text": "conclusion?A.I believe it was the case that the Secretary of Stateand others within DHSC would have been pressing uponNumber 10 and the Prime Minister the need to act at thattime as well.Q.Well, I'm afraid I need to press you. You say youbelieve. Have you seen emails or communications from 1 2 3 4 5 6 7 8 910111213141516171819202122232425 UK Covid-19 Inquiry 28 November 2023 (17) Pages 65 - 68 69 the DHSC, institutionally, to the Prime Minister saying,\"We're behind the curve, we've missed a trick here. Weare delayed and there is an urgent need for morestringent measures and we need a change in strategy\"?A.No, but my recollection of the conversations that I hadaround that time was that the Secretary of State was ofthat view and I should say that I'm pretty certain thathe would have communicated that in conversation with thePrime Minister.But, again, I would not have been in all of thoseconversations and one of the reasons why I texted andemailed as I did was to alert people to my concerns andto hope that if they were, as I believed bothDominic Cummings and Matt Hancock were, if they were ofsimilar mind, to feel strengthened in their desire topush forward with these restrictions because they wouldknow that they had my support.Q.On 12 March, as we know, there was self-isolation forindividuals who were symptomatic for seven days?A.Yes.Q.After the weekend, on 16 March, COBR decided that thereneeded to be further, more stringent measures, and youwill recall the household isolation for 14 days, reducedcontact advice, over 70s particularly must ensure thatthey reduce contact? 1 2 3 4 5 6 7 8 910111213141516171819202122232425 70 A.Yes.Q.And there was a warning about the need to move toshielding imminently.On the 18th, COBR decided to close schools fromthe 20th, just in very general terms, Mr Gove.Did you have any direct dealings with the PrimeMinister during the course of that week as to whether ornot those more stringent measures needed to be applied?I ask you this because the evidence from Mr Cummings hasbeen that there was a widespread view -- he said prettymuch everyone -- considered the Prime Minister to beoscillating -- I'm not using his word but that's thesense of it -- in relation to his response. What was your assessment of the Prime Minister'sintent, state of mind, as to whether these measuresshould be countenanced?A.I think the Prime Minister found the decisionsdifficult. It's not that he found decision-makingdifficult, it is that a decision to restrict freedoms inan unprecedented way went against his instincts and theprinciples that governed his political outlook. The Prime Minister at the time, Mr Johnson, wassomeone who was a liberal in so many senses, andcertainly someone who found the idea of restricting freeassociation deeply difficult,",
+  "selection_rationale": "Anchored on LLM item 15 (traceability_ok=True). Review whether this is a formal decision vs testimony.",
+  "llm_run": "outputs/run_20260608_005512_module2_2023-11-28",
+  "seed_llm_items": [
+    {
+      "llm_item_id": 15,
+      "decision": "COBR decided to implement household isolation for 14 days and reduce contact advice for individuals over 70.",
+      "source_quote": "COBR decided that there needed to be further, more stringent measures, and you will recall the household isolation for 14 days, reduced contact advice, over 70s particularly must ensure that they reduce contact.",
+      "traceability_ok": true
+    },
+    {
+      "llm_item_id": 16,
+      "decision": "COBR decided to close schools from the 20th of March.",
+      "source_quote": "On the 18th, COBR decided to close schools from the 20th, just in very general terms.",
+      "traceability_ok": true
+    }
+  ],
+  "manual_decisions": [
+    {
+      "manual_id": "m1",
+      "decision": "On 18 March 2020, COBR decided to close schools from 20 March.",
+      "evidence": "Counsel states COBR's decision directly in questioning.",
+      "source_location": "counsel_question",
+      "source_quote": "On the 18th, COBR decided to close schools from the 20th",
+      "is_formal_decision": false,
+      "notes": "Historical COBR decision (March 2020) cited in Nov 2023 hearing — not a new inquiry ruling. Only clear single-statement decision in this excerpt."
+    }
+  ],
+  "comparisons": [
+    {
+      "manual_id": "m1",
+      "llm_item_id": 16,
+      "llm_decision_summary": "COBR decided to close schools from the 20th of March",
+      "triangulation": "agreement",
+      "triangulation_notes": "Same decision; manual annotation counted only this one clear COBR decision in the excerpt.",
+      "traceability_ok_system": true,
+      "semantic_grounding": "yes",
+      "grace": {
+        "interpretability": 5,
+        "actionability": 4,
+        "nuance": 3,
+        "redundancy": 5,
+        "reflexive_note": "Accurate and quote-backed; does not note historical vs hearing-day context."
+      }
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 15,
+      "llm_decision_summary": "COBR decided household isolation / reduced contact for over-70s",
+      "triangulation": "silence",
+      "triangulation_notes": "LLM extracted the 16 March bundled measures; not counted as a separate manual decision (bundled Q&A, witness only confirmed Yes).",
+      "traceability_ok_system": true,
+      "semantic_grounding": "partial",
+      "grace": {
+        "interpretability": 3,
+        "actionability": 3,
+        "nuance": 2,
+        "redundancy": 4,
+        "reflexive_note": "Quote exists but bundles multiple measures; conservative manual rule excluded it."
+      }
+    }
+  ],
+  "annotated_at": "2026-05-22",
+  "_instructions": "Label manual_decisions before filling comparisons. See docs/ANNOTATION_RUBRIC.md."
+}

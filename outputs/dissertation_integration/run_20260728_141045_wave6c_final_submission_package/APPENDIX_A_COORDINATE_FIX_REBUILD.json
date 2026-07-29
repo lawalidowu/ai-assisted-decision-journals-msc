@@ -1,0 +1,21 @@
+{
+  "word_pages": 77,
+  "pdf_pages": 77,
+  "displayed": {
+    "pages": "Number of Pages:\t77",
+    "words": "Number of Words: 14,564"
+  },
+  "appendix_a_ok": {
+    "has_excerpt_002": true,
+    "has_29_october": true,
+    "has_disabilities": true,
+    "has_cobr_schools": true,
+    "has_care_homes": true
+  },
+  "docx": "c:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\dissertation_integration\\run_20260728_141045_wave6c_final_submission_package\\Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx",
+  "pdf": "c:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\dissertation_integration\\run_20260728_141045_wave6c_final_submission_package\\Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf",
+  "docx_sha256": "d41f59910c3bb99189ed049e5588a1d832d1f5155491011df59e7fe39eb27e59",
+  "pdf_sha256": "e672f578b0fb2ffab2ce6997f34647aed1b29f4a55660354dab44e5238650e14",
+  "docx_bytes": 884263,
+  "pdf_bytes": 1133537
+}

@@ -1,0 +1,45 @@
+{
+  "excerpt_id": "excerpt_005",
+  "transcript_slug": "transcript-of-module-2-public-hearing-on-01-december-2023",
+  "source_file": "data/processed/inquiry/document/transcript-of-module-2-public-hearing-on-01-december-2023.txt",
+  "char_start": 0,
+  "char_end": 1508,
+  "word_count": 244,
+  "excerpt_text": "1 Friday, 1 December 2023 (10.00 am) MR MATT HANCOCK (continued) Questions from LEAD COUNSEL TO THE INQUIRY (continued) LADY HALLETT: Mr Keith.MR KEITH: Thank you, my Lady.Mr Hancock, you told the Inquiry yesterday how inSeptember of 2020 you were urging for more measures,more stringent measures, trying to move the process on,for greater intervention.I would just like to show you some, and they're onlya very small sample of the messages that you sent,demonstrating that indeed throughout September andOctober you were urging the process forward.INQ000048399 is a WhatsApp group. On page 35, on17 September -- thank you -- at 5.25:\"To avoid national lockdown we need to act fast inparts of the country where it's going in the wrongdirection.\"Then further down the page, at 2.00.46, 46 secondspast 2:\"We have just held a very alarming JBC Gold.\"Sharp rises in the North East & Merseyside ...\"We need to get tiering sorted and tougher localaction in place pronto.\" 1 2 3 4 5 6 7 8 910111213141516171819202122232425 2 The reference to tiering there, Mr Hancock, may wepresume that's a reference to what you said yesterdayabout how the tiering proposal was first debated inSeptember; you're endeavouring there or you're makingquite plain that the system needs to be sorted fortiering?A.Yes.Q.Page 38, and this is 8 October, 8.47, at the top of thepage, Matt Hancock:\"We need to be making the argument in every forum: \"- there is a problem\"- we want to avoid full lockdown\"- our call to action.\"On 9 October in",
+  "selection_rationale": "Procedural / decision-language segment (fallback anchor).",
+  "llm_run": "outputs/run_20260609_014914_module2_2023-12-01",
+  "seed_llm_items": [
+    {
+      "llm_item_id": 1,
+      "decision": "Implement tougher local action and tiering measures to avoid a national lockdown.",
+      "source_quote": "To avoid national lockdown we need to act fast in parts of the country where it's going in the wrong direction.",
+      "traceability_ok": null
+    },
+    {
+      "llm_item_id": 2,
+      "decision": "Make a strong argument against full lockdown and for regional action.",
+      "source_quote": "We need to be making the argument in every forum: - there is a problem - we want to avoid full lockdown - our call to action.",
+      "traceability_ok": null
+    }
+  ],
+  "manual_decisions": [],
+  "comparisons": [
+    {
+      "manual_id": null,
+      "llm_item_id": 1,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: Hancock WhatsApp urging — ministerial advocacy, not a recorded government agreement.",
+      "semantic_grounding": "no"
+    },
+    {
+      "manual_id": null,
+      "llm_item_id": 2,
+      "triangulation": "silence",
+      "triangulation_notes": "LLM only: 'avoid full lockdown' is messaging/call to action — not an adopted policy decision.",
+      "semantic_grounding": "no"
+    }
+  ],
+  "annotated_at": "2026-05-22",
+  "author_review_notes": "Author read: none. WhatsApps show Hancock urging tiering/local action and to avoid full lockdown — internal advocacy, not agreed government decisions.",
+  "_instructions": "Label manual_decisions before filling comparisons. See docs/ANNOTATION_RUBRIC.md."
+}

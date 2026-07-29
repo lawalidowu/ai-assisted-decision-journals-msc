@@ -1,0 +1,40 @@
+{
+  "description": "Phase 1 exploratory prototype — Module 2 corpus",
+  "manifest_csv": "data/manifests/inquiry_module2_phase1.csv",
+  "manifest_json": "data/manifests/inquiry_module2_phase1.json",
+  "seeds": "configs/inquiry_phase1_seeds.json",
+  "delay_seconds": 0.75,
+  "sources": [
+    {
+      "doc_category": "document",
+      "post_types": ["document"],
+      "search": "Transcript of Module 2 Public Hearing on",
+      "order": "date-desc",
+      "max_pages": 5,
+      "match": {
+        "modules": ["Module 2"],
+        "doc_types": ["Transcript"],
+        "title_prefixes": ["Transcript of Module 2 Public Hearing on"]
+      }
+    },
+    {
+      "doc_category": "report",
+      "post_types": ["report"],
+      "search": "Module 2",
+      "order": "date-desc",
+      "max_pages": 3,
+      "match": {
+        "modules": ["Module 2"],
+        "title_contains": ["Module 2"]
+      }
+    }
+  ],
+  "phase1": {
+    "skip_reselection": true,
+    "max_transcripts": 8,
+    "max_consultation_transcripts": 2,
+    "max_analysis": 2,
+    "max_reports": 2,
+    "manual_annotation_slots": 3
+  }
+}

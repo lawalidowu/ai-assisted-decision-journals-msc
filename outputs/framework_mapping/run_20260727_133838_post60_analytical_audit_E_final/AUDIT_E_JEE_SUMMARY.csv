@@ -1,0 +1,13 @@
+category,label,count,percentage
+jee_status,insufficient_evidence,22,36.7% (22/60)
+jee_status,no_mapping,16,26.7% (16/60)
+jee_status,procedural_or_inquiry,11,18.3% (11/60)
+jee_status,replace,10,16.7% (10/60)
+jee_status,accept_primary,1,1.7% (1/60)
+jee_mapped_total,mapped,11,18.3% (11/60)
+jee_primary,R4,3,27.3% (3/11)
+jee_primary,P3,2,18.2% (2/11)
+jee_primary,D2,2,18.2% (2/11)
+jee_primary,R5,2,18.2% (2/11)
+jee_primary,R3,1,9.1% (1/11)
+jee_primary,P1,1,9.1% (1/11)
