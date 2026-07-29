@@ -1,0 +1,110 @@
+# Viva question bank
+
+**Important:** Candidate rehearsal questions only — **not** official examiner questions, mark schemes, or recorded feedback.
+
+Total questions: **102** · Adversarial: **28**
+
+| ID | Category | Difficulty | Question | Concise answer anchor | Evidence | Caveat | Unsafe overclaim |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Q001 | fundamentals | foundational | What problem did the dissertation address? | Convert complex public inquiry text into auditable candidate decision-journal entries without treating LLM output as authoritative. | Ch1 §§1.1–1.2 | Case-study scope only | We solved pandemic decision-making |
+| Q002 | fundamentals | foundational | What was the exact research aim? | Read exact Ch1 aim: design and evaluate an LLM-assisted method for traceable candidate decision-journal entries using Module 2 as case study. | Ch1 §1.3 | Do not rewrite aim | Aim was to verify government decisions |
+| Q003 | fundamentals | foundational | What were the research questions? | No numbered RQs in Ch1; Aim + Objectives 1–6 are the formal framing. | Ch1 §1.3 | Do not invent RQ1–RQn | We had four RQs |
+| Q004 | fundamentals | probing | Why are public inquiry transcripts suitable? | Public, citable, decision-rich discourse with mixed speech acts; reproducible corpus. | Ch1.1 | One module/eight hearings | Works for all inquiries |
+| Q005 | fundamentals | probing | Why is this an AI project rather than document processing? | LLM generates structured candidates; contribution is governing those candidates. | Ch3; Ch1.6 | Not a new base model | Pure NLP parsing without LLM |
+| Q006 | fundamentals | foundational | What is the central contribution? | Governed workflow separating machine candidates, automated checks, human validation and source evidence. | Ch1.6; Ch5 | Not an auto-verified catalogue | Production policy engine |
+| Q007 | fundamentals | probing | What is genuinely novel? | Operational separation of constructs plus frozen examiner-auditable artefacts on this case — not SOTA extraction. | Ch1.6 | Builds on known LLM risks | First ever LLM on transcripts |
+| Q008 | fundamentals | probing | Why useful for policymaking? | Supports institutional memory / retrospective review with inspectable route — not automated policy. | Ch1.6 | Prototype only | Ready for operational use |
+| Q009 | fundamentals | foundational | What does the system not claim to do? | Not deployed; not authoritative decisions; not byte-identical regen; not multi-model generalisation. | Ch1.4; reproducibility limits | Keep list tight | It verifies truth |
+| Q010 | methodology | foundational | Why clean and segment transcript text? | Reduce noise; enable localisable chunks for provenance. | Ch3 | May drop context | Perfect cleaning |
+| Q011 | methodology | probing | Why seven-sentence chunks with overlap two? | Balance context and localisation for quote anchoring. | Ch3 | Boundary effects | Universal optimum |
+| Q012 | methodology | foundational | Why a structured candidate schema? | Forces decision/evidence/location fields for audit. | Ch3 | May bias toward decision-shaped text | Schema proves validity |
+| Q013 | methodology | probing | Why the temperature/prompt configuration? | Favour reproducibility; Phase 1 notes emphasise low temperature. | Ch3; structural reliability production_note | Model-specific | Config is optimal forever |
+| Q014 | methodology | foundational | How were stable IDs assigned? | phase1-NNN identifiers in frozen journal enabling lineage. | phase1_decision_journal.json | Study-local IDs | Global standard IDs |
+| Q015 | methodology | probing | How was deduplication handled? | Non-destructive review flags rather than silent deletion. | Ch3/Ch4 flags | Heuristic flags | All duplicates removed automatically |
+| Q016 | methodology | foundational | How is traceability_ok calculated? | Mechanical link of generated statement to source material in chunk — not validity/faithfulness. | journal totals; validate_traceability | Approximation | Hallucination detector |
+| Q017 | methodology | adversarial | Why freeze model output before evaluation? | Separate generation from evaluation; prevent moving targets; lock SHA. | journal SHA 814cc7c4… | Historical snapshot | Live API is identical |
+| Q018 | methodology | foundational | Why separate candidate generation and evaluation? | Core governance contribution; avoids treating generation as acceptance. | Ch1.6; Ch3 | Still one pipeline study | Fully independent labs |
+| Q019 | methodology | probing | Why six manual decision excerpts? | Bounded gold for triangulation and keyword baseline. | App A; Table 4.2 | Not full-corpus labels | Representative of 414 |
+| Q020 | methodology | probing | Why n=42, n=50 and n=60? | Different evaluation questions: taxonomy, stratified A/B, purposive frameworks/faithfulness. | Ch3–Ch4 | Bounded feasibility | One accuracy sample |
+| Q021 | methodology | foundational | Why stratified validation? | Cover strata and surface No×High; not a probability sample of all 414. | Ch4 §4.5 | Not universal rate | Random population sample |
+| Q022 | methodology | probing | Why examine confidence separately? | High automated confidence ≠ journal membership; compare to Rubric B. | Table 4.3 | Moderate κ | Confidence replaces humans |
+| Q023 | methodology | foundational | Why clustering? | Navigational organisation of 414; size ≠ importance. | Ch4 §4.6; 20 clusters | Heuristic labels | Clusters prove validity |
+| Q024 | methodology | probing | Why JEE and Decision Quality? | Recognised interpretive frameworks after validated source. | Ch4 Table 4.4 | Subjective mapping | Official WHO scores |
+| Q025 | methodology | foundational | Why report-genre and structural reliability checks? | Supplementary quality lenses (50/53; 49/50), not semantic validity. | Ch4 §4.8 | Limited transfer | Prove correctness |
+| Q026 | AI/LLM design | probing | Why one main model? | Bounded feasibility case; contribution is workflow governance not horse-race. | Ch1.4; Ch5 | Model-conditioned | Model-independent |
+| Q027 | AI/LLM design | adversarial | Would another model reproduce the same journal? | Unknown; not tested; no byte-identical claim even for same model live regen. | reproducibility limits | Future multi-model study | Yes, identical |
+| Q028 | AI/LLM design | adversarial | Does one model weaken generalisability? | Yes for model generalisation; claim is workflow feasibility in one case. | Ch5 | Acknowledge | Still general |
+| Q029 | AI/LLM design | foundational | Why are historical outputs frozen? | Auditability and evaluation stability. | journal freeze | Snapshot | Live always matches |
+| Q030 | AI/LLM design | probing | What would proper model comparison require? | Same corpus, frozen configs, paired human labels, pre-registered metrics — future work. | Ch5 | Not done here | We already compared models |
+| Q031 | AI/LLM design | adversarial | Temperature zero removes all error. | Reduces randomness not semantic/wrong-artefact errors. | methods | Still errors | Zero error |
+| Q032 | evaluation | foundational | Why were there 414 candidates? | Extractor over eight Module 2 hearings; frozen totals.decisions=414. | journal totals.decisions | Candidates ≠ accepted decisions | 414 verified decisions |
+| Q033 | evaluation | foundational | What does 351/414 traceability mean? | Mechanical traceability pass count. | totals.traceability_pass=351 | Not journal validity | 85% accuracy |
+| Q034 | evaluation | adversarial | What does 351/414 not mean? | Not acceptance; not faithfulness; not Rubric A yes. | Ch4; No×High | Keep sharp | Success rate |
+| Q035 | evaluation | foundational | What do 5 agreement, 10 silence and 0 dissonance indicate? | Triangulation tags on six manuals: some matches, many silences, no direct conflicts tagged. | Table 4.2 | Bounded excerpts | Corpus-wide |
+| Q036 | evaluation | probing | Why keyword recall 1/6 while LLM agreement rows 5/6? | Keyword baseline weak on manuals; LLM agreement-row recall higher on those six — not full IR over 414. | App B; BASELINE_KEYWORD | Agreement-row metric | LLM always better everywhere |
+| Q037 | evaluation | foundational | Why were 21/50 items No × High? | Most frequent A×B cell: strong quote support but not journal-valid. | Fig 4.9; sample | Stratified sample | Universal 42% |
+| Q038 | evaluation | adversarial | Why is phase1-082 important? | Centrepiece: procedural adjournment — High support, No validity. | demo phase1-082 | One case | Proves all High are wrong |
+| Q039 | evaluation | foundational | Why was rule weighted kappa 0.48? | Linear weighted κ vs Rubric B; neither replaces human. | confidence_comparison_results metrics | Moderate | Strong agreement |
+| Q040 | evaluation | foundational | Why was LLM weighted kappa 0.39? | Same comparison for LLM confidence vs Rubric B. | metrics.llm_vs_human_b | Moderate | Strong agreement |
+| Q041 | evaluation | adversarial | Are those agreement values acceptable? | Acceptable as evidence automation is insufficient — not as strong reliability. | Table 4.3 | Do not call strong | Excellent reliability |
+| Q042 | evaluation | foundational | What do the 20 clusters show? | Exploratory grouping for navigation. | clustering_report n_clusters=20 | Not validity | Policy importance ranking |
+| Q043 | evaluation | foundational | What do JEE 11/60 and Decision Quality 37/60 mean? | Mapped counts in purposive n=60; interpretive. | Audit E summaries | Not performance scores | UK preparedness grades |
+| Q044 | evaluation | probing | Why was the combined count 26/60? | Most frequent combined cell: DQ mapped with JEE unmapped. | crosstab unmapped×mapped=26 | Purposive | Always true |
+| Q045 | evaluation | foundational | How should faithfulness 8/25/20/7 be interpreted? | Exact/near 8; paraphrase 25; materially unsupported/altered 20; non-traceable 7. | AUDIT_E_MANIFEST counts | Single reviewer | Hallucination rate for all 414 |
+| Q046 | evaluation | foundational | What do report pilot 50/53 and structural reliability 49/50 establish? | Supplementary report-pilot and structural checklist outcomes. | REPORT_PILOT; structural summary | Not semantic validity | Full correctness |
+| Q047 | traceability | adversarial | Isn’t a highly supported quotation automatically a valid decision? | No — Rubric B≠A; phase1-082. | Ch4 §4.5; demo 082 | Rubrics author-defined | Yes always |
+| Q048 | traceability | probing | Why did the model extract the wrong artefact? | Hearing discourse contains decision-like procedural language; model tracked wording. | phase1-082 | Prompting limits | Model always fails |
+| Q049 | traceability | adversarial | Does this mean the model failed? | Shows generation can succeed at wording while governance must reject membership — method working. | 082 teaching | Not all cases | Total failure |
+| Q050 | traceability | probing | Is the rubric subjective? | Operationalised by author; single-reviewer limit acknowledged. | Ch4/Ch5 | Need multi-rater | Objective law |
+| Q051 | traceability | adversarial | Could better prompting eliminate No × High? | May reduce but not guaranteed; wrong-artefact risk is structural in mixed discourse. | Ch5 | Unproven | Prompting solves all |
+| Q052 | traceability | probing | Why retain these candidates rather than delete them? | Audit trail; teach governance; non-destructive flags. | methods flags | Storage cost | Delete all No |
+| Q053 | traceability | adversarial | What governance control follows from this result? | Human journal-validity gate cannot be replaced by quote strength alone. | Ch5 governance | Prototype | Auto-accept High |
+| Q054 | faithfulness | foundational | Did the system hallucinate? | Use faithfulness categories; do not collapse all failures into hallucination. 20/60 materially unsupported/altered in n=60. | Table 4.5 | Not corpus rate | Never hallucinated |
+| Q055 | faithfulness | probing | How often did it hallucinate? | Do not give a single hallucination rate; report 8/25/20/7 categories for n=60. | AUDIT_E_MANIFEST | Single reviewer | X% hallucination |
+| Q056 | faithfulness | probing | Is traceability_ok a hallucination detector? | No — mechanical presence ≠ meaning. | Ch4.5 vs 4.2 | Need faithfulness review | Yes it is |
+| Q057 | faithfulness | adversarial | Can a quote be found while meaning is still altered? | Yes — phase1-090 counsel question vs asserted decision. | demo 090 | Purposive example | Impossible |
+| Q058 | faithfulness | foundational | Why was a separate faithfulness review necessary? | Traceability insufficient for summary meaning. | Ch4 Table 4.5 | Single reviewer | Redundant with traceability |
+| Q059 | faithfulness | probing | How could faithfulness evaluation be improved? | Multi-rater labels; clearer taxonomy; larger samples — future work. | Ch5 | Not done | Already solved |
+| Q060 | governance and ethics | foundational | What are the policy risks of using an LLM here? | Authoritative-looking wrong artefacts; meaning drift; misuse without oversight. | Ch1.2; Ch5 | Prototype | No risk |
+| Q061 | governance and ethics | adversarial | Could generated candidates mislead officials? | Yes if accepted without human review — hence separation. | governance defence | Need controls | Safe to publish raw |
+| Q062 | governance and ethics | foundational | What human oversight is required? | Validity, strength, faithfulness; mapping after source validation. | Ch3–Ch4 | Single-reviewer now | None needed |
+| Q063 | governance and ethics | probing | Could the system be deployed now? | No — research prototype. | Ch1.4 | List deployment gates | Yes tomorrow |
+| Q064 | governance and ethics | probing | What additional validation would deployment require? | Multi-reviewer, access control, logging, change governance, domain calibration. | Ch5 | Not implemented | UI only |
+| Q065 | governance and ethics | foundational | How does the workflow support accountability? | Visible separation of source/machine/automated/human layers. | Ch1.6 | Prototype | Replaces accountability |
+| Q066 | reproducibility | foundational | Can the complete study be reproduced offline? | Claim verification and demo yes; live generation needs API; PDFs may need download. | examiner package limits | Not full byte-identical generation | Everything offline including regen |
+| Q067 | reproducibility | probing | Which components require an OpenAI API key? | Live regeneration paths — not offline demo/frozen checks. | repro limits | Cost/privacy | No API ever used |
+| Q068 | reproducibility | adversarial | Why should the examiner trust untracked historical run artefacts? | Prefer frozen journal hashes; runs are historical provenance only. | Wave3 limits | Gap acknowledged | Runs override journal |
+| Q069 | reproducibility | foundational | How were hashes used? | Lock journal, decks, demo evidence, Audit E paths. | SHA256SUMS files | Human labels still needed | Hashes prove truth |
+| Q070 | reproducibility | probing | How was Audit E authoritative-path ambiguity resolved? | Canonical locator — one path per claim. | AUDIT_E_CANONICAL_LOCATOR.md | Aliases exist | Any file is fine |
+| Q071 | reproducibility | foundational | Why were raw transcripts and PDFs not committed? | Bulk/packaging; public sources citable; extracts suffice. | security note | Examiner may download | Hidden data |
+| Q072 | reproducibility | probing | What does the baseline tag protect? | Corrected Wave 6C dissertation freeze for distinction waves. | baseline-wave6c-corrected-2026-07-28 | Historical process | All history immutable forever |
+| Q073 | contribution and novelty | adversarial | Is the novelty merely using an LLM on transcripts? | No — governed separation and No×High empirical lesson. | Ch1.6 | Not SOTA model | Yes only LLM use |
+| Q074 | contribution and novelty | probing | How does this differ from summarisation / RAG / IE? | Structured candidates + validity/faithfulness/framework layers + freeze. | contribution doc | Overlaps exist | Completely unique field |
+| Q075 | contribution and novelty | foundational | What is the single most important finding? | Quote support ≠ journal membership (No×High / 082). | Ch4 §4.5 | One study | Universal law |
+| Q076 | contribution and novelty | probing | What would be publishable from this work? | Governed extraction evaluation + wrong-artefact finding + faithfulness taxonomy case study. | Ch5 | Needs peer review | Ready Nature paper |
+| Q077 | limitations | foundational | Why was a second reviewer not included? | MSc feasibility; rubrics+freeze for auditability; dual coding future. | Ch5 | No IRR | Supervisor was second rater |
+| Q078 | limitations | adversarial | Does moderate kappa kill the thesis? | No — it supports the claim that automation cannot replace humans. | Table 4.3 | Still limited | κ proves success |
+| Q079 | limitations | probing | Why no multi-model comparison? | Scope; future work; one-model bound stated. | Ch5 | Weakens model generalisation | Unnecessary |
+| Q080 | limitations | foundational | Does one inquiry case study limit external validity? | Yes — stated in Ch1.4; cross-inquiry replication future. | Ch1.4 | Acknowledge | Fully general |
+| Q081 | deployment | adversarial | Isn’t this ready if the demo works? | Demo is frozen inspection aid; not production authority. | demo freeze banner | Need deployment study | Demo=deployed |
+| Q082 | deployment | probing | Who should approve journal entries? | Human role with clear criteria; not the model. | governance defence | Org-specific | Auto-approve High |
+| Q083 | deployment | foundational | What should be logged in a real deployment? | Candidate, source, checks, reviewer, outcome, model/prompt version. | governance defence | Not implemented | Already logged in production |
+| Q084 | presentation-specific | foundational | Why ≤12 slides / 15–20 minutes? | EEEM004 handbook requirements. | ProjectHandbook2025-26 | Q&A length unknown | Officially exactly 15 |
+| Q085 | presentation-specific | probing | Why is the live demo optional? | Handbook assesses demo if present; presentation complete without it. | handbook checklist; DEMO_CUE_CARD | ≤2 min if used | Demo mandatory |
+| Q086 | presentation-specific | adversarial | If time is short what do you cut? | S05/S08/S11 and demo; never omit 082 centrepiece and contribution/close. | storyboard 10-min model | Planning cuts | Cut the centrepiece |
+| Q087 | presentation-specific | foundational | What files do you open if asked for evidence? | Evidence map, journal totals, demo 082/090, Audit E locator. | docs/examiner_evidence | Paths may be hash-locked | Memory only |
+| Q088 | statistics | foundational | What is weighted kappa here? | Linear weighted κ treating adjacent Rubric B disagreements as less severe. | Table 4.3 methods | Single label set | Unweighted only |
+| Q089 | statistics | probing | Why do exact agreement and kappa differ? | Agreement is raw match rate; κ adjusts for chance / ordinal structure. | Table 4.3 | Prevalence effects possible | They must match |
+| Q090 | statistics | adversarial | Why not report p-values or confidence intervals? | Not computed/reported in study — will not invent. | results chapters | Descriptive framing | Secret significant results |
+| Q091 | statistics | probing | Why is 21/50 important without being a universal rate? | Modal cell in stratified sample teaching construct separation. | Fig 4.9 | Not population rate | 42% of all decisions |
+| Q092 | statistics | adversarial | Class imbalance makes kappa meaningless. | Prevalence can affect κ; still reported with exact agreement; interpretation cautious. | Table 4.3 | No CI | Meaningless so ignore |
+| Q093 | data quality | foundational | What speech-act problem exists in transcripts? | Questions, procedure, advocacy mixed with measures. | Ch1.2 | Genre limit | Clean decisions only |
+| Q094 | data quality | probing | How do review flags help quality? | Non-destructive navigation of procedural/duplicate risks. | Ch4 flags | Heuristic | Perfect filter |
+| Q095 | adversarial | adversarial | Haven’t you just built a summariser with extra labels? | No — journal validity gate and No×High finding are central. | Ch4; contribution | Overlaps with IE | Just summariser |
+| Q096 | adversarial | adversarial | Your human labels are circular because you designed the rubrics. | Rubrics are explicit and auditable; independence limit acknowledged; future multi-rater. | Ch5 | Single author | Fully independent |
+| Q097 | adversarial | adversarial | Without IRR how can examiners trust n=50? | As structured case-study evaluation with frozen IDs — not as population estimate. | Ch4 caveat | Need IRR later | Equivalent to multi-rater |
+| Q098 | adversarial | adversarial | Framework mapping is story-telling. | Interpretive by design; after source validation; not performance proof — phase1-246 warning. | Ch4; demo 246 | Subjective | Objective scoring |
+| Q099 | adversarial | adversarial | If regen changes outputs, what is science here? | Frozen artefact evaluation of a workflow and failure modes; not live leaderboard. | journal freeze | Model drift risk | Regen identical |
+| Q100 | adversarial | adversarial | Why should policymakers care about phase1-082? | Shows automation can look right and still be wrong artefact — oversight design implication. | demo 082 | One case | All policy decisions |
+| Q101 | adversarial | adversarial | You hid weak kappa behind narrative. | κ reported plainly; used to argue against replacement of humans. | Table 4.3 | Still moderate | Strong κ |
+| Q102 | adversarial | adversarial | Git late means results untrustworthy. | Baseline freeze + hashes + examiner package mitigate; process debt acknowledged. | baseline tag | Historical gap | Git timing irrelevant |

@@ -1,0 +1,116 @@
+{
+  "headline_numbers": {
+    "414": [
+      "Ch4 Table 4.1",
+      "data/manifests/phase1_decision_journal.json",
+      "totals.decisions=414",
+      "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06"
+    ],
+    "351/414": [
+      "Ch4 Table 4.1",
+      "data/manifests/phase1_decision_journal.json",
+      "totals.traceability_pass=351",
+      "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06"
+    ],
+    "5/10/0": [
+      "Ch4 Table 4.2",
+      "configs/annotations/excerpts/excerpt_00{1-6}.json",
+      "agreement/silence/dissonance",
+      "see examiner SHA256SUMS"
+    ],
+    "1/6": [
+      "Ch4; App B",
+      "docs/BASELINE_KEYWORD.md",
+      "keyword recall 1/6",
+      "n/a"
+    ],
+    "5/6": [
+      "App B",
+      "triangulation agreement vs manuals",
+      "LLM agreement-row recall 5/6",
+      "n/a"
+    ],
+    "21/50": [
+      "Ch4 \u00a74.5",
+      "configs/evaluation/confidence_validation_sample.json",
+      "A=no & B=high count",
+      "9d74936c490de586\u2026"
+    ],
+    "0.48": [
+      "Ch4 Table 4.3",
+      "configs/evaluation/confidence_comparison_results.json",
+      "metrics.rule_vs_human_b.weighted_kappa=0.4813",
+      "e197b7f28d2bb08a\u2026"
+    ],
+    "0.39": [
+      "Ch4 Table 4.3",
+      "configs/evaluation/confidence_comparison_results.json",
+      "metrics.llm_vs_human_b.weighted_kappa=0.3927",
+      "e197b7f28d2bb08a\u2026"
+    ],
+    "20": [
+      "Ch4 \u00a74.6",
+      "data/manifests/phase1_clustering_report.json",
+      "n_clusters=20",
+      "08a6bf8d48191978\u2026"
+    ],
+    "11/60": [
+      "Ch4 Table 4.4",
+      "\u2026/AUDIT_E_JEE_SUMMARY.csv",
+      "mapped=11",
+      "499b82c045713821\u2026"
+    ],
+    "37/60": [
+      "Ch4 Table 4.4",
+      "\u2026/AUDIT_E_DQ_SUMMARY.csv",
+      "mapped=37",
+      "2bdd445b3fa7782a\u2026"
+    ],
+    "26/60": [
+      "Ch4 Table 4.4",
+      "\u2026/crosstabs/AUDIT_E_jee_vs_dq_mapped.csv",
+      "unmapped\u00d7mapped=26",
+      "773724149e29f231\u2026"
+    ],
+    "8/25/20/7": [
+      "Ch4 Table 4.5",
+      "\u2026/AUDIT_E_MANIFEST.json",
+      "traceability_category_counts",
+      "8262948f55a04950\u2026"
+    ],
+    "50/53": [
+      "Ch4 \u00a74.8",
+      "docs/REPORT_PILOT.md",
+      "50/53",
+      "n/a"
+    ],
+    "49/50": [
+      "Ch4 \u00a74.8",
+      "configs/evaluation/structural_reliability_results.json",
+      "summary.structural_pass_count=49",
+      "8c9ce78f9eecfe01\u2026"
+    ]
+  },
+  "demo": {
+    "phase1-016": [
+      "yes",
+      "high",
+      "e5d28326427f4108ed97922bf444a4467ce807e4aa198277e2ba46d6cd3a2953"
+    ],
+    "phase1-082": [
+      "no",
+      "high",
+      "9b131dc2b403f51a3a1de366ee56793c6ff255986a57e683d525297963cca2c0"
+    ],
+    "phase1-090": [
+      "materially_unsupported_or_altered",
+      "",
+      "7e94f16177c4ce820f956d64d27dfd9a1798e91627cb7e372ac43b0ba25ed430"
+    ],
+    "phase1-246": [
+      "P3",
+      "commitment_to_follow_through",
+      "30e2cf20540de86b618cc3790b006148fb50905e3c51b35c404dab88099440ee"
+    ]
+  }
+}

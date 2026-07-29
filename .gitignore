@@ -93,6 +93,10 @@ PROJECT/
 !outputs/distinction_strategy/05_presentation_deck/
 !outputs/distinction_strategy/05_presentation_deck/**
 
+# Wave 6 viva defence package
+!outputs/distinction_strategy/06_viva_defence/
+!outputs/distinction_strategy/06_viva_defence/**
+
 # Explicitly keep secrets and bulk artefacts out
 .env
 .env.*

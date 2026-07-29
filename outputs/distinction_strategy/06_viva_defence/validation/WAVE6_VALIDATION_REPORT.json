@@ -1,0 +1,76 @@
+{
+  "created_at_utc": "2026-07-29T20:47:02.491466+00:00",
+  "checks": {
+    "protected_hashes": {
+      "ok": true,
+      "detail": {
+        "wave2_docx": {
+          "path": "outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx",
+          "match": true
+        },
+        "wave2_pdf": {
+          "path": "outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf",
+          "match": true
+        },
+        "journal": {
+          "path": "data/manifests/phase1_decision_journal.json",
+          "match": true
+        },
+        "demo_016": {
+          "path": "demo/evidence/phase1-016.json",
+          "match": true
+        },
+        "demo_082": {
+          "path": "demo/evidence/phase1-082.json",
+          "match": true
+        },
+        "demo_090": {
+          "path": "demo/evidence/phase1-090.json",
+          "match": true
+        },
+        "demo_246": {
+          "path": "demo/evidence/phase1-246.json",
+          "match": true
+        }
+      }
+    },
+    "presentation_decks": {
+      "ok": true,
+      "detail": [
+        {
+          "file": "Lawal_Akeeb_MSc_Presentation_10min_8slides.pdf",
+          "match": true
+        },
+        {
+          "file": "Lawal_Akeeb_MSc_Presentation_10min_8slides.pptx",
+          "match": true
+        },
+        {
+          "file": "Lawal_Akeeb_MSc_Presentation_15min_12slides.pdf",
+          "match": true
+        },
+        {
+          "file": "Lawal_Akeeb_MSc_Presentation_15min_12slides.pptx",
+          "match": true
+        }
+      ]
+    },
+    "secret_scan": {
+      "ok": true,
+      "hits": []
+    },
+    "evidence_paths": {
+      "ok": true,
+      "missing": []
+    },
+    "claim_tokens": {
+      "ok": true,
+      "missing": []
+    },
+    "forbidden_overclaims": {
+      "ok": true,
+      "found": []
+    }
+  },
+  "ok": true
+}
