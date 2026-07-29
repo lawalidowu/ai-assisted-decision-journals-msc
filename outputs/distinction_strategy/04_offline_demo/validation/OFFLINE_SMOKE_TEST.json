@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-07-29T17:15:10.171775+00:00",
+  "bind": "127.0.0.1",
+  "result": "SMOKE_PASS",
+  "launch_command": "python demo/launch_demo.py --no-browser --port 8765",
+  "browser_manual": {
+    "landing": "pass",
+    "freeze_notice": "Frozen research artefact \u2014 no live model call",
+    "cases": {
+      "phase1-016": "Yes x High",
+      "phase1-082": "No x High centrepiece",
+      "phase1-090": "materially_unsupported_or_altered",
+      "phase1-246": "JEE P3 + commitment_to_follow_through"
+    },
+    "print_html": "pass",
+    "external_network_resources": [],
+    "file_fallback_embed": "pass"
+  }
+}

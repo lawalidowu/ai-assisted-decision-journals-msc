@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-assisted decision journaling — offline examiner demo</title>
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <p class="brand-name">AI-assisted decision journaling from public inquiry transcripts</p>
+      <p class="brand-sub">Offline examiner demonstration · Frozen research artefact</p>
+    </div>
+    <p class="freeze-banner" role="status">Frozen research artefact — no live model call</p>
+  </header>
+
+  <nav class="nav" aria-label="Demo sections">
+    <button type="button" class="nav-btn active" data-target="landing">Overview</button>
+    <button type="button" class="nav-btn" data-target="case-016">016 · Yes × High</button>
+    <button type="button" class="nav-btn centrepiece" data-target="case-082">082 · No × High</button>
+    <button type="button" class="nav-btn" data-target="case-090">090 · Faithfulness</button>
+    <button type="button" class="nav-btn" data-target="case-246">246 · JEE / DQ</button>
+  </nav>
+
+  <main id="main">
+    <section id="landing" class="panel active" aria-labelledby="landing-title">
+      <h1 id="landing-title">AI-assisted decision journaling from public inquiry transcripts</h1>
+      <p class="proposition">
+        An LLM can quote a source accurately while still extracting the wrong kind of artefact for a decision journal.
+      </p>
+
+      <div class="workflow" aria-label="Frozen two-phase workflow">
+        <div class="wf-step source">Public transcript</div>
+        <span class="wf-arrow" aria-hidden="true">→</span>
+        <div class="wf-step auto">Chunked source text</div>
+        <span class="wf-arrow" aria-hidden="true">→</span>
+        <div class="wf-step machine">LLM candidate object</div>
+        <span class="wf-arrow" aria-hidden="true">→</span>
+        <div class="wf-step auto">Mechanical traceability</div>
+        <span class="wf-arrow" aria-hidden="true">→</span>
+        <div class="wf-step machine">Fixed reference dataset</div>
+        <span class="wf-arrow" aria-hidden="true">→</span>
+        <div class="wf-step human">Human validity &amp; evidence review</div>
+        <span class="wf-arrow" aria-hidden="true">→</span>
+        <div class="wf-step human">Navigational / policy interpretation</div>
+      </div>
+
+      <ul class="legend">
+        <li><span class="chip machine">Frozen machine-generated candidate</span></li>
+        <li><span class="chip auto">Automated checks</span></li>
+        <li><span class="chip human">Human judgement</span></li>
+        <li><span class="chip source">Validated source evidence</span></li>
+      </ul>
+
+      <p class="limits">
+        This demonstration is not live, not deployed, and not automatically authoritative.
+        Numbers and text come from frozen Wave&nbsp;3 evidence snapshots only.
+      </p>
+
+      <div class="case-cards">
+        <button type="button" class="card" data-target="case-016">
+          <strong>phase1-016</strong>
+          <span>Yes × High · alignment case</span>
+        </button>
+        <button type="button" class="card featured" data-target="case-082">
+          <strong>phase1-082</strong>
+          <span>No × High · centrepiece wrong-artefact case</span>
+        </button>
+        <button type="button" class="card" data-target="case-090">
+          <strong>phase1-090</strong>
+          <span>Materially unsupported / altered</span>
+        </button>
+        <button type="button" class="card" data-target="case-246">
+          <strong>phase1-246</strong>
+          <span>JEE P3 + Decision Quality</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="case-016" class="panel case-panel" data-evidence="evidence/phase1-016.json" hidden></section>
+    <section id="case-082" class="panel case-panel" data-evidence="evidence/phase1-082.json" hidden></section>
+    <section id="case-090" class="panel case-panel" data-evidence="evidence/phase1-090.json" hidden></section>
+    <section id="case-246" class="panel case-panel" data-evidence="evidence/phase1-246.json" hidden></section>
+
+    <section id="noscript-fallback" class="panel" hidden>
+      <h2>JavaScript is required for dynamic case loading</h2>
+      <p>Open the evidence JSON files in <code>evidence/</code> and follow <code>DEMO_WALKTHROUGH.md</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>University of Surrey MSc · Akeeb Idowu Lawal · UK COVID-19 Inquiry Module&nbsp;2 pilot</p>
+    <p class="footer-note">Contribution: governed workflow keeping machine candidates, automated checks, human validation and source evidence visibly separate.</p>
+  </footer>
+
+  <noscript>
+    <style>
+      #landing { display: block !important; }
+      .nav-btn { display: none; }
+    </style>
+    <div class="noscript-box">
+      <p><strong>JavaScript is disabled.</strong> Use the printable/static walkthrough in <code>DEMO_WALKTHROUGH.md</code> and open files under <code>evidence/</code>.</p>
+    </div>
+  </noscript>
+
+  <aside id="hash-panel" class="hash-panel" aria-label="Evidence file hashes">
+    <h2 class="hash-title">Evidence SHA-256 (frozen copies)</h2>
+    <ul id="hash-list" class="hash-list"></ul>
+  </aside>
+
+  <script src="evidence_embed.js"></script>
+  <script src="demo.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "title": "Wave 4 offline demo evidence manifest",
+  "created_at_utc": "2026-07-29T16:34:48.748498+00:00",
+  "source_package": "outputs/distinction_strategy/03_reproducibility_package/demos",
+  "files": {
+    "phase1-016.json": {
+      "path": "evidence/phase1-016.json",
+      "journal_id": "phase1-016",
+      "sha256": "e5d28326427f4108ed97922bf444a4467ce807e4aa198277e2ba46d6cd3a2953",
+      "bytes": 1187
+    },
+    "phase1-082.json": {
+      "path": "evidence/phase1-082.json",
+      "journal_id": "phase1-082",
+      "sha256": "9b131dc2b403f51a3a1de366ee56793c6ff255986a57e683d525297963cca2c0",
+      "bytes": 1431
+    },
+    "phase1-090.json": {
+      "path": "evidence/phase1-090.json",
+      "journal_id": "phase1-090",
+      "sha256": "7e94f16177c4ce820f956d64d27dfd9a1798e91627cb7e372ac43b0ba25ed430",
+      "bytes": 1630
+    },
+    "phase1-246.json": {
+      "path": "evidence/phase1-246.json",
+      "journal_id": "phase1-246",
+      "sha256": "30e2cf20540de86b618cc3790b006148fb50905e3c51b35c404dab88099440ee",
+      "bytes": 1531
+    }
+  }
+}

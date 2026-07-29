@@ -1,0 +1,19 @@
+{
+  "title": "Wave 4 offline examiner demo package",
+  "created_at_utc": "2026-07-29T17:15:09.981045+00:00",
+  "wave3_commit": "7b270854ddbb7b8c21e06de6711d90b856d95859",
+  "demo_relative": "demo/",
+  "launch": "python demo/launch_demo.py",
+  "sha256sums": "SHA256SUMS",
+  "cases": [
+    "phase1-016",
+    "phase1-082",
+    "phase1-090",
+    "phase1-246"
+  ],
+  "notes": [
+    "Self-contained offline HTML demo.",
+    "No CDN, no API calls, localhost-only launcher.",
+    "Screenshots not included (optional; no external capture dependency)."
+  ]
+}

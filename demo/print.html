@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <title>Printable offline demo — AI-assisted decision journaling</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; margin: 1.5rem; color: #182028; line-height: 1.4; }
+    h1 { font-size: 1.6rem; }
+    .banner { border: 1px solid #b9a46a; background: #fff6d8; padding: 0.6rem 0.8rem; font-weight: 650; }
+    .case { border-top: 1px solid #c9c2b4; padding: 1rem 0; page-break-inside: avoid; }
+    .path { color: #4a5560; font-size: 0.85rem; }
+    @media print { .noprint { display: none; } }
+  </style>
+</head>
+<body>
+  <p class="banner">Frozen research artefact — no live model call</p>
+  <h1>AI-assisted decision journaling from public inquiry transcripts</h1>
+  <p>An LLM can quote a source accurately while still extracting the wrong kind of artefact for a decision journal.</p>
+  <p class="noprint">Print or Save as PDF from the browser. Prefer the interactive demo via <code>python demo/launch_demo.py</code>.</p>
+  
+<section class="case">
+  <h2>phase1-016 — Strong Yes × High — alignment</h2>
+  <p><strong>Hearing date:</strong> 2023-11-28</p>
+  <p><strong>Candidate decision:</strong> COBR decided to close schools from the 20th of March.</p>
+  <p><strong>Source quotation:</strong> On the 18th, COBR decided to close schools from the 20th, just in very general terms.</p>
+  <p><strong>traceability_ok:</strong> True
+
+     · flags: none</p>
+  <p><strong>Rubric A:</strong> YES
+
+     · <strong>Rubric B:</strong> HIGH
+
+     · <strong>Faithfulness:</strong> —
+
+     · <strong>JEE:</strong> —
+
+     · <strong>DQ:</strong> —</p>
+  <p class="path">evidence/phase1-016.json</p>
+</section>
+<section class="case">
+  <h2>phase1-082 — No × High — wrong-artefact (centrepiece)</h2>
+  <p><strong>Hearing date:</strong> 2023-11-30</p>
+  <p><strong>Candidate decision:</strong> The hearing will resume at 10 o&#x27;clock tomorrow.</p>
+  <p><strong>Source quotation:</strong> The hearing adjourned until 10 am on Friday, 1 December 2023</p>
+  <p><strong>traceability_ok:</strong> True
+
+     · flags: procedural</p>
+  <p><strong>Rubric A:</strong> NO
+
+     · <strong>Rubric B:</strong> HIGH
+
+     · <strong>Faithfulness:</strong> substantively_faithful_paraphrase
+
+     · <strong>JEE:</strong> 
+
+     · <strong>DQ:</strong> </p>
+  <p class="path">evidence/phase1-082.json</p>
+</section>
+<section class="case">
+  <h2>phase1-090 — Materially unsupported or altered</h2>
+  <p><strong>Hearing date:</strong> 2023-12-01</p>
+  <p><strong>Candidate decision:</strong> Further work and reports were commissioned through Kemi Badenoch.</p>
+  <p><strong>Source quotation:</strong> Did you also contribute to the decision that further work and the reports be ultimately commissioned through Kemi Badenoch?</p>
+  <p><strong>traceability_ok:</strong> True
+
+     · flags: none</p>
+  <p><strong>Rubric A:</strong> NO
+
+     · <strong>Rubric B:</strong> MEDIUM
+
+     · <strong>Faithfulness:</strong> materially_unsupported_or_altered
+
+     · <strong>JEE:</strong> 
+
+     · <strong>DQ:</strong> </p>
+  <p class="path">evidence/phase1-090.json</p>
+</section>
+<section class="case">
+  <h2>phase1-246 — JEE P3 + Decision Quality interpretation</h2>
+  <p><strong>Hearing date:</strong> 2023-12-13</p>
+  <p><strong>Candidate decision:</strong> There was agreement between the DHSC, the PHE, NHS and the DfE that messaging in schools should signpost for any child experiencing long-term symptoms following a Covid-19 infection.</p>
+  <p><strong>Source quotation:</strong> In May 2021 there was agreement between the DHSC, the PHE, NHS and the DfE that messaging in schools should signpost for any child experiencing long-term symptoms following a Covid-19 infection.</p>
+  <p><strong>traceability_ok:</strong> True
+
+     · flags: none</p>
+  <p><strong>Rubric A:</strong> —
+
+     · <strong>Rubric B:</strong> —
+
+     · <strong>Faithfulness:</strong> exact_or_near_verbatim
+
+     · <strong>JEE:</strong> P3
+
+     · <strong>DQ:</strong> commitment_to_follow_through</p>
+  <p class="path">evidence/phase1-246.json</p>
+</section>
+  <h2>Evidence SHA-256</h2>
+  <ul><li><code>phase1-016.json</code> — e5d28326427f4108ed97922bf444a4467ce807e4aa198277e2ba46d6cd3a2953</li><li><code>phase1-082.json</code> — 9b131dc2b403f51a3a1de366ee56793c6ff255986a57e683d525297963cca2c0</li><li><code>phase1-090.json</code> — 7e94f16177c4ce820f956d64d27dfd9a1798e91627cb7e372ac43b0ba25ed430</li><li><code>phase1-246.json</code> — 30e2cf20540de86b618cc3790b006148fb50905e3c51b35c404dab88099440ee</li></ul>
+</body>
+</html>

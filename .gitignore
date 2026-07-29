@@ -85,6 +85,10 @@ PROJECT/
 !outputs/distinction_strategy/03_reproducibility_package/docs_copy/
 !outputs/distinction_strategy/03_reproducibility_package/docs_copy/**
 
+# Wave 4 offline examiner demo package
+!outputs/distinction_strategy/04_offline_demo/
+!outputs/distinction_strategy/04_offline_demo/**
+
 # Explicitly keep secrets and bulk artefacts out
 .env
 .env.*
