@@ -1,0 +1,2 @@
+date,deck,demo_used,total_time,slide_checkpoints,overrun,questions_practised,weak_answers,corrections_required,confidence_score,next_rehearsal_focus
+YYYY-MM-DD,primary_12|fallback_8|primary_no_demo|primary_plus_demo|interrupted|talk_to_viva,yes|no|fallback_print,MM:SS,"S01=;S07=;S12=",seconds_over_or_under,"Qids or topics","list","list",1-5,"topic"

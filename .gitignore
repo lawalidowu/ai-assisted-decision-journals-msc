@@ -62,6 +62,11 @@ PROJECT/
 !outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/SUBMISSION_PACKAGE_README.md
 !outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/FINAL_FIELD_AND_NAVIGATION_CHECK.md
 !outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/FINAL_VISUAL_QA.md
+
+# Wave 7A September title-page formal submission package (active)
+!outputs/dissertation_integration/ACTIVE_FORMAL_SUBMISSION_POINTER.json
+!outputs/dissertation_integration/run_20260730_064035_wave7a_title_page_september/
+!outputs/dissertation_integration/run_20260730_064035_wave7a_title_page_september/**
 !outputs/framework_mapping/
 !outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/
 !outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_MANIFEST.json
@@ -96,6 +101,10 @@ PROJECT/
 # Wave 6 viva defence package
 !outputs/distinction_strategy/06_viva_defence/
 !outputs/distinction_strategy/06_viva_defence/**
+
+# Wave 7A final submission freeze package
+!outputs/distinction_strategy/07_final_submission_freeze/
+!outputs/distinction_strategy/07_final_submission_freeze/**
 
 # Explicitly keep secrets and bulk artefacts out
 .env

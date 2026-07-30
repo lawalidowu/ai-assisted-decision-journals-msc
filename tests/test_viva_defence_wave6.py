@@ -7,7 +7,12 @@ import json
 import re
 from pathlib import Path
 
+import sys
+
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from active_formal_submission import active_docx, active_docx_sha256, active_pdf, active_pdf_sha256  # noqa: E402
+
 VIVA = ROOT / "docs" / "viva"
 PKG = ROOT / "outputs" / "distinction_strategy" / "06_viva_defence"
 
@@ -24,22 +29,10 @@ AUDIT_MANIFEST = (
     / "AUDIT_E_MANIFEST.json"
 )
 
-DOCX = (
-    ROOT
-    / "outputs"
-    / "dissertation_integration"
-    / "run_20260729_153931_wave2_final_integrity_fixes"
-    / "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx"
-)
-PDF = (
-    ROOT
-    / "outputs"
-    / "dissertation_integration"
-    / "run_20260729_153931_wave2_final_integrity_fixes"
-    / "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf"
-)
-DOCX_HASH = "a829ff6d0b4a778f2a276f9fff45af05dbc47fa268f3a9b0b131a87099b0a2e2"
-PDF_HASH = "40c123b9743277d9083d3b66eb855e0fa7a57101017d08a7d8a2d94558a63519"
+DOCX = active_docx()
+PDF = active_pdf()
+DOCX_HASH = active_docx_sha256()
+PDF_HASH = active_pdf_sha256()
 JOURNAL_HASH = "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06"
 
 DEMO_HASH = {

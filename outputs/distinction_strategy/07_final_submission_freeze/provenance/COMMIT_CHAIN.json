@@ -1,0 +1,52 @@
+{
+  "branch": "distinction/final-submission-freeze",
+  "head": "c1feba145bdc46164b5daae79ec1a0d3901e97d0",
+  "ancestry": [
+    [
+      "baseline",
+      "72e9fc4e7b8d4979fb3de9a63a9e8350056aed28"
+    ],
+    [
+      "wave2",
+      "ee02346b3f1e60704c59d08e891c2a4735fa1307"
+    ],
+    [
+      "wave3",
+      "7b270854ddbb7b8c21e06de6711d90b856d95859"
+    ],
+    [
+      "wave4",
+      "5aae5c0e32bbd5855b6908fe4c09e7e65af054e4"
+    ],
+    [
+      "wave5a",
+      "4a5cfb7412a8cea3569f62b6a6b6dc2ec20f31dc"
+    ],
+    [
+      "wave5b",
+      "cb34b144a49064b18939d37ea06b22ff936086af"
+    ],
+    [
+      "wave6",
+      "c1feba145bdc46164b5daae79ec1a0d3901e97d0"
+    ]
+  ],
+  "origin_main": "72e9fc4e7b8d4979fb3de9a63a9e8350056aed28",
+  "baseline_tag": "baseline-wave6c-corrected-2026-07-28",
+  "fast_forward_to_main_possible": true,
+  "fast_forward_performed": false,
+  "tool_versions": {
+    "python": "3.12.10"
+  },
+  "principal_hashes": {
+    "docx": "70df0ee0992cd55635053f00926923d1b39357312f820fe29883810a0d9e96b5",
+    "pdf": "fa685483df8e19972d798dffd58801fbb14b48f1928e62af12153b971406c0b5",
+    "journal": "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06",
+    "demo": {
+      "phase1-016": "e5d28326427f4108ed97922bf444a4467ce807e4aa198277e2ba46d6cd3a2953",
+      "phase1-082": "9b131dc2b403f51a3a1de366ee56793c6ff255986a57e683d525297963cca2c0",
+      "phase1-090": "7e94f16177c4ce820f956d64d27dfd9a1798e91627cb7e372ac43b0ba25ed430",
+      "phase1-246": "30e2cf20540de86b618cc3790b006148fb50905e3c51b35c404dab88099440ee"
+    }
+  }
+}

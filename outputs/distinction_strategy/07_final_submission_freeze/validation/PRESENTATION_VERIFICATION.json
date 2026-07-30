@@ -1,0 +1,72 @@
+{
+  "Lawal_Akeeb_MSc_Presentation_15min_12slides.pptx": {
+    "sha256": "5e6c5329e2191d48101719d548897806171b75a3fb99819c29d6a033347be70f",
+    "slides": 12,
+    "expected": 12,
+    "hidden": 0,
+    "notes_slides": 12,
+    "phase1_082": true,
+    "pdf_pages": 12,
+    "pdf_sha256": "b117f18266c1b2f959f6d2ff44a3760374f4649305a4a29deb7b707bf57022cd",
+    "external_http_targets": false
+  },
+  "Lawal_Akeeb_MSc_Presentation_10min_8slides.pptx": {
+    "sha256": "83efb1a4c621b3fcaac8c46b1bba729d04492362e5b52e4739a42d8aedba3148",
+    "slides": 8,
+    "expected": 8,
+    "hidden": 0,
+    "notes_slides": 8,
+    "phase1_082": true,
+    "pdf_pages": 8,
+    "pdf_sha256": "f2c907c9f2adc231dff38299ca0f2823eb7f6d4cace0e2fd51212796a972d2fc",
+    "external_http_targets": false
+  },
+  "timing": {
+    "primary_seconds": 930,
+    "fallback_seconds": 600
+  },
+  "desktop_verification": {
+    "created_at_utc": "2026-07-29T18:26:48.442233+00:00",
+    "tool": "Microsoft PowerPoint COM + PyMuPDF",
+    "primary_pptx": {
+      "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_15min_12slides.pptx",
+      "expected_slides": 12,
+      "opened_without_repair": true,
+      "slide_count": 12,
+      "hidden_slides": [],
+      "notes_present": true,
+      "centrepiece_082": true,
+      "missing_media": [],
+      "slideshow_ok": true,
+      "errors": []
+    },
+    "fallback_pptx": {
+      "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_10min_8slides.pptx",
+      "expected_slides": 8,
+      "opened_without_repair": true,
+      "slide_count": 8,
+      "hidden_slides": [],
+      "notes_present": true,
+      "centrepiece_082": true,
+      "missing_media": [],
+      "slideshow_ok": true,
+      "errors": []
+    },
+    "primary_pdf": {
+      "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_15min_12slides.pdf",
+      "page_count": 12,
+      "expected_pages": 12,
+      "blank_pages": [],
+      "ok": true
+    },
+    "fallback_pdf": {
+      "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_10min_8slides.pdf",
+      "page_count": 8,
+      "expected_pages": 8,
+      "blank_pages": [],
+      "ok": true
+    },
+    "result": "PASS"
+  },
+  "deck_sha256sums_ok": true
+}

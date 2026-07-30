@@ -18,15 +18,25 @@ SECRET_RE = re.compile(
 )
 
 PROTECTED = {
-    "wave2_docx": (
+    "wave2_docx_historical_may": (
         ROOT
         / "outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx",
         "a829ff6d0b4a778f2a276f9fff45af05dbc47fa268f3a9b0b131a87099b0a2e2",
     ),
-    "wave2_pdf": (
+    "wave2_pdf_historical_may": (
         ROOT
         / "outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf",
         "40c123b9743277d9083d3b66eb855e0fa7a57101017d08a7d8a2d94558a63519",
+    ),
+    "active_docx_september": (
+        ROOT
+        / "outputs/dissertation_integration/run_20260730_064035_wave7a_title_page_september/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx",
+        "70df0ee0992cd55635053f00926923d1b39357312f820fe29883810a0d9e96b5",
+    ),
+    "active_pdf_september": (
+        ROOT
+        / "outputs/dissertation_integration/run_20260730_064035_wave7a_title_page_september/Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf",
+        "fa685483df8e19972d798dffd58801fbb14b48f1928e62af12153b971406c0b5",
     ),
     "journal": (
         ROOT / "data/manifests/phase1_decision_journal.json",

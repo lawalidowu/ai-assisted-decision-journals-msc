@@ -1,0 +1,21 @@
+{
+  "demo_role": "yes_high",
+  "journal_id": "phase1-016",
+  "hearing_date": "2023-11-28",
+  "slug": "transcript-of-module-2-public-hearing-on-28-november-2023",
+  "run_id": "run_20260608_005512_module2_2023-11-28",
+  "public_pdf_url": "https://covid19.public-inquiry.uk/wp-content/uploads/2023/11/28214340/C-19-Inquiry-28-November-23-Module-2-Day-27.pdf",
+  "local_historical_run_decisions": "outputs/run_20260608_005512_module2_2023-11-28/decisions.json",
+  "local_run_decisions_sha256": "e5136219e16078ad84c372201db961bb932b8666ec1f45e97946e681ae713a76",
+  "decision": "COBR decided to close schools from the 20th of March.",
+  "source_quote": "On the 18th, COBR decided to close schools from the 20th, just in very general terms.",
+  "source_location": "sentences_70-70",
+  "evidence": "On the 18th, COBR decided to close schools from the 20th, just in very general terms.",
+  "traceability_ok": true,
+  "review_flags": [],
+  "journal_entry_hash_note": "Fields copied from frozen phase1_decision_journal.json",
+  "journal_sha256": "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06",
+  "rubric_a": "yes",
+  "rubric_b": "high",
+  "n50_notes": ""
+}

@@ -128,6 +128,11 @@ def test_rendered_png_counts() -> None:
 
 
 def test_demo_and_protected_hashes_unchanged() -> None:
+    import sys
+
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from active_formal_submission import active_docx, active_docx_sha256, active_pdf, active_pdf_sha256
+
     for jid, digest in DEMO_HASH.items():
         assert sha256(ROOT / "demo" / "evidence" / f"{jid}.json") == digest
     assert (
@@ -143,6 +148,8 @@ def test_demo_and_protected_hashes_unchanged() -> None:
         sha256(wave2 / "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf")
         == "40c123b9743277d9083d3b66eb855e0fa7a57101017d08a7d8a2d94558a63519"
     )
+    assert sha256(active_docx()) == active_docx_sha256() == "70df0ee0992cd55635053f00926923d1b39357312f820fe29883810a0d9e96b5"
+    assert sha256(active_pdf()) == active_pdf_sha256() == "fa685483df8e19972d798dffd58801fbb14b48f1928e62af12153b971406c0b5"
 
 
 def test_presenter_and_demo_cue_exist() -> None:

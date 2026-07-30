@@ -1,0 +1,870 @@
+{
+  "created_at_utc": "2026-07-30T05:45:31.256214+00:00",
+  "branch": "distinction/final-submission-freeze",
+  "head": "c1feba145bdc46164b5daae79ec1a0d3901e97d0",
+  "dissertation": {
+    "docx_hash_ok": true,
+    "pdf_hash_ok": true,
+    "checks": {
+      "physical_pages": 77,
+      "displayed_pages_field": 77,
+      "displayed_words_field": 14558,
+      "flag_bits": {
+        "overlap_claim_absent": true,
+        "procedural_4": true,
+        "duplicate_32": true,
+        "flagged_36": true,
+        "flag_sentence": true
+      },
+      "signature_instruction_present": true,
+      "fabricated_signature_detected": false,
+      "structure_markers": {
+        "title": true,
+        "declaration": true,
+        "abstract": true,
+        "acknowledgements": true,
+        "contents": true,
+        "chapter1": true,
+        "references": true,
+        "appendix": true
+      },
+      "title_date_line": "September 2026",
+      "jee_leak_warning_absent": true,
+      "excerpt_002_present": true,
+      "official_counting_function_words": 14558,
+      "word_discrepancy": false
+    },
+    "page_inspection": [
+      {
+        "page": 1,
+        "status": "PASS",
+        "words": 59,
+        "images": 1,
+        "drawings": 0,
+        "content_hash16": "37e33ceb2dd69c80",
+        "notes": "ok"
+      },
+      {
+        "page": 2,
+        "status": "PASS",
+        "words": 165,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "600c488f3f5f372c",
+        "notes": "ok"
+      },
+      {
+        "page": 3,
+        "status": "PASS",
+        "words": 11,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "253cc63b434567ce",
+        "notes": "word_count_page"
+      },
+      {
+        "page": 4,
+        "status": "PASS",
+        "words": 294,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "82783094440c52b4",
+        "notes": "ok"
+      },
+      {
+        "page": 5,
+        "status": "PASS",
+        "words": 239,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "e6cecffe9412cf5f",
+        "notes": "ok"
+      },
+      {
+        "page": 6,
+        "status": "PASS",
+        "words": 278,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "4eccddba11cc5d1c",
+        "notes": "ok"
+      },
+      {
+        "page": 7,
+        "status": "PASS",
+        "words": 213,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "16b5805750d9a10c",
+        "notes": "ok"
+      },
+      {
+        "page": 8,
+        "status": "PASS",
+        "words": 44,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "73df515727f8b7f7",
+        "notes": "ok"
+      },
+      {
+        "page": 9,
+        "status": "PASS",
+        "words": 127,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "e05635e4d65ae76e",
+        "notes": "ok"
+      },
+      {
+        "page": 10,
+        "status": "PASS",
+        "words": 158,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "2f61d111cd785a79",
+        "notes": "ok"
+      },
+      {
+        "page": 11,
+        "status": "PASS",
+        "words": 270,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "dba1e42c6b8c4e83",
+        "notes": "ok"
+      },
+      {
+        "page": 12,
+        "status": "PASS",
+        "words": 261,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "2c460c383b7d95ee",
+        "notes": "ok"
+      },
+      {
+        "page": 13,
+        "status": "PASS",
+        "words": 240,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "12fc6292865d6c23",
+        "notes": "ok"
+      },
+      {
+        "page": 14,
+        "status": "PASS",
+        "words": 207,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "0e8b80caedb5cdfd",
+        "notes": "ok"
+      },
+      {
+        "page": 15,
+        "status": "PASS",
+        "words": 281,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "8b5a91dec73b2678",
+        "notes": "ok"
+      },
+      {
+        "page": 16,
+        "status": "PASS",
+        "words": 241,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "59ea152222b710dd",
+        "notes": "ok"
+      },
+      {
+        "page": 17,
+        "status": "PASS",
+        "words": 259,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "327e21fbeef26c38",
+        "notes": "ok"
+      },
+      {
+        "page": 18,
+        "status": "PASS",
+        "words": 263,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "0b57ad67afc95b78",
+        "notes": "ok"
+      },
+      {
+        "page": 19,
+        "status": "PASS",
+        "words": 274,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "fa656a23a7c88d65",
+        "notes": "ok"
+      },
+      {
+        "page": 20,
+        "status": "PASS",
+        "words": 261,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "8248e997ad0b9e48",
+        "notes": "ok"
+      },
+      {
+        "page": 21,
+        "status": "PASS",
+        "words": 269,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "1e9b28d37452cc8b",
+        "notes": "ok"
+      },
+      {
+        "page": 22,
+        "status": "PASS",
+        "words": 43,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "36822561fdbc4a0f",
+        "notes": "ok"
+      },
+      {
+        "page": 23,
+        "status": "PASS",
+        "words": 212,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "ecbb1f62a161b875",
+        "notes": "ok"
+      },
+      {
+        "page": 24,
+        "status": "PASS",
+        "words": 61,
+        "images": 1,
+        "drawings": 0,
+        "content_hash16": "9e36977813712a05",
+        "notes": "ok"
+      },
+      {
+        "page": 25,
+        "status": "PASS",
+        "words": 237,
+        "images": 0,
+        "drawings": 77,
+        "content_hash16": "115561b89bd1cd87",
+        "notes": "ok"
+      },
+      {
+        "page": 26,
+        "status": "PASS",
+        "words": 239,
+        "images": 0,
+        "drawings": 57,
+        "content_hash16": "25392795299cc3c8",
+        "notes": "ok"
+      },
+      {
+        "page": 27,
+        "status": "PASS",
+        "words": 105,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "caabf4ba6df99644",
+        "notes": "ok"
+      },
+      {
+        "page": 28,
+        "status": "PASS",
+        "words": 60,
+        "images": 1,
+        "drawings": 0,
+        "content_hash16": "3ce14ce3f488c5f2",
+        "notes": "ok"
+      },
+      {
+        "page": 29,
+        "status": "PASS",
+        "words": 208,
+        "images": 0,
+        "drawings": 49,
+        "content_hash16": "b13bc37ce70b153d",
+        "notes": "ok"
+      },
+      {
+        "page": 30,
+        "status": "PASS",
+        "words": 246,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "e0208b090098ef66",
+        "notes": "ok"
+      },
+      {
+        "page": 31,
+        "status": "PASS",
+        "words": 260,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "0f67e6a17066ec0e",
+        "notes": "ok"
+      },
+      {
+        "page": 32,
+        "status": "PASS",
+        "words": 215,
+        "images": 0,
+        "drawings": 33,
+        "content_hash16": "9fff84ed21bb07b9",
+        "notes": "ok"
+      },
+      {
+        "page": 33,
+        "status": "PASS",
+        "words": 186,
+        "images": 0,
+        "drawings": 99,
+        "content_hash16": "90e06796722fc339",
+        "notes": "ok"
+      },
+      {
+        "page": 34,
+        "status": "PASS",
+        "words": 179,
+        "images": 0,
+        "drawings": 143,
+        "content_hash16": "3469dc431f1ebbe5",
+        "notes": "ok"
+      },
+      {
+        "page": 35,
+        "status": "PASS",
+        "words": 206,
+        "images": 0,
+        "drawings": 66,
+        "content_hash16": "9a87408c19f955f5",
+        "notes": "ok"
+      },
+      {
+        "page": 36,
+        "status": "PASS",
+        "words": 236,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "40e4e195dc579cfe",
+        "notes": "ok"
+      },
+      {
+        "page": 37,
+        "status": "PASS",
+        "words": 190,
+        "images": 0,
+        "drawings": 65,
+        "content_hash16": "87731c7dd9e8532c",
+        "notes": "ok"
+      },
+      {
+        "page": 38,
+        "status": "PASS",
+        "words": 190,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "2ab37688c2ce9ee4",
+        "notes": "ok"
+      },
+      {
+        "page": 39,
+        "status": "PASS",
+        "words": 223,
+        "images": 0,
+        "drawings": 57,
+        "content_hash16": "ad80737bb3c5740f",
+        "notes": "ok"
+      },
+      {
+        "page": 40,
+        "status": "PASS",
+        "words": 85,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "d9ca5e69aa21c100",
+        "notes": "ok"
+      },
+      {
+        "page": 41,
+        "status": "PASS",
+        "words": 264,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "0094c620f13f00fd",
+        "notes": "ok"
+      },
+      {
+        "page": 42,
+        "status": "PASS",
+        "words": 219,
+        "images": 0,
+        "drawings": 93,
+        "content_hash16": "58828f7498362ded",
+        "notes": "ok"
+      },
+      {
+        "page": 43,
+        "status": "PASS",
+        "words": 245,
+        "images": 0,
+        "drawings": 33,
+        "content_hash16": "66139ecd00dbc040",
+        "notes": "ok"
+      },
+      {
+        "page": 44,
+        "status": "PASS",
+        "words": 131,
+        "images": 1,
+        "drawings": 0,
+        "content_hash16": "09352aaa881246c9",
+        "notes": "ok"
+      },
+      {
+        "page": 45,
+        "status": "PASS",
+        "words": 168,
+        "images": 1,
+        "drawings": 0,
+        "content_hash16": "c607e6d6388c071f",
+        "notes": "ok"
+      },
+      {
+        "page": 46,
+        "status": "PASS",
+        "words": 248,
+        "images": 0,
+        "drawings": 44,
+        "content_hash16": "152903a2dbc9cfc0",
+        "notes": "ok"
+      },
+      {
+        "page": 47,
+        "status": "PASS",
+        "words": 140,
+        "images": 1,
+        "drawings": 0,
+        "content_hash16": "5220eb3029cf7135",
+        "notes": "ok"
+      },
+      {
+        "page": 48,
+        "status": "PASS",
+        "words": 239,
+        "images": 0,
+        "drawings": 111,
+        "content_hash16": "6286bb00d179d4f3",
+        "notes": "ok"
+      },
+      {
+        "page": 49,
+        "status": "PASS",
+        "words": 215,
+        "images": 0,
+        "drawings": 66,
+        "content_hash16": "81b80762dbcd8ce3",
+        "notes": "ok"
+      },
+      {
+        "page": 50,
+        "status": "PASS",
+        "words": 258,
+        "images": 0,
+        "drawings": 66,
+        "content_hash16": "cc5fbb579e0c811b",
+        "notes": "ok"
+      },
+      {
+        "page": 51,
+        "status": "PASS",
+        "words": 289,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "833397ffd12309bd",
+        "notes": "ok"
+      },
+      {
+        "page": 52,
+        "status": "PASS",
+        "words": 309,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "a4caa5462ccc157f",
+        "notes": "ok"
+      },
+      {
+        "page": 53,
+        "status": "PASS",
+        "words": 288,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "d515eae76907bbe5",
+        "notes": "ok"
+      },
+      {
+        "page": 54,
+        "status": "PASS",
+        "words": 268,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "1dadfda660106681",
+        "notes": "ok"
+      },
+      {
+        "page": 55,
+        "status": "PASS",
+        "words": 277,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "70d748987bad5764",
+        "notes": "ok"
+      },
+      {
+        "page": 56,
+        "status": "PASS",
+        "words": 280,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "975ce7cb94936a63",
+        "notes": "ok"
+      },
+      {
+        "page": 57,
+        "status": "PASS",
+        "words": 281,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "ba499bc3c2c8cb92",
+        "notes": "ok"
+      },
+      {
+        "page": 58,
+        "status": "PASS",
+        "words": 174,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "eaa33e86bbb60081",
+        "notes": "ok"
+      },
+      {
+        "page": 59,
+        "status": "PASS",
+        "words": 242,
+        "images": 0,
+        "drawings": 134,
+        "content_hash16": "bf7b9acf6d79649c",
+        "notes": "ok"
+      },
+      {
+        "page": 60,
+        "status": "PASS",
+        "words": 353,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "f8746ee64ff55952",
+        "notes": "ok"
+      },
+      {
+        "page": 61,
+        "status": "PASS",
+        "words": 242,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "098d75f9bc8567ea",
+        "notes": "ok"
+      },
+      {
+        "page": 62,
+        "status": "PASS",
+        "words": 303,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "a35d1c3d9831abed",
+        "notes": "ok"
+      },
+      {
+        "page": 63,
+        "status": "PASS",
+        "words": 266,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "1c17792992d5fbee",
+        "notes": "ok"
+      },
+      {
+        "page": 64,
+        "status": "PASS",
+        "words": 244,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "b931b838d1115112",
+        "notes": "ok"
+      },
+      {
+        "page": 65,
+        "status": "PASS",
+        "words": 279,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "b78011453b7caa3b",
+        "notes": "ok"
+      },
+      {
+        "page": 66,
+        "status": "PASS",
+        "words": 268,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "2487c6dfe5f6dfe9",
+        "notes": "ok"
+      },
+      {
+        "page": 67,
+        "status": "PASS",
+        "words": 293,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "c967c1de7d09a0ca",
+        "notes": "ok"
+      },
+      {
+        "page": 68,
+        "status": "PASS",
+        "words": 275,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "33e0ecea7c1838b2",
+        "notes": "ok"
+      },
+      {
+        "page": 69,
+        "status": "PASS",
+        "words": 206,
+        "images": 0,
+        "drawings": 281,
+        "content_hash16": "4f6bda44beb36a39",
+        "notes": "ok"
+      },
+      {
+        "page": 70,
+        "status": "PASS",
+        "words": 182,
+        "images": 0,
+        "drawings": 289,
+        "content_hash16": "b21a90b6a05b9a56",
+        "notes": "ok"
+      },
+      {
+        "page": 71,
+        "status": "PASS",
+        "words": 164,
+        "images": 0,
+        "drawings": 174,
+        "content_hash16": "957bb0a32ef6cd85",
+        "notes": "ok"
+      },
+      {
+        "page": 72,
+        "status": "PASS",
+        "words": 81,
+        "images": 0,
+        "drawings": 55,
+        "content_hash16": "c3ca3908dbc6af12",
+        "notes": "ok"
+      },
+      {
+        "page": 73,
+        "status": "PASS",
+        "words": 184,
+        "images": 0,
+        "drawings": 100,
+        "content_hash16": "c0fef27c286acf65",
+        "notes": "ok"
+      },
+      {
+        "page": 74,
+        "status": "PASS",
+        "words": 207,
+        "images": 0,
+        "drawings": 118,
+        "content_hash16": "85ea299679513feb",
+        "notes": "ok"
+      },
+      {
+        "page": 75,
+        "status": "PASS",
+        "words": 245,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "f6dbd2d6c2db3382",
+        "notes": "ok"
+      },
+      {
+        "page": 76,
+        "status": "PASS",
+        "words": 250,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "08fc6e850b16ebbd",
+        "notes": "ok"
+      },
+      {
+        "page": 77,
+        "status": "PASS",
+        "words": 213,
+        "images": 0,
+        "drawings": 0,
+        "content_hash16": "62c4fc58bb8e3ae6",
+        "notes": "ok"
+      }
+    ],
+    "page_summary": {
+      "PASS": 77,
+      "WARNING": 0,
+      "FAIL": 0
+    }
+  },
+  "presentation": {
+    "Lawal_Akeeb_MSc_Presentation_15min_12slides.pptx": {
+      "sha256": "5e6c5329e2191d48101719d548897806171b75a3fb99819c29d6a033347be70f",
+      "slides": 12,
+      "expected": 12,
+      "hidden": 0,
+      "notes_slides": 12,
+      "phase1_082": true,
+      "pdf_pages": 12,
+      "pdf_sha256": "b117f18266c1b2f959f6d2ff44a3760374f4649305a4a29deb7b707bf57022cd",
+      "external_http_targets": false
+    },
+    "Lawal_Akeeb_MSc_Presentation_10min_8slides.pptx": {
+      "sha256": "83efb1a4c621b3fcaac8c46b1bba729d04492362e5b52e4739a42d8aedba3148",
+      "slides": 8,
+      "expected": 8,
+      "hidden": 0,
+      "notes_slides": 8,
+      "phase1_082": true,
+      "pdf_pages": 8,
+      "pdf_sha256": "f2c907c9f2adc231dff38299ca0f2823eb7f6d4cace0e2fd51212796a972d2fc",
+      "external_http_targets": false
+    },
+    "timing": {
+      "primary_seconds": 930,
+      "fallback_seconds": 600
+    },
+    "desktop_verification": {
+      "created_at_utc": "2026-07-29T18:26:48.442233+00:00",
+      "tool": "Microsoft PowerPoint COM + PyMuPDF",
+      "primary_pptx": {
+        "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_15min_12slides.pptx",
+        "expected_slides": 12,
+        "opened_without_repair": true,
+        "slide_count": 12,
+        "hidden_slides": [],
+        "notes_present": true,
+        "centrepiece_082": true,
+        "missing_media": [],
+        "slideshow_ok": true,
+        "errors": []
+      },
+      "fallback_pptx": {
+        "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_10min_8slides.pptx",
+        "expected_slides": 8,
+        "opened_without_repair": true,
+        "slide_count": 8,
+        "hidden_slides": [],
+        "notes_present": true,
+        "centrepiece_082": true,
+        "missing_media": [],
+        "slideshow_ok": true,
+        "errors": []
+      },
+      "primary_pdf": {
+        "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_15min_12slides.pdf",
+        "page_count": 12,
+        "expected_pages": 12,
+        "blank_pages": [],
+        "ok": true
+      },
+      "fallback_pdf": {
+        "path": "outputs/distinction_strategy/05_presentation_deck/Lawal_Akeeb_MSc_Presentation_10min_8slides.pdf",
+        "page_count": 8,
+        "expected_pages": 8,
+        "blank_pages": [],
+        "ok": true
+      },
+      "result": "PASS"
+    },
+    "deck_sha256sums_ok": true
+  },
+  "demo_files": {
+    "hashes": {
+      "phase1-016": {
+        "match": true,
+        "sha256": "e5d28326427f4108ed97922bf444a4467ce807e4aa198277e2ba46d6cd3a2953"
+      },
+      "phase1-082": {
+        "match": true,
+        "sha256": "9b131dc2b403f51a3a1de366ee56793c6ff255986a57e683d525297963cca2c0"
+      },
+      "phase1-090": {
+        "match": true,
+        "sha256": "7e94f16177c4ce820f956d64d27dfd9a1798e91627cb7e372ac43b0ba25ed430"
+      },
+      "phase1-246": {
+        "match": true,
+        "sha256": "30e2cf20540de86b618cc3790b006148fb50905e3c51b35c404dab88099440ee"
+      }
+    },
+    "launch_script_bind": true,
+    "print_html": true,
+    "embed_js": true,
+    "082_centrepiece": true,
+    "no_openai_in_demo": true
+  },
+  "demo_smoke": {
+    "ok": true,
+    "url": "http://127.0.0.1:8765/index.html",
+    "log_snip": "",
+    "has_frozen_notice": true,
+    "bind_localhost": true
+  },
+  "viva": {
+    "questions": 102,
+    "unique_ids": 102,
+    "adversarial": 28,
+    "mock1": 30,
+    "mock2": 30,
+    "evidence_rows": 21,
+    "rapid_review_words": 568,
+    "forbidden": {
+      "official_viva_is_forty": false,
+      "ready_for_production_deployment": false,
+      "second_independent_reviewer_existed": false,
+      "byte_identical_expected": false,
+      "confidence_interval_of": false
+    }
+  },
+  "secret_scan": {
+    "ok": true,
+    "hits": [],
+    "files_scanned": 56
+  },
+  "pytest": {
+    "returncode": 0,
+    "passed": 109,
+    "failed": 0,
+    "tail": "........................................................................ [ 66%]\n.....................................                                    [100%]\n109 passed in 11.93s"
+  },
+  "github_private": true
+}

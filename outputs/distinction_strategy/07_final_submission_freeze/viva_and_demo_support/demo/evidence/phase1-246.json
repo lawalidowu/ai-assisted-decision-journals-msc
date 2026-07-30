@@ -1,0 +1,23 @@
+{
+  "demo_role": "jee_dq",
+  "journal_id": "phase1-246",
+  "hearing_date": "2023-12-13",
+  "slug": "transcript-of-module-2-public-hearing-on-13-december-2023",
+  "run_id": "run_20260609_071809_module2_2023-12-13",
+  "public_pdf_url": "https://covid19.public-inquiry.uk/wp-content/uploads/2023/12/13183600/C-19-Inquiry-13-December-2023-Module-2-Day-34.pdf",
+  "local_historical_run_decisions": "outputs/run_20260609_071809_module2_2023-12-13/decisions.json",
+  "local_run_decisions_sha256": "1763cc9cbaf81187ce2cb5c118b95ab79bbb63f75d633154c79f1e7f111881f8",
+  "decision": "There was agreement between the DHSC, the PHE, NHS and the DfE that messaging in schools should signpost for any child experiencing long-term symptoms following a Covid-19 infection.",
+  "source_quote": "In May 2021 there was agreement between the DHSC, the PHE, NHS and the DfE that messaging in schools should signpost for any child experiencing long-term symptoms following a Covid-19 infection.",
+  "source_location": "sentence_3",
+  "evidence": "Agreement on messaging in schools regarding long-term symptoms of Covid-19.",
+  "traceability_ok": true,
+  "review_flags": [],
+  "journal_entry_hash_note": "Fields copied from frozen phase1_decision_journal.json",
+  "journal_sha256": "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06",
+  "faithfulness_category": "exact_or_near_verbatim",
+  "jee_decision": "replace",
+  "jee_primary": "P3",
+  "dq_decision": "replace",
+  "dq_primary": "commitment_to_follow_through"
+}

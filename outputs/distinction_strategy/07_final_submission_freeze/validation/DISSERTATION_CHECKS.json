@@ -1,0 +1,29 @@
+{
+  "physical_pages": 77,
+  "displayed_pages_field": 77,
+  "displayed_words_field": 14558,
+  "flag_bits": {
+    "overlap_claim_absent": true,
+    "procedural_4": true,
+    "duplicate_32": true,
+    "flagged_36": true,
+    "flag_sentence": true
+  },
+  "signature_instruction_present": true,
+  "fabricated_signature_detected": false,
+  "structure_markers": {
+    "title": true,
+    "declaration": true,
+    "abstract": true,
+    "acknowledgements": true,
+    "contents": true,
+    "chapter1": true,
+    "references": true,
+    "appendix": true
+  },
+  "title_date_line": "September 2026",
+  "jee_leak_warning_absent": true,
+  "excerpt_002_present": true,
+  "official_counting_function_words": 14558,
+  "word_discrepancy": false
+}

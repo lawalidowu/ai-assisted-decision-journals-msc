@@ -11,14 +11,11 @@ from docx import Document
 ROOT = Path(__file__).resolve().parents[1]
 DISS = ROOT / "dissertation"
 SCRIPTS = ROOT / "scripts"
-WAVE2_DOCX = (
-    ROOT
-    / "outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes"
-    / "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx"
-)
-
 sys.path.insert(0, str(SCRIPTS))
+from active_formal_submission import active_docx  # noqa: E402
 from build_submission_docx import LEAK_TERMS, verify_output  # noqa: E402
+
+ACTIVE_DOCX = active_docx()
 
 
 def _docx_with_visible_text(tmp_path: Path, text: str) -> Path:
@@ -101,10 +98,10 @@ def test_genuine_xml_template_leak_terms_still_detected(tmp_path: Path, leak: st
     assert leak in issues
 
 
-def test_wave2_candidate_docx_jee_not_flagged_when_present() -> None:
-    if not WAVE2_DOCX.is_file():
-        pytest.skip("Wave 2 candidate DOCX missing")
-    issues = verify_output(WAVE2_DOCX)
+def test_active_candidate_docx_jee_not_flagged_when_present() -> None:
+    if not ACTIVE_DOCX.is_file():
+        pytest.skip("Active formal DOCX missing")
+    issues = verify_output(ACTIVE_DOCX)
     assert "Joint External Evaluation" not in issues
     assert "Jesutomiwa" not in issues
     assert "Kanojia" not in issues

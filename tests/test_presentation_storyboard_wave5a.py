@@ -158,10 +158,16 @@ def test_wave4_demo_cases_unchanged() -> None:
 
 
 def test_protected_artefact_hashes_unchanged() -> None:
+    import sys
+
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from active_formal_submission import active_docx, active_docx_sha256, active_pdf, active_pdf_sha256
+
     assert (
         sha256(ROOT / "data/manifests/phase1_decision_journal.json")
         == "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06"
     )
+    # Historical Wave 2 May-title package remains byte-stable
     wave2 = ROOT / "outputs/dissertation_integration/run_20260729_153931_wave2_final_integrity_fixes"
     assert (
         sha256(wave2 / "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.docx")
@@ -171,6 +177,9 @@ def test_protected_artefact_hashes_unchanged() -> None:
         sha256(wave2 / "Lawal_Akeeb_Idowu_MSc_Dissertation_FINAL.pdf")
         == "40c123b9743277d9083d3b66eb855e0fa7a57101017d08a7d8a2d94558a63519"
     )
+    # Active formal submission is September 2026 title-month rebuild
+    assert sha256(active_docx()) == active_docx_sha256() == "70df0ee0992cd55635053f00926923d1b39357312f820fe29883810a0d9e96b5"
+    assert sha256(active_pdf()) == active_pdf_sha256() == "fa685483df8e19972d798dffd58801fbb14b48f1928e62af12153b971406c0b5"
 
 
 def test_aim_not_rewritten_stronger() -> None:
