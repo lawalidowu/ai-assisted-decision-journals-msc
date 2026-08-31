@@ -1,45 +1,137 @@
 # AI-assisted decision journals
 
-Research software that extracts **candidate policy decisions** and supporting **evidence quotes** from long-form emergency-response text (public inquiry hearing transcripts), checks whether each quote can be found in the source text, and evaluates extraction quality with human rubrics and automated checks.
-
-**Case study (MSc dissertation):** UK COVID-19 Inquiry Module 2 — eight public hearing transcripts → **414** frozen candidate entries, with manual and automated evaluation reported in the dissertation.
-
 **Author:** Akeeb Idowu Lawal · University of Surrey · MSc Artificial Intelligence (EEEM004)
 
-**Reproducibility release:** tag `msc-dissertation-reproducibility-2026-08-31` (commit `9e4452a`); public-safe paths in tag `msc-dissertation-public-release-2026-08-31`. Frozen journal SHA-256: `814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06` (414 entries). Supplementary robustness experiment evidence is included under `experiments/`.
+This repository supports an MSc dissertation on whether large language models (LLMs) can help researchers build **traceable candidate decision journals** from long public-inquiry hearing transcripts. It is a **command-line research prototype**, not a deployed web application.
 
 ---
 
-## What this repository contains
+## What this project does
 
-| Layer | What it is | Where to look |
-|-------|------------|---------------|
-| **Pipeline code** | PDF/text ingestion, LLM extraction, journal merge, review flags, clustering, evaluation scripts | `src/decision_journal/`, `scripts/` |
-| **Frozen research dataset** | The fixed 414-entry decision journal used in all dissertation analyses | `data/manifests/phase1_decision_journal.json` |
-| **Human evaluation records** | Six annotated excerpts, n=50 confidence sample, n=60 framework review | `configs/annotations/`, `configs/evaluation/` |
-| **Result summaries** | Markdown reports for triangulation, baseline, taxonomy, pilots | `docs/*.md` |
-| **Dissertation** | Source chapters and submitted Word document | `dissertation/` |
-| **Supplementary robustness experiments** | These exploratory experiments examined sensitivity to chunk/overlap settings and model choice. They were conducted after the main Phase 1 dataset had been fixed and did not alter the 414-entry reference dataset. | `experiments/` (minimum dissertation-supporting evidence committed) |
+During emergencies, decision-makers often need a clear record of what was decided, when, and on what evidence. A **decision journal** is a structured record of that kind. This project asks whether an LLM can **propose** candidate journal entries from long transcripts: each entry includes a decision statement, supporting evidence, and a **source quote** that can be checked against the original text.
 
-This is a **CLI research prototype**, not a deployed web application. There is no fine-tuned model and no retrieval-augmented generation layer — each text chunk is sent to the LLM in full with a structured JSON schema and mandatory `source_quote` fields.
+The software:
 
----
+1. Takes long documents (PDFs or plain text).
+2. Splits them into overlapping sentence-based chunks.
+3. Asks an LLM to return structured JSON for each chunk.
+4. Checks mechanically whether each quoted passage appears in the chunk text (**traceability**).
+5. Merges results into a single dataset for human review and evaluation.
 
-## Start here (new researcher)
-
-1. **Understand the system** — read [How data flows](#how-data-flows-through-the-system) below, then [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for technical detail.
-2. **Verify dissertation numbers without an API key** — follow [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) § “Inspect frozen results offline”.
-3. **Find a specific dissertation claim** — use the mapping table in [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) § “Dissertation results index”.
-4. **Re-run extraction on new documents** — see [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) § “Adapting the pipeline to a new corpus”.
-
-Historical development notes (internal revision logs, packaging folders) live under `docs/revision_control/` and `docs/examiner_evidence/` for audit only — they are **not** the primary navigation path.
+**Important:** The outputs are **candidate** decision-journal entries. They are **not** verified policy decisions. Human review remains necessary before any entry could be treated as authoritative.
 
 ---
 
-## Setup
+## What problem this addresses
+
+Manual decision journaling from long transcripts is slow and does not scale easily. Automated keyword search misses context and cannot reliably produce structured entries with linked evidence. This project tests a middle path: use an LLM to **propose** entries under a fixed schema, then evaluate how often those proposals are traceable, how they compare to human judgement, and how sensitive results are to chunking and model choice.
+
+The case study uses **UK COVID-19 Inquiry Module 2** public hearing transcripts — eight hearings processed into text, then analysed as one fixed dataset.
+
+---
+
+## What was done in the MSc study
+
+The dissertation workflow had three broad stages:
+
+1. **Extraction** — Run the pipeline on eight public hearings to produce a **fixed set of 414 candidate entries**. This file was then locked for all later analysis. Nothing in the supplementary robustness work changed these 414 entries.
+2. **Evaluation** — Human and automated checks on samples from that fixed set: six annotated excerpts, a stratified sample of 50 entries, clustering of all 414 entries, and an extended human review of 60 purposively selected entries.
+3. **Supplementary robustness experiments** — Exploratory checks of whether results were sensitive to chunk/overlap settings and model choice, conducted **after** the 414-entry dataset was fixed.
+
+Submitted thesis and supporting files are under `dissertation/`. The fixed candidate dataset is `data/manifests/phase1_decision_journal.json`.
+
+---
+
+## What the study found
+
+Headline results reported in the dissertation (full artefact mapping in [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md)):
+
+| Finding | Value | Where to verify |
+|---------|-------|-----------------|
+| Candidate entries extracted | **414** | `data/manifests/phase1_decision_journal.json` |
+| Quotes found in source chunk text (mechanical traceability) | **351/414** | Same file — `traceability_ok` per entry |
+| Entries flagged for review (non-destructive) | **36** | `phase2.review_flags` on journal entries |
+| Six-excerpt manual triangulation | **5 agreement / 10 silence / 0 dissonance** | [`docs/TRIANGULATION_SUMMARY.md`](docs/TRIANGULATION_SUMMARY.md) |
+| Keyword baseline vs LLM on six excerpts | **5/6 vs 1/6** | [`docs/BASELINE_KEYWORD.md`](docs/BASELINE_KEYWORD.md) |
+| GRACE-adapted assessment | **n = 16** | [`docs/GRACE_SUMMARY.md`](docs/GRACE_SUMMARY.md) |
+| Error taxonomy extended sample | **n = 42** | [`docs/ERROR_TAXONOMY.md`](docs/ERROR_TAXONOMY.md) |
+| Dual-rubric validation sample | **n = 50** (e.g. **21/50** no × high) | `configs/evaluation/confidence_validation_sample.json` |
+| Automated confidence vs human rubrics | **κ ≈ 0.48 / 0.39** | `configs/evaluation/confidence_comparison_results.json` |
+| Theme grouping of all 414 entries | **20 groups** | `data/manifests/phase1_clustering_report.json` |
+| Extended human framework review | **n = 60** | `outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/` |
+| Structural reliability (schema adherence under perturbation) | **49/50** | `configs/evaluation/structural_reliability_results.json` |
+| Report-genre pilot (separate document) | **53 candidates** | [`docs/REPORT_PILOT.md`](docs/REPORT_PILOT.md) |
+
+### Primary vs supplementary analyses
+
+| **Primary** (defines the fixed 414-entry dataset) | **Supplementary** (robustness checks; does not change the 414 entries) |
+|---------------------------------------------------|--------------------------------------------------------------------------|
+| Eight-hearing extraction → 414 candidates | Report-genre pilot on a separate In Brief document |
+| Six-excerpt manual triangulation | Error taxonomy extended sample (n = 42) |
+| n = 50 confidence validation | Structural reliability stress test |
+| Extended human review (n = 60) | Chunk/overlap sensitivity |
+| Clustering of n = 414 | Model comparison on six excerpts |
+| Keyword baseline on six excerpts | Limited full-hearing confirmation (three hearings; one valid model run) |
+
+**Supplementary robustness experiments** (`experiments/`) tested chunk/overlap settings and model choice. They were exploratory and did **not** alter the 414-entry reference dataset. For model sensitivity, only the **Terra** full-hearing run (2/6 recovery) is valid performance evidence; the **Sol** full-hearing run failed and is retained for transparency only — **not** as model-performance evidence.
+
+### What traceability does and does not mean
+
+- **Does:** Checks that the `source_quote` can be found in the processed chunk text used during extraction.
+- **Does not:** Prove that an entry is a valid decision-journal item, correct policy analysis, or faithful paraphrase of intent. Many traceable quotes still failed human validity checks (e.g. 21/50 no × high in the n = 50 sample).
+
+---
+
+## How the system works
+
+```
+Public source documents (PDFs)
+        │
+        ▼
+  Text extraction and cleanup
+        │
+        ▼
+  Sentence-based chunking (default: 7 sentences, overlap 2)
+        │
+        ▼
+  LLM extraction — structured JSON per chunk (decision, evidence, source_quote)
+        │
+        ▼
+  Deduplication + mechanical traceability check
+        │
+        ▼
+  Per-document run folders (outputs/run_<timestamp>_<label>/)
+        │
+        ▼
+  Fixed candidate dataset — one JSON file for all downstream work
+        (data/manifests/phase1_decision_journal.json — 414 entries)
+        │
+        ├── Review flags (procedural wording, possible duplicates)
+        ├── Human confidence validation (n = 50)
+        ├── Automated confidence comparison (rules + LLM vs human)
+        ├── Embedding-based grouping (agglomerative clustering → 20 theme groups)
+        ├── Manual excerpt evaluation (6 excerpts)
+        ├── Extended human review (n = 60)
+        └── Supplementary robustness experiments (chunk size, model choice)
+```
+
+**Design rule:** After the 414-entry dataset was fixed, every dissertation analysis reads **that single file** or **derivatives** (outputs produced from it, stored in `configs/evaluation/` and related folders). Analyses do not silently re-extract the corpus.
+
+There is no fine-tuned model and no retrieval-augmented generation layer. Each chunk is sent to the LLM in full with a structured schema and mandatory `source_quote` field.
+
+**Structural reliability** in this project means checking whether repeated model outputs still followed the required JSON structure when inputs were perturbed — a format-stability check, not a claim about decision quality.
+
+For schema detail, rubrics, and evaluation scales, see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and [`docs/ANNOTATION_RUBRIC.md`](docs/ANNOTATION_RUBRIC.md).
+
+---
+
+## How to inspect or reproduce the study
+
+You can verify most dissertation numbers **without an API key** by reading committed JSON/CSV files and running offline tests. Re-running LLM extraction may yield different outputs because hosted models change over time.
+
+### Setup
 
 ```bash
-# From the repository root (Windows PowerShell or Unix shell)
 python -m venv .venv
 
 # Windows
@@ -49,137 +141,23 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
-cp .env.example .env    # then add your OPENAI_API_KEY
+cp .env.example .env    # add OPENAI_API_KEY only if re-running LLM steps
 ```
 
-You do **not** need an API key to inspect frozen JSON, run integrity tests, or recalculate counts from committed evaluation files.
+### Task-based guide
 
----
+| If you want to… | Start here |
+|-----------------|------------|
+| **Obtain or inspect processed transcripts** | `data/processed/inquiry/` (committed for this release). To rebuild from public PDFs: `scripts/run_pipeline.py` — see [`data/raw/README.md`](data/raw/README.md) |
+| **Split text into overlapping chunks and extract candidates** | `scripts/run_extraction.py` (requires API). Core logic: `src/decision_journal/extraction.py` |
+| **Check source traceability** | Built into extraction; counts in `phase1_decision_journal.json` (`traceability_ok`) |
+| **Build or inspect the fixed 414-entry dataset** | `data/manifests/phase1_decision_journal.json`. Merge script: `scripts/build_phase1_journal.py` — **do not overwrite** this file when verifying dissertation claims |
+| **Review or evaluate candidates** | Human labels: `configs/annotations/`, `configs/evaluation/`. Summaries: `docs/TRIANGULATION_SUMMARY.md`, `docs/BASELINE_KEYWORD.md`, etc. Extended review outputs: `outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/` |
+| **Inspect supplementary robustness experiments** | `experiments/chunk_overlap_sensitivity_2026-08-30/`, `experiments/model_sensitivity_2026-08-31/` |
+| **Run offline integrity checks** | `python -m pytest tests/test_appendix_a_excerpt_coordinates.py tests/test_phase2a_flag_counts_and_wordcount.py tests/test_leak_term_scan.py -q` |
+| **Map a specific dissertation claim to files** | [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) — “Dissertation results index” |
 
-## How data flows through the system
-
-```
-Public source documents (PDFs)
-        │
-        ▼
-  Text extraction + inquiry-specific cleanup
-        │
-        ▼
-  Sentence-based chunking (default: 7 sentences, overlap 2)
-        │
-        ▼
-  LLM extraction (structured JSON per chunk: decision, evidence, source_quote)
-        │
-        ▼
-  Deduplication + mechanical traceability check (quote found in chunk text?)
-        │
-        ▼
-  Per-document run folders (outputs/run_<timestamp>_<label>/)
-        │
-        ▼
-  Canonical decision journal — ONE frozen file for all downstream work
-        (data/manifests/phase1_decision_journal.json — 414 entries)
-        │
-        ├── Review flags (procedural wording, possible duplicates)
-        ├── Human confidence validation (n=50, dual rubrics)
-        ├── Automated confidence comparison (rules + LLM vs human)
-        ├── Embedding clustering (20 theme groups)
-        ├── Manual excerpt evaluation (6 excerpts, triangulation, GRACE)
-        ├── Extended audits (n=60 JEE / Decision Quality / faithfulness)
-        └── Supplementary sensitivity studies (chunk size, model choice)
-```
-
-**Important design rule:** After the journal was frozen, every dissertation analysis reads **that single journal file** (or derivatives stored in `configs/evaluation/`). Analyses do not silently re-extract the corpus.
-
----
-
-## Main components
-
-### Python package — `src/decision_journal/`
-
-| Module | Role |
-|--------|------|
-| `extraction.py` | Prompts, chunking, LLM calls, traceability validation, deduplication |
-| `pdf_text.py` | PDF → plain text |
-| `journal.py` | Load and validate the canonical journal |
-| `review_flags.py` | Non-destructive quality flags on journal entries |
-| `confidence_signals.py` | Rule-based and LLM-based confidence heuristics |
-| `clustering.py` | Embedding + agglomerative clustering |
-| `structural_reliability.py` | Schema robustness stress test |
-| `inquiry_*.py` | UK COVID-19 Inquiry API harvest and download (case-study specific) |
-
-### Runnable scripts — `scripts/`
-
-Scripts are grouped by purpose in [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md). In practice, most users need only a subset:
-
-| Purpose | Key scripts |
-|---------|-------------|
-| **Ingest case-study corpus** | `run_pipeline.py`, `pdf_to_text.py` |
-| **Extract decisions** | `run_extraction.py` |
-| **Build / verify frozen journal** | `build_phase1_journal.py`, `verify_phase1_data.py` |
-| **Enrich journal** | `apply_review_flags.py`, `run_clustering.py`, `visualize_clustering.py` |
-| **Human validation workflow** | `build_confidence_validation_sample.py`, `rate_confidence_sample.py`, `compare_confidence_signals.py` |
-| **Manual evaluation summaries** | `build_annotation_excerpts.py`, `summarize_triangulation.py`, `keyword_baseline.py`, `summarize_grace.py`, `build_error_taxonomy.py` |
-| **Extended human audit (n=60)** | `run_jee_dq_human_review.py`, `run_post60_analytical_audit_E_final.py` |
-| **Supplementary tests** | `run_structural_reliability.py` |
-| **Integrity checks** | `pytest` (see reproducibility guide) |
-
-Many other scripts under `scripts/` build dissertation Word files, presentation decks, or one-off packaging — they are **not** required to understand or verify the research pipeline.
-
-### Configuration and frozen data
-
-| Path | Role |
-|------|------|
-| `configs/phase1_journal_runs.json` | Maps the eight canonical extraction runs to the 414-entry journal |
-| `configs/inquiry_*.json` | Case-study corpus selection (Module 2 hearings) |
-| `configs/annotations/manual_phase1.json` | Six manually annotated excerpts |
-| `configs/evaluation/*.json` | Frozen evaluation samples and computed metrics |
-| `data/manifests/phase1_decision_journal.json` | **Authoritative dataset** (414 candidates; 351 pass traceability) |
-| `data/manifests/phase1_clustering_report.json` | Clustering output (20 groups) |
-| `data/processed/inquiry/` | Processed transcript text used in the released study |
-| `data/raw/inquiry/` | Source PDFs (usually local only; public URLs in manifest) |
-
----
-
-## Dissertation results at a glance
-
-| Result reported in dissertation | Primary artefact |
-|-----------------------------------|------------------|
-| 414 candidate entries | `data/manifests/phase1_decision_journal.json` |
-| 351/414 mechanical traceability | `totals` field in journal; per-entry `traceability_ok` |
-| 36 review flags | `phase2.review_flags` on journal entries |
-| Six manual excerpts / reference decisions | `configs/annotations/manual_phase1.json`, `configs/annotations/excerpts/` |
-| Triangulation (5 agreement / 10 silence / 0 dissonance) | `docs/TRIANGULATION_SUMMARY.md` |
-| Keyword baseline (5/6 vs 1/6) | `docs/BASELINE_KEYWORD.md` |
-| GRACE-adapted assessment (n=16) | `docs/GRACE_SUMMARY.md`, `configs/evaluation/grace_expansion.json` |
-| Error taxonomy (n=42) | `docs/ERROR_TAXONOMY.md` |
-| n=50 dual-rubric validation (e.g. 21/50 no×high) | `configs/evaluation/confidence_validation_sample.json` |
-| Automated confidence (κ ≈ 0.48 / 0.39) | `configs/evaluation/confidence_comparison_results.json` |
-| Clustering (20 groups, n=414) | `data/manifests/phase1_clustering_report.json`, `outputs/figures/` |
-| n=60 JEE / Decision Quality / faithfulness | `outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/` |
-| Structural reliability (49/50) | `configs/evaluation/structural_reliability_results.json` |
-| Report-genre pilot (53 candidates) | `docs/REPORT_PILOT.md` |
-| Chunk/overlap sensitivity | `experiments/chunk_overlap_sensitivity_2026-08-30/` |
-| Model sensitivity + limited full-hearing check | `experiments/model_sensitivity_2026-08-31/` |
-
-Full traceability (scripts, inputs, what is committed vs local) is in [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md).
-
-### Primary vs supplementary analyses
-
-| **Primary** (define the frozen dataset and main evaluation) | **Supplementary** (robustness / sensitivity; do not redefine the 414-entry set) |
-|-------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Eight-hearing extraction → 414 journal | Report-genre pilot on a separate In Brief document |
-| Six-excerpt manual triangulation | Error taxonomy extended sample (n=42) |
-| n=50 confidence validation | Structural reliability stress test |
-| n=60 JEE/DQ/faithfulness audit | Chunk/overlap sensitivity |
-| Clustering of n=414 | Model comparison on six excerpts |
-| Keyword baseline on six excerpts | Limited full-hearing confirmation (three hearings, one valid model run) |
-
----
-
-## Typical command sequences
-
-### A. Inspect frozen results (no API — recommended first step)
+### Quick offline verification
 
 ```bash
 python -m pytest tests/test_appendix_a_excerpt_coordinates.py \
@@ -187,72 +165,46 @@ python -m pytest tests/test_appendix_a_excerpt_coordinates.py \
   tests/test_leak_term_scan.py -q
 ```
 
-Then recalculate headline counts from JSON — commands in [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md).
+Recalculate headline counts from JSON — commands in [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) § “Inspect frozen results offline”.
 
-### B. Rebuild case-study corpus from public sources
+### What cannot be reproduced exactly
 
-```bash
-python scripts/run_pipeline.py --stage harvest
-python scripts/run_pipeline.py --stage download
-python scripts/run_pipeline.py --stage text
-python scripts/verify_phase1_data.py
-```
-
-### C. Extract decisions from one transcript (requires API)
-
-```bash
-python scripts/run_extraction.py data/processed/inquiry/document/<slug>.txt \
-  --label phase1 --inquiry
-```
-
-### D. Reproduce journal merge (only if you have the eight canonical run folders)
-
-```bash
-python scripts/build_phase1_journal.py
-python scripts/apply_review_flags.py
-```
-
-**Do not overwrite** `data/manifests/phase1_decision_journal.json` when verifying historical dissertation claims. The committed journal is authoritative.
-
-### E. Re-run downstream analyses on the frozen journal
-
-```bash
-python scripts/build_confidence_validation_sample.py   # design only — sample already frozen
-python scripts/compare_confidence_signals.py         # needs API for LLM pass unless cache present
-python scripts/run_clustering.py                     # needs API for embeddings unless cache present
-python scripts/run_structural_reliability.py         # needs API
-python scripts/summarize_triangulation.py
-python scripts/keyword_baseline.py
-```
-
----
-
-## What cannot be reproduced exactly
-
-- **LLM extraction outputs** — Phase 1 used `gpt-4o-mini` at temperature 0; hosted model snapshots change over time. Re-running extraction may yield different decisions.
-- **Human judgements** — Rubric ratings, triangulation codes, JEE/DQ, and faithfulness classifications are stored in frozen JSON/CSV; they are not regenerated by scripts.
-- **Embedding clustering** — Re-clustering needs the embedding cache or new API calls; cluster labels are navigation aids, not a validated ontology.
+- **LLM extraction** — Phase 1 used `gpt-4o-mini` at temperature 0; hosted snapshots change.
+- **Human judgements** — Ratings and classifications are stored in frozen files; scripts do not regenerate them.
+- **Embedding-based clustering** — Re-clustering needs the embedding cache or new API calls; cluster labels are navigation aids, not a validated ontology.
 - **Supplementary model runs** — Robustness experiments used then-current model aliases (`gpt-5.6-terra`, etc.) that may not remain available.
 
-See [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) for the full limits table and what each analysis class requires (offline / download / API / human records).
+See [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) for the full limits table.
 
 ---
 
-## Adapting to a new corpus
+## Using the approach on another corpus
 
-The reusable pattern (independent of the UK COVID-19 case study):
+The reusable pattern does not depend on the UK COVID-19 case study:
 
-1. Place source documents as `.txt` or convert PDFs with `pdf_text.py`.
-2. Run `run_extraction.py` **without** `--inquiry` for a generic prompt, or adapt `INQUIRY_PROMPT_TEMPLATE` in `extraction.py` for your domain.
-3. Merge runs with a new journal config (copy the pattern in `build_phase1_journal.py` and `journal.py`).
-4. Apply `apply_review_flags.py` for non-destructive quality markers.
-5. Build your own evaluation samples — do not reuse the dissertation’s n=50/n=60 labels.
+1. Place source documents as `.txt`, or convert PDFs with `scripts/pdf_to_text.py`.
+2. Run `scripts/run_extraction.py` **without** `--inquiry` for a generic prompt, or adapt the prompt template in `src/decision_journal/extraction.py` for your domain.
+3. Merge extraction runs into a new journal file (copy the pattern in `scripts/build_phase1_journal.py` and `src/decision_journal/journal.py`).
+4. Apply `scripts/apply_review_flags.py` for non-destructive quality markers.
+5. Design **new** human evaluation samples — do not reuse this dissertation’s n = 50 / n = 60 labels.
 
-Case-study-specific ingestion (`inquiry_harvest.py`, `inquiry_download.py`, Module 2 configs) should be replaced for a different document source (e.g. outbreak investigation reports).
+Replace case-study-specific ingestion (`inquiry_harvest.py`, `inquiry_download.py`, `configs/inquiry_*.json`) when working with a different document source (e.g. outbreak investigation reports).
+
+Full step-by-step guidance: [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) § “Adapting the pipeline to a new corpus”.
 
 ---
 
-## Repository layout
+## Repository contents
+
+| What | Where |
+|------|-------|
+| Pipeline code | `src/decision_journal/`, `scripts/` |
+| Fixed 414-entry candidate dataset | `data/manifests/phase1_decision_journal.json` |
+| Processed transcript text (released study) | `data/processed/inquiry/` |
+| Human evaluation records | `configs/annotations/`, `configs/evaluation/` |
+| Result summaries | `docs/*.md` |
+| Dissertation | `dissertation/` |
+| Supplementary robustness experiments | `experiments/` |
 
 ```
 .
@@ -260,29 +212,44 @@ Case-study-specific ingestion (`inquiry_harvest.py`, `inquiry_download.py`, Modu
 ├── scripts/                  # Command-line tools
 ├── configs/                  # Settings, annotations, evaluation manifests
 ├── data/
-│   ├── manifests/            # Committed metadata + frozen journal
-│   ├── raw/                  # Source PDFs (local)
+│   ├── manifests/            # Metadata + fixed candidate dataset
+│   ├── raw/                  # Source PDFs (public URLs in manifest)
 │   └── processed/            # Processed transcript text used in the released study
-├── outputs/                  # Extraction runs, figures, audit workspaces
-├── experiments/              # Supplementary sensitivity studies
+├── outputs/                  # Extraction runs, figures, review workspaces
+├── experiments/              # Supplementary robustness experiments
 ├── docs/                     # Summaries, architecture, reproducibility guide
 ├── dissertation/             # Thesis source and submission files
-├── tests/                    # Integrity and coordinate tests
+├── tests/                    # Integrity tests
 └── demo/                     # Small offline demonstration assets
 ```
 
 ---
 
-## Further reading
+## Detailed technical documentation
 
-| Document | Audience |
-|----------|----------|
-| [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) | **Start here** for commands, claim index, and reproduction classes |
-| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | Technical architecture, schema, evaluation scales |
+| Document | Purpose |
+|----------|---------|
+| [`docs/REPRODUCIBILITY_GUIDE.md`](docs/REPRODUCIBILITY_GUIDE.md) | **Primary technical guide** — commands, claim index, reproduction classes, script reference |
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | System design, schema, evaluation scales |
 | [`docs/ANNOTATION_RUBRIC.md`](docs/ANNOTATION_RUBRIC.md) | Manual annotation protocol |
-| [`docs/repository_release/DUAL_RELEASE_AUDIT.md`](docs/repository_release/DUAL_RELEASE_AUDIT.md) | Release-readiness audit (MSc vs future reuse) |
-| [`docs/examiner_evidence/`](docs/examiner_evidence/) | Compact evidence pack for examiners (secondary to guide above) |
+| [`docs/INQUIRY_EXTRACTION_SUMMARY.md`](docs/INQUIRY_EXTRACTION_SUMMARY.md) | Per-hearing extraction statistics |
+| [`docs/examiner_evidence/DATA_LINEAGE.md`](docs/examiner_evidence/DATA_LINEAGE.md) | Compact source-to-findings diagram |
 | [`data/raw/README.md`](data/raw/README.md) | How to obtain and place source PDFs |
+
+Internal development notes under `docs/revision_control/` and `docs/examiner_evidence/` are retained for audit but are not the main navigation path.
+
+---
+
+## Reproducibility and release information
+
+| Item | Value |
+|------|-------|
+| Reproducibility tag | `msc-dissertation-reproducibility-2026-08-31` (commit `9e4452a`) |
+| Public-safe release tag | `msc-dissertation-public-release-2026-08-31` |
+| Fixed 414-entry dataset SHA-256 | `814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06` |
+| Supplementary experiment evidence | Committed under `experiments/` |
+
+Release audits: [`docs/repository_release/PUBLIC_GITHUB_RELEASE_CHECK.md`](docs/repository_release/PUBLIC_GITHUB_RELEASE_CHECK.md), [`docs/repository_release/DUAL_RELEASE_AUDIT.md`](docs/repository_release/DUAL_RELEASE_AUDIT.md).
 
 ---
 
