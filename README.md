@@ -62,10 +62,10 @@ Headline results reported in the dissertation (full artefact mapping in [`docs/R
 | Structural reliability (schema adherence under perturbation) | **49/50** | `configs/evaluation/structural_reliability_results.json` |
 | Report-genre pilot (separate document) | **53 candidates** | [`docs/REPORT_PILOT.md`](docs/REPORT_PILOT.md) |
 
-### Primary vs supplementary analyses
+### Main dissertation analyses vs supplementary robustness checks
 
-| **Primary** (defines the fixed 414-entry dataset) | **Supplementary** (robustness checks; does not change the 414 entries) |
-|---------------------------------------------------|--------------------------------------------------------------------------|
+| **Main dissertation analyses** (reported in the dissertation) | **Supplementary robustness checks** (do not change the 414 entries) |
+|---------------------------------------------------------------|-----------------------------------------------------------------------|
 | Eight-hearing extraction → 414 candidates | Report-genre pilot on a separate In Brief document |
 | Six-excerpt manual triangulation | Error taxonomy extended sample (n = 42) |
 | n = 50 confidence validation | Structural reliability stress test |
