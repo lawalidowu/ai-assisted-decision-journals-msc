@@ -1,6 +1,6 @@
 {
   "title": "MSc dissertation reproducibility release SHA-256 manifest",
-  "created_at_utc": "2026-08-31T11:30:28.662914+00:00",
+  "created_at_utc": "2026-08-31T12:11:17.296336+00:00",
   "baseline_tag_planned": "msc-dissertation-reproducibility-2026-08-31",
   "frozen_journal_sha256": "814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06",
   "lfs_threshold_bytes": 52428800,
@@ -47,9 +47,9 @@
     },
     {
       "path": "README.md",
-      "sha256": "5a99cae7834bc11e7850d9f3b9f7092e6ffcf658240c66f03a1bf87dd5cc19e9",
-      "bytes": 15146,
-      "megabytes": 0.014444,
+      "sha256": "dcea264ce589d97a8637e2f4541758b839b2e86b941832bcd57f88a4d595eded",
+      "bytes": 15522,
+      "megabytes": 0.014803,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },
@@ -255,9 +255,9 @@
     },
     {
       "path": "data/manifests/inquiry_module2_phase1.csv",
-      "sha256": "432ef248f5b25bfcb1bfde7a1343447835a49e1fdfa0d38bb61ed87819073817",
-      "bytes": 6776,
-      "megabytes": 0.006462,
+      "sha256": "8ad865df35f69987842e3ba6e69b2f7656cad45187ef1068d6294a39415958ec",
+      "bytes": 5948,
+      "megabytes": 0.005672,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },
@@ -647,9 +647,9 @@
     },
     {
       "path": "docs/REPRODUCIBILITY_GUIDE.md",
-      "sha256": "ade47dcd4ecd6d16478e809ef48312489bb4981e7a40c8165913ae45d1fa1b32",
-      "bytes": 30870,
-      "megabytes": 0.02944,
+      "sha256": "10eaf4318c598b9badb92c9a6af5acdb807d26345d79c4ee40e5a7fd6fce7379",
+      "bytes": 31166,
+      "megabytes": 0.029722,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },
@@ -2927,17 +2927,17 @@
     },
     {
       "path": "outputs/framework_mapping/run_20260727_131920_audit_E_human_approval_check/AUDIT_E_HUMAN_APPROVAL_MANIFEST.json",
-      "sha256": "94c2bab6afc078a3d230fef5e5604045e28cc0c4741afa5ce94bcad53e4b2c70",
-      "bytes": 1537,
-      "megabytes": 0.001466,
+      "sha256": "da93ac7d1c12c8227940fbfdd78853dfc761fe8d2469f7a64ae294fdd2cf9b97",
+      "bytes": 1322,
+      "megabytes": 0.001261,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },
     {
       "path": "outputs/framework_mapping/run_20260727_131920_audit_E_human_approval_check/AUDIT_E_HUMAN_APPROVAL_SHA256SUMS.txt",
-      "sha256": "353104cbaae901968e47828af604783a349795783615b74ee76979218898aac6",
-      "bytes": 1568,
-      "megabytes": 0.001495,
+      "sha256": "03ac4e390ecf6fef78adb1866c9fd44a1054f39c22a4a76d39547493bd6c93e6",
+      "bytes": 1246,
+      "megabytes": 0.001188,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },
@@ -3055,9 +3055,9 @@
     },
     {
       "path": "outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_MANIFEST.json",
-      "sha256": "8262948f55a04950983dcc146073a51822422237fdc8d92abf966c377c4bcd20",
-      "bytes": 1964,
-      "megabytes": 0.001873,
+      "sha256": "5dc722aab9bb5cf17f5313417f9c4d1ad443e4669a608e685576cdc3b5b70224",
+      "bytes": 1640,
+      "megabytes": 0.001564,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },
@@ -3079,9 +3079,9 @@
     },
     {
       "path": "outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/AUDIT_E_SHA256SUMS.txt",
-      "sha256": "bed06d1ceef1be5fdbe0a8815f9c63fea44b5e9e5aa2192df3594e225fa897ad",
-      "bytes": 5663,
-      "megabytes": 0.005401,
+      "sha256": "5b9b66f25b9f6f8c69e0656a453f4e703df109c4cef88b7ed59351b8cd85ad78",
+      "bytes": 4513,
+      "megabytes": 0.004304,
       "role": "tracked",
       "lfs_required_gt_50mb": false
     },

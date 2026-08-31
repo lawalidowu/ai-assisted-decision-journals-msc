@@ -1,10 +1,10 @@
 {
   "task": "audit_E_human_approval_check",
   "generated_at_utc": "2026-07-27T13:19:20.288213+00:00",
-  "work_dir": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_131920_audit_E_human_approval_check",
-  "audit_e_dir_read_only": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_110052_post60_analytical_audit_E",
-  "audit_d_dir_read_only_frozen": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_094015_post60_coding_consistency_audit",
-  "input_reference": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_094015_post60_coding_consistency_audit\\CONSISTENCY_CORRECTED_REFERENCE.csv",
+  "work_dir": "outputs/framework_mapping/run_20260727_131920_audit_E_human_approval_check",
+  "audit_e_dir_read_only": "outputs/framework_mapping/run_20260727_110052_post60_analytical_audit_E",
+  "audit_d_dir_read_only_frozen": "outputs/framework_mapping/run_20260727_094015_post60_coding_consistency_audit",
+  "input_reference": "outputs/framework_mapping/run_20260727_094015_post60_coding_consistency_audit/CONSISTENCY_CORRECTED_REFERENCE.csv",
   "check1_audit_e_string_divergence_count": 53,
   "check1_corrected_categories": {
     "traceability_false": 7,

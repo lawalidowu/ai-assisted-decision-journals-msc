@@ -6,6 +6,8 @@ Research software that extracts **candidate policy decisions** and supporting **
 
 **Author:** Akeeb Idowu Lawal · University of Surrey · MSc Artificial Intelligence (EEEM004)
 
+**Reproducibility release:** tag `msc-dissertation-reproducibility-2026-08-31` (commit `9e4452a`); public-safe paths in tag `msc-dissertation-public-release-2026-08-31`. Frozen journal SHA-256: `814cc7c47a9f75bfc0a6c7b693feec7073e59131398d89fab7c9111fbb2e5e06` (414 entries). Aug 2026 chunk/overlap and model-sensitivity minimum evidence is included under `experiments/`.
+
 ---
 
 ## What this repository contains
@@ -17,7 +19,7 @@ Research software that extracts **candidate policy decisions** and supporting **
 | **Human evaluation records** | Six annotated excerpts, n=50 confidence sample, n=60 framework review | `configs/annotations/`, `configs/evaluation/` |
 | **Result summaries** | Markdown reports for triangulation, baseline, taxonomy, pilots | `docs/*.md` |
 | **Dissertation** | Source chapters and submitted Word document | `dissertation/` |
-| **Supplementary experiments** | Post-submission chunk-size and model-comparison studies (Aug 2026) | `experiments/` (local; may not be in git until release snapshot) |
+| **Supplementary experiments** | Post-submission chunk-size and model-comparison studies (Aug 2026) | `experiments/` (minimum dissertation-supporting evidence committed) |
 
 This is a **CLI research prototype**, not a deployed web application. There is no fine-tuned model and no retrieval-augmented generation layer — each text chunk is sent to the LLM in full with a structured JSON schema and mandatory `source_quote` fields.
 

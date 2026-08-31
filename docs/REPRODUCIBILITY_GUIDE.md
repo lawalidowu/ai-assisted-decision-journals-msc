@@ -295,27 +295,26 @@ Each row maps a **reported result** to its producing code, inputs, outputs, and 
 | **n=60 JEE/DQ** | `run_jee_dq_human_review.py` → Audit E | Purposive 60 | `AUDIT_E_JEE_SUMMARY.csv`, `AUDIT_E_DQ_SUMMARY.csv` | Single reviewer | **Partial** | **Partial** — summaries partially tracked |
 | **Faithfulness 8/25/20/7** | Audit E chain | Source passages | `AUDIT_E_TRACEABILITY_HUMAN_CLASSIFICATION.csv` | Author | Partial | **Partial** |
 | **Structural 49/50** | `run_structural_reliability.py` | `structural_reliability_chunks.json` | `structural_reliability_results.json` | — | Yes | **Yes** (re-run needs API) |
-| **Report-genre pilot 53 / 50 traceable** | `run_extraction.py` (no `--inquiry`) | In Brief report text | `outputs/run_20260609_081454_*`, `docs/REPORT_PILOT.md` | None | **No** (run ignored) | **No** without local run |
-| **Chunk/overlap sensitivity** | `experiments/chunk_overlap_sensitivity_2026-08-30/run_experiment.py` | Six excerpts | `FINAL_CHUNK_SENSITIVITY_REPORT.md`, CSVs | Gold alignment | **No** (gitignored) | **No** until tracked |
-| **Model sensitivity (excerpts)** | `experiments/model_sensitivity_2026-08-31/run_experiment.py` | Six excerpts | `05_FINAL_MODEL_SENSITIVITY_REPORT.md`, CSVs | Same | **No** | **No** until tracked |
-| **Model sensitivity (extended)** | `run_extension.py` | Six excerpts | `12_EXTENDED_MODEL_SENSITIVITY_REPORT.md` | Same | **No** | **No** until tracked |
-| **Full-hearing Terra 2/6** | `run_full_hearing_confirmation.py` | 3 full hearing `.txt` | `17_FULL_HEARING_CONFIRMATION_REPORT.md`, Terra raw JSON | Six decisions | **No** | **No** until tracked |
-| **Full-hearing Sol** | Same (failed/incomplete) | Same | `*_invalidated_*`, `*_INCOMPLETE.json` | — | **No** | **Not valid evidence** — do not cite as performance |
+| **Report-genre pilot 53 / 50 traceable** | `run_extraction.py` (no `--inquiry`) | In Brief report text | `outputs/run_20260609_081454_*`, `docs/REPORT_PILOT.md` | None | **Yes** | **Yes** |
+| **Chunk/overlap sensitivity** | `experiments/chunk_overlap_sensitivity_2026-08-30/run_experiment.py` | Six excerpts | `FINAL_CHUNK_SENSITIVITY_REPORT.md`, CSVs | Gold alignment | **Yes** | **Yes** (minimum audit set committed) |
+| **Model sensitivity (excerpts)** | `experiments/model_sensitivity_2026-08-31/run_experiment.py` | Six excerpts | `05_FINAL_MODEL_SENSITIVITY_REPORT.md`, CSVs | Same | **Yes** | **Yes** (minimum audit set committed) |
+| **Model sensitivity (extended)** | `run_extension.py` | Six excerpts | `12_EXTENDED_MODEL_SENSITIVITY_REPORT.md` | Same | **Yes** | **Yes** |
+| **Full-hearing Terra 2/6** | `run_full_hearing_confirmation.py` | 3 full hearing `.txt` | `17_FULL_HEARING_CONFIRMATION_REPORT.md`, Terra raw JSON | Six decisions | **Yes** | **Yes** |
+| **Full-hearing Sol** | Same (failed/incomplete) | Same | `*_invalidated_*`, `*_INCOMPLETE.json` | — | **Yes** (transparency only) | **Not valid evidence** — do not cite as performance |
 
-### Evidence gaps to resolve before a public MSc release
+### Release status (Aug 2026 supplementary evidence)
 
-1. Aug 2026 sensitivity experiment directories are gitignored but cited in the final dissertation.  
-2. Report-genre extraction run folder is not committed.  
-3. Full n=60 adjudication workspace may be local-only; Audit E summary CSVs are partially tracked.  
-4. Processed transcripts (`data/processed/`) are usually local-only — needed for excerpt coordinate tests and rebuilds.
+The minimum dissertation-supporting experiment evidence for chunk/overlap and model sensitivity is **committed** in the final reproducibility release under `experiments/`. Use tag `msc-dissertation-reproducibility-2026-08-31` or the public-safe tag `msc-dissertation-public-release-2026-08-31` after path sanitisation.
 
-See `docs/repository_release/DUAL_RELEASE_AUDIT.md` for the release manifest.
+See `docs/repository_release/DUAL_RELEASE_AUDIT.md` for the full release manifest.
 
 ---
 
 ## 7. Supplementary experiments (Aug 2026)
 
 These analyses were conducted **after** the 414-entry journal was frozen. They do not modify the canonical dataset. They test whether results are sensitive to chunking parameters and model choice.
+
+**Committed in the reproducibility release:** the minimum audit-safe file sets for both experiment directories are tracked in git (see `docs/repository_release/DUAL_RELEASE_AUDIT.md` Part 3). Tag `msc-dissertation-reproducibility-2026-08-31` includes this evidence; tag `msc-dissertation-public-release-2026-08-31` is the public-safe snapshot after path sanitisation.
 
 ### 7.1 Chunk and overlap sensitivity
 
