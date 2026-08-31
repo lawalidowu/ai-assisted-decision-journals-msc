@@ -197,7 +197,7 @@ Rubric B used two yes/no checks: whether the quote is present and readable, and 
 
 ### 3.7.4 Interpretation framework
 
-Cross-tabulating Rubric A and Rubric B yields interpretable patterns for Chapter 4:
+Because Rubric A and Rubric B answer different questions, they are cross-tabulated rather than combined into a single score. A candidate may receive strong quote support (Rubric B) while still failing the journal definition (Rubric A), as when a procedural adjournment is extracted faithfully but is not a policy or governance decision. Examining the two ratings together therefore helps distinguish strong journal entries, valid decisions with weaker evidence, faithful extractions of the wrong type of content, and weak or noisy candidates. The table below summarises these joint patterns for interpretation in Chapter 4.
 
 | Rubric A | Rubric B | Interpretation |
 |----------|----------|----------------|
@@ -213,12 +213,14 @@ Cross-tabulating Rubric A and Rubric B yields interpretable patterns for Chapter
 
 ### 3.7.5 Automated confidence signals
 
-On the same stratified sample of 50 items, two automated confidence signals were generated after the human labels were complete:
+Automated confidence is not treated as ground truth. This step tests whether an automated signal could assist human review and whether its use is supported by comparison with human judgement.
+
+On the same stratified sample of 50 items, two automated confidence signals were generated only after the human Rubric A and Rubric B labels were complete:
 
 1. **Rule-based baseline:** heuristics over decision verbs, hedging language, quote length, and traceability outcome.
 2. **LLM-assigned confidence:** a second pass over decision and quote only, with an explicit reasoning field.
 
-Both signals were compared with Rubric B using linear weighted kappa and were cross-tabulated separately with Rubric A. Linear weighting treats adjacent disagreements as less severe than disagreements across the full evidence-strength scale. Because the ratings were produced by a single author, the comparison is a structured feasibility assessment rather than an independently validated reliability study. Outcomes are reported in Chapter 4.
+Both signals are intended to represent evidence strength — how strongly the quotation supports the generated statement — rather than journal validity. Rubric B is therefore the primary comparison. The signals were compared with Rubric B using linear weighted kappa and were cross-tabulated separately with Rubric A to examine how the confidence signals related to journal-validity ratings without treating journal validity as their primary target. Linear weighting treats adjacent disagreements (for example High versus Medium) as less severe than larger disagreements (High versus Low) on the ordinal evidence-strength scale. The analysis asks whether each signal shows sufficient agreement with human evidence-strength judgement to be informative as a review aid; weak agreement is retained as a meaningful finding and does not justify replacing human review. Because the ratings were produced by a single author, the comparison is a structured feasibility assessment rather than an independently validated reliability study. Outcomes are reported in Chapter 4.
 
 ---
 
@@ -263,7 +265,9 @@ Cosine similarity ranked possible framework categories for each record. The rank
 
 ### 3.9.4 Review provenance
 
-The n = 60 pilot was adjudicated by one reviewer and supported by AI-assisted source-integrity and coding-consistency audits. All 60 records had been reviewed previously. Six proposed corrections were then confirmed interactively by the reviewer. For 52 records, the consistency audit recommended no change and the earlier coding was retained without a new record-by-record review. Two records met the predefined automatic-clear rule. The resulting classifications should therefore be treated as a single-reviewer feasibility assessment, not as independently validated or gold-standard annotations.
+This subsection records how the final n = 60 classifications were reached. Its purpose is transparency about human re-review, not a separate evaluation experiment. All 60 records had been reviewed previously; the final audit stage did not imply that every record was newly or independently re-reviewed.
+
+The n = 60 pilot was adjudicated by one reviewer and supported by AI-assisted source-integrity and coding-consistency audits. Those automated checks screened prior coding for consistency; they did not replace human adjudication or validate substantive correctness. Three routes produced the final classifications: six proposed corrections were interactively confirmed by the reviewer; for 52 records, the consistency audit recommended no change and the earlier coding was retained without a new record-by-record review; and two records met the predefined automatic-clear rule. The resulting classifications should therefore be treated as a single-reviewer feasibility assessment, not as independently validated or gold-standard annotations.
 
 ### 3.9.5 Source-passage traceability classifications
 

@@ -24,7 +24,7 @@ from pathlib import Path
 
 from docx import Document
 from docx.enum.section import WD_SECTION
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_LINE_SPACING
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Pt, Inches
@@ -287,6 +287,7 @@ def replace_abstract_section(doc: Document) -> None:
         para = Paragraph(new_p, doc.paragraphs[abs_idx]._parent)
         para.style = doc.styles[body_style]
         para.add_run(text)
+        md.format_paragraph(para)
         prev = new_p
 
 
@@ -569,10 +570,12 @@ def finalize_dissertation_in_word(docx_path: Path) -> dict[str, int | bool]:
     wdFieldSequence = 12
 
     try:
-        word = win32com.client.Dispatch("Word.Application")
+        word = win32com.client.DispatchEx("Word.Application")
         word.Visible = False
         word.DisplayAlerts = 0
-        doc = word.Documents.Open(str(docx_path.resolve()), ReadOnly=False, AddToRecentFiles=False)
+        while word.Documents.Count > 0:
+            word.Documents(1).Close(False)
+        doc = word.Documents.Open(str(docx_path.resolve()), False, False, False)
 
         doc.Repaginate()
         pages = int(doc.ComputeStatistics(wdStatisticPages))
@@ -666,21 +669,22 @@ def add_reference_paragraph(doc: Document, ref: str, style: str, number: int) ->
     pf.left_indent = Inches(0.5)
     pf.first_line_indent = Inches(-0.5)
     pf.space_after = Pt(6)
+    pf.line_spacing_rule = md.BODY_LINE_SPACING
     marker = p.add_run(f"[{number}] ")
     marker.font.name = "Times New Roman"
-    marker.font.size = Pt(12)
+    marker.font.size = Pt(md.BODY_FONT_PT)
     for part in re.split(r"(\*[^*]+\*)", ref):
         if not part:
             continue
         if part.startswith("*") and part.endswith("*"):
             run = p.add_run(part[1:-1])
             run.font.name = "Times New Roman"
-            run.font.size = Pt(12)
+            run.font.size = Pt(md.BODY_FONT_PT)
             run.italic = True
         else:
             run = p.add_run(part)
             run.font.name = "Times New Roman"
-            run.font.size = Pt(12)
+            run.font.size = Pt(md.BODY_FONT_PT)
 
 
 def append_body_from_markdown(doc: Document) -> None:
@@ -731,6 +735,7 @@ def prepare_template_copy() -> Path:
     candidates = [
         OUTPUT,
         DISS / "Lawal_MSc_Dissertation_submission.docx",
+        DISS / "Lawal_MSc_Dissertation_handbook_compliant.docx",
     ]
     for candidate in candidates:
         try:
@@ -757,6 +762,7 @@ def build(*, word_finalize: bool = False) -> Path:
 
     md.clear_style_numbering(doc)
     md.disable_document_hyphenation(doc)
+    md.patch_handbook_body_styles(doc)
     patch_front_matter(doc)
     exclude_word_count_from_toc(doc)
     replace_abstract_section(doc)

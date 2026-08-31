@@ -1,0 +1,4 @@
+policy_or_inquiry,dq_outcome,count,percentage_of_total
+inquiry_procedure,unmapped,11,18.3% (11/60)
+policy_content,mapped,37,61.7% (37/60)
+policy_content,unmapped,12,20.0% (12/60)

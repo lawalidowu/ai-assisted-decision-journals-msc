@@ -19,6 +19,19 @@ outputs/**
 !outputs/.gitkeep
 !data/raw/README.md
 
+# === MSc reproducibility release 2026-08-31 ===
+!data/processed/
+!data/processed/inquiry/
+!data/processed/inquiry/document/
+!data/processed/inquiry/document/*.txt
+!data/processed/inquiry/report/
+!data/processed/inquiry/report/*.txt
+!outputs/run_20260609_081454_module2_in_brief_report/
+!outputs/run_20260609_081454_module2_in_brief_report/**
+!outputs/framework_mapping/run_20260727_133838_post60_analytical_audit_E_final/**
+!outputs/framework_mapping/run_20260727_131920_audit_E_human_approval_check/
+!outputs/framework_mapping/run_20260727_131920_audit_E_human_approval_check/**
+
 # Python
 __pycache__/
 *.py[cod]

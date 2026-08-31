@@ -1,0 +1,10 @@
+configuration,chunk_size,overlap,manual_decisions_recovered,manual_decisions_total,manual_recall_pct,candidate_total,candidates_per_excerpt_mean,candidates_per_recovered_manual,traceable_candidates,traceability_pct,unmatched_candidates,pre_dedupe_candidates,duplicate_removed,duplicate_pct,api_calls,prompt_tokens,completion_tokens,total_tokens,wall_seconds,estimated_usd,invalid_config,repetition
+w7_o2,7,2,3,6,50.0,6,1.0,2.0,4,66.7,1,6,0,0.0,12,7942,751,8693,13.03,0.0016,False,1
+w7_o2,7,2,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,12,7942,503,8445,8.99,0.0015,False,2
+w7_o2,7,2,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,12,7942,512,8454,9.03,0.0015,False,3
+w5_o3,5,3,4,6,66.7,9,1.5,2.25,7,77.8,2,9,0,0.0,19,11929,1098,13027,18.19,0.0024,False,1
+w5_o3,5,3,4,6,66.7,9,1.5,2.25,7,77.8,2,9,0,0.0,19,11929,1093,13022,18.16,0.0024,False,2
+w5_o3,5,3,4,6,66.7,9,1.5,2.25,7,77.8,2,9,0,0.0,19,11929,1093,13022,16.54,0.0024,False,3
+w5_o2,5,2,3,6,50.0,6,1.0,2.0,5,83.3,2,6,0,0.0,15,9318,727,10045,12.53,0.0018,False,1
+w5_o2,5,2,3,6,50.0,6,1.0,2.0,5,83.3,2,6,0,0.0,15,9318,728,10046,12.93,0.0018,False,2
+w5_o2,5,2,3,6,50.0,5,0.83,1.67,4,80.0,2,6,1,16.7,15,9318,706,10024,12.99,0.0018,False,3

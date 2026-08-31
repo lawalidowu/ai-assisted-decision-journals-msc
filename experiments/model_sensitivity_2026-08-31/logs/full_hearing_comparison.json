@@ -1,0 +1,29 @@
+{
+  "sol_full_hearing_status": "INCOMPLETE_NOT_INTERPRETABLE_EXECUTION_FAILURE",
+  "valid_evidence_model": "gpt-5.6-terra",
+  "terra_recovered": 2,
+  "sol_recovered": null,
+  "cross_model_comparison_permitted": false,
+  "terra_recovered_decisions": [
+    "excerpt_001:m1",
+    "excerpt_002:m2"
+  ],
+  "terra_not_recovered": [
+    "excerpt_002:m1",
+    "excerpt_006:m1",
+    "excerpt_006:m2",
+    "excerpt_006:m3"
+  ],
+  "both": [],
+  "terra_only": [
+    "excerpt_001:m1",
+    "excerpt_002:m2"
+  ],
+  "sol_only": [],
+  "neither": [
+    "excerpt_002:m1",
+    "excerpt_006:m1",
+    "excerpt_006:m2",
+    "excerpt_006:m3"
+  ]
+}

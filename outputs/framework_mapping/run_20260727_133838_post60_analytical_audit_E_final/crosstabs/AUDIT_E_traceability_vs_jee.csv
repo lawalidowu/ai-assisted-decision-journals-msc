@@ -1,0 +1,5 @@
+traceability,jee_outcome,count,percentage_of_total
+non_traceable,mapped,1,1.7% (1/60)
+non_traceable,unmapped,6,10.0% (6/60)
+traceable,mapped,10,16.7% (10/60)
+traceable,unmapped,43,71.7% (43/60)

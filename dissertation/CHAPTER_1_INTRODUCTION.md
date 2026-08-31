@@ -24,17 +24,13 @@ To design and evaluate an LLM-assisted method for creating traceable candidate d
 
 ### Objectives
 
-1. Develop a reproducible workflow that extracts structured candidate entries from public inquiry transcripts while retaining source quotations and provenance.
+1. Develop a reproducible LLM-assisted method for extracting candidate decision-journal entries and associated source evidence from public inquiry transcripts.
 
-2. Evaluate extraction quality on eight Module 2 hearing transcripts using source-traceability checks, bounded manual review, error analysis and simple comparison methods.
+2. Develop an auditable decision-journal representation that links candidate entries to their source evidence and provenance for later human review.
 
-3. Store the 414 candidates as a fixed reference dataset of candidate decision-journal entries so that later review and analysis do not alter the original extraction.
+3. Evaluate the reliability and limitations of the extraction and review process, including source traceability, journal validity, evidence strength, summary faithfulness and recurring failure modes.
 
-4. Assess journal validity and evidence strength on a stratified sample of 50 entries, and compare automated confidence signals with those human judgements.
-
-5. Organise candidates for review using non-destructive flags and exploratory clustering, then use a separate sample of 60 entries to test whether validated passages support preparedness (JEE) and Decision Quality interpretation and whether generated summaries remain faithful to their sources.
-
-6. Examine the method’s limitations, policy relevance, organisational-learning value and conditions for responsible scaling.
+4. Assess how AI-assisted decision journaling can support transparent human review, organisational learning and structured policy interpretation, and identify conditions for responsible future development.
 
 ## 1.4 Scope and boundaries
 
@@ -46,8 +42,8 @@ The empirical work used eight Module 2 hearing transcripts and produced candidat
 
 ## 1.6 Contributions
 
-The methodological contribution is a governed review process rather than a new extraction or clustering algorithm. It links candidate entries to source evidence, preserves a fixed reference dataset, separates journal validity from evidence strength, and uses review flags, confidence checks, clustering and recognised frameworks without displacing human judgement.
+The methodological contribution is a governed extraction-and-review process rather than a new extraction or clustering algorithm. Candidate generation is kept separate from later evaluation: entries are linked to source evidence, kept unchanged in a fixed reference dataset, and assessed separately for journal validity and evidence strength. Review flags, confidence checks, clustering and recognised frameworks support that process, but human judgement remains necessary.
 
-The empirical contribution is bounded feasibility evidence from an eight-transcript case study and two separate evaluation samples: n = 50 for journal validity and evidence strength, and n = 60 for framework interpretation and candidate-statement faithfulness.
+The empirical contribution is bounded feasibility evidence from an eight-transcript case study and two separate evaluation samples: n = 50 for journal validity and evidence strength, and n = 60 for framework interpretation and for assessing whether generated statements accurately reflected their source passages.
 
 The policy and organisational-learning contribution is a practical model for source-linked retrospective review and institutional memory. It keeps AI-generated candidates visibly separate from human-validated records and does not claim deployment readiness or automated policy judgement.

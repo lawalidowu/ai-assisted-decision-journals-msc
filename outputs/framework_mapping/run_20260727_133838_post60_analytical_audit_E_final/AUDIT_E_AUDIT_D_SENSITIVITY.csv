@@ -1,0 +1,9 @@
+metric,pre_audit_d,post_audit_d,delta
+records_changed,0,6,6
+substantive_field_changes,0,19,19
+jee_mapped_count,12,11,-1
+dq_mapped_count,37,37,0
+jee_replace_count,11,10,-1
+jee_no_mapping_count,15,16,1
+statement_implementation_statement,14,15,1
+principal_conclusion_changed,n/a,no,Audit D refined edge cases; aggregate proportions unchanged

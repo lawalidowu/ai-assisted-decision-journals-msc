@@ -1,0 +1,7 @@
+model,run_status,excerpt_id,manual_decision_id,manual_decision_text,recovered,candidates_in_span
+gpt-5.6-terra,VALID_COMPLETE,excerpt_001,m1,"On 18 March 2020, COBR decided to close schools from 20 March.",True,2
+gpt-5.6-terra,VALID_COMPLETE,excerpt_002,m1,"At the 29 October 2020 COVID-O meeting, the committee agreed to an ambitious package of measures to prevent transmission",False,1
+gpt-5.6-terra,VALID_COMPLETE,excerpt_002,m2,The Prime Minister and CDL asked departments to develop a more ambitious package (on a slower timeline) to prevent dispr,True,1
+gpt-5.6-terra,VALID_COMPLETE,excerpt_006,m1,A rapid review (12 May) and a full review (31 May) on ethnic minority disparities were commissioned through Public Healt,False,0
+gpt-5.6-terra,VALID_COMPLETE,excerpt_006,m2,Further work and reports on ethnic minority disparities were commissioned through Kemi Badenoch; the Prime Minister task,False,0
+gpt-5.6-terra,VALID_COMPLETE,excerpt_006,m3,"On 19 March 2020, a decision was made to discharge untested hospital patients into care homes.",False,0

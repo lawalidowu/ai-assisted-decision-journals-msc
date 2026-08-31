@@ -1,0 +1,20 @@
+{
+  "baseline": "w7_o2",
+  "alternative_1": "w5_o3",
+  "alternative_2": "w5_o2",
+  "selection_rule": "pre-registered hierarchy on Stage 1 metrics",
+  "stage1_rank_order": [
+    "w5_o3",
+    "w5_o2",
+    "w5_o1",
+    "w7_o2",
+    "w7_o3",
+    "w9_o1",
+    "w11_o1",
+    "w11_o3",
+    "w9_o2",
+    "w11_o2",
+    "w7_o1",
+    "w9_o3"
+  ]
+}

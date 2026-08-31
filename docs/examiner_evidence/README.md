@@ -5,6 +5,8 @@
 **Branch freeze context:** Wave 2 commit `ee02346` on `distinction/final-integrity-fixes`  
 **Standing rule:** LLM regeneration is **not** expected to be byte-identical.
 
+> **New researchers:** start with the [root README](../../README.md) and the canonical [Reproducibility guide](../REPRODUCIBILITY_GUIDE.md). This folder is a compact examiner evidence pack; it is not the primary navigation path.
+
 ## Five-minute examiner path
 
 1. Read this page (2 min).

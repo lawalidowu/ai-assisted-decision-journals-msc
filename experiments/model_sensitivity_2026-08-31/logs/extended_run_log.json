@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-08-31T06:38:56.296750+00:00",
+  "finished_utc": "2026-08-31T06:42:09.492011+00:00",
+  "models": [
+    "gpt-5.6-terra",
+    "gpt-5.6-sol",
+    "gpt-5.6-luna"
+  ],
+  "repetitions_per_model": 3,
+  "runs_completed": 9
+}

@@ -1,0 +1,11 @@
+file,finding,original_wording,assessment,recommended_action
+AUDIT_E_EXECUTIVE_SUMMARY.md,Overstated divergence claim (53/60),88.3% (53/60) generated decisions diverge from source quotes,"FAIL — based on non-substantive string rule, not material alteration",Replace with substantiated traceability categories from this check
+AUDIT_E_EXECUTIVE_SUMMARY.md,Inferential/causal language,(matched in file),CHECK,Confirm absent or qualified
+AUDIT_E_ANALYTICAL_REPORT.md,Overstated divergence claim (53/60),88.3% (53/60) generated decisions diverge from source quotes,"FAIL — based on non-substantive string rule, not material alteration",Replace with substantiated traceability categories from this check
+AUDIT_E_ANALYTICAL_REPORT.md,Inferential/causal language,(matched in file),CHECK,Confirm absent or qualified
+AUDIT_E_DISSERTATION_FINDINGS.md,Overstated divergence claim (53/60),88.3% (53/60) generated decisions diverge from source quotes,"FAIL — based on non-substantive string rule, not material alteration",Replace with substantiated traceability categories from this check
+AUDIT_E_DISSERTATION_FINDINGS.md,Inferential/causal language,(matched in file),CHECK,Confirm absent or qualified
+AUDIT_E_FAILURE_MODES.csv,Overstated divergence claim (53/60),88.3% (53/60) generated decisions diverge from source quotes,"FAIL — based on non-substantive string rule, not material alteration",Replace with substantiated traceability categories from this check
+AUDIT_E outputs (general),no_mapping vs insufficient_evidence,Reported separately in JEE summary,PASS,Maintain separation in dissertation wording
+AUDIT_E outputs (general),Purposive pilot not representative,Stated in limitations sections,PASS,Retain explicit non-representativeness
+AUDIT_E_EXECUTIVE_SUMMARY.md,dominant mixed pattern,"43.3% (26/60) DQ mapped, JEE unmapped — dominant mixed pattern",CAUTION — largest single cross-tab cell in n=60 pilot; not corpus-wide,Qualify as 'most frequent pattern in this pilot'

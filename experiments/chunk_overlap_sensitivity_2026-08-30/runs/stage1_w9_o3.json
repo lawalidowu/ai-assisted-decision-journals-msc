@@ -1,0 +1,28 @@
+{
+  "configuration": "w9_o3",
+  "metrics": {
+    "configuration": "w9_o3",
+    "chunk_size": 9,
+    "overlap": 3,
+    "manual_decisions_recovered": 0,
+    "manual_decisions_total": 6,
+    "manual_recall_pct": 0.0,
+    "candidate_total": 0,
+    "candidates_per_excerpt_mean": 0.0,
+    "candidates_per_recovered_manual": 0,
+    "traceable_candidates": 0,
+    "traceability_pct": 0.0,
+    "unmatched_candidates": 0,
+    "pre_dedupe_candidates": 0,
+    "duplicate_removed": 0,
+    "duplicate_pct": 0.0,
+    "api_calls": 8,
+    "prompt_tokens": 6157,
+    "completion_tokens": 8,
+    "total_tokens": 6165,
+    "wall_seconds": 3.76,
+    "estimated_usd": 0.0009,
+    "invalid_config": false
+  },
+  "candidates": []
+}

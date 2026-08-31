@@ -1,0 +1,57 @@
+{
+  "configuration": "w11_o1",
+  "metrics": {
+    "configuration": "w11_o1",
+    "chunk_size": 11,
+    "overlap": 1,
+    "manual_decisions_recovered": 3,
+    "manual_decisions_total": 6,
+    "manual_recall_pct": 50.0,
+    "candidate_total": 4,
+    "candidates_per_excerpt_mean": 0.67,
+    "candidates_per_recovered_manual": 1.33,
+    "traceable_candidates": 3,
+    "traceability_pct": 75.0,
+    "unmatched_candidates": 1,
+    "pre_dedupe_candidates": 4,
+    "duplicate_removed": 0,
+    "duplicate_pct": 0.0,
+    "api_calls": 8,
+    "prompt_tokens": 5989,
+    "completion_tokens": 508,
+    "total_tokens": 6497,
+    "wall_seconds": 7.29,
+    "estimated_usd": 0.0012,
+    "invalid_config": false
+  },
+  "candidates": [
+    {
+      "decision": "COBR decided to implement household isolation for 14 days and reduce contact advice for individuals over 70.",
+      "evidence": "COBR decided that there needed to be further, more stringent measures, and you will recall the household isolation for 14 days, reduced contact advice, over 70s particularly must ensure that they reduce contact.",
+      "source_location": "sentences_69-70",
+      "source_quote": "COBR decided that there needed to be further, more stringent measures, and you will recall the household isolation for 14 days, reduced contact advice, over 70s particularly must ensure that they reduce contact?",
+      "traceability_ok": true
+    },
+    {
+      "decision": "COBR decided to close schools from the 20th of March.",
+      "evidence": "On the 18th, COBR decided to close schools from the 20th, just in very general terms.",
+      "source_location": "sentences_70-71",
+      "source_quote": "On the 18th, COBR decided to close schools from the 20th, just in very general terms.",
+      "traceability_ok": true
+    },
+    {
+      "decision": "The committee agreed to an ambitious package of measures to prevent transmission to and within groups disproportionately impacted by COVID-19, focusing particularly on ethnic minority communities.",
+      "evidence": "The committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "source_location": "sentence_1",
+      "source_quote": "At the 29 October meeting of COVID-O, the committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "traceability_ok": false
+    },
+    {
+      "decision": "The Prime Minister and CDL asked departments for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "evidence": "The Prime Minister and CDL also asked departments, in slower time, for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "source_location": "sentence_1",
+      "source_quote": "The Prime Minister and CDL also asked departments, in slower time, for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "traceability_ok": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task": "audit_E_human_approval_check",
+  "generated_at_utc": "2026-07-27T13:19:20.288213+00:00",
+  "work_dir": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_131920_audit_E_human_approval_check",
+  "audit_e_dir_read_only": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_110052_post60_analytical_audit_E",
+  "audit_d_dir_read_only_frozen": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_094015_post60_coding_consistency_audit",
+  "input_reference": "C:\\SURREY\\MODULES\\SEMESTER 2\\MSC PROJECT\\code\\outputs\\framework_mapping\\run_20260727_094015_post60_coding_consistency_audit\\CONSISTENCY_CORRECTED_REFERENCE.csv",
+  "check1_audit_e_string_divergence_count": 53,
+  "check1_corrected_categories": {
+    "traceability_false": 7,
+    "materially_unsupported_or_altered": 20,
+    "substantively_faithful_paraphrase": 25,
+    "exact_or_near_verbatim": 8
+  },
+  "check2_provenance_counts": {
+    "consistency_human_reviewed_keep": 52,
+    "consistency_human_reviewed_corrected": 6,
+    "consistency_auto_clear": 2
+  },
+  "consistency_human_reviewed_keep_accurate": "partially_misleading_requires_clarification",
+  "audit_e_freeze_recommended": false,
+  "audit_e_freeze_blockers": [
+    "53/60 diverge claim overstated",
+    "52 keep records described as human-reviewed during Audit D"
+  ],
+  "dissertation_wording_draft": "AUDIT_E_APPROVED_DISSERTATION_WORDING.md"
+}

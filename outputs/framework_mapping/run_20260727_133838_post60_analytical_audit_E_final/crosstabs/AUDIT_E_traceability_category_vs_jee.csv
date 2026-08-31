@@ -1,0 +1,9 @@
+traceability_category,jee_outcome,count,percentage_of_total
+exact_or_near_verbatim,mapped,3,5.0% (3/60)
+exact_or_near_verbatim,unmapped,5,8.3% (5/60)
+materially_unsupported_or_altered,mapped,1,1.7% (1/60)
+materially_unsupported_or_altered,unmapped,19,31.7% (19/60)
+substantively_faithful_paraphrase,mapped,6,10.0% (6/60)
+substantively_faithful_paraphrase,unmapped,19,31.7% (19/60)
+traceability_false,mapped,1,1.7% (1/60)
+traceability_false,unmapped,6,10.0% (6/60)

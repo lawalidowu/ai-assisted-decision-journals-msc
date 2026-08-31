@@ -1,0 +1,43 @@
+{
+  "configuration": "w7_o1",
+  "metrics": {
+    "configuration": "w7_o1",
+    "chunk_size": 7,
+    "overlap": 1,
+    "manual_decisions_recovered": 1,
+    "manual_decisions_total": 6,
+    "manual_recall_pct": 16.7,
+    "candidate_total": 2,
+    "candidates_per_excerpt_mean": 0.33,
+    "candidates_per_recovered_manual": 2.0,
+    "traceable_candidates": 2,
+    "traceability_pct": 100.0,
+    "unmatched_candidates": 1,
+    "pre_dedupe_candidates": 2,
+    "duplicate_removed": 0,
+    "duplicate_pct": 0.0,
+    "api_calls": 11,
+    "prompt_tokens": 7172,
+    "completion_tokens": 235,
+    "total_tokens": 7407,
+    "wall_seconds": 6.61,
+    "estimated_usd": 0.0012,
+    "invalid_config": false
+  },
+  "candidates": [
+    {
+      "decision": "COBR decided to implement household isolation for 14 days and reduce contact advice for individuals over 70.",
+      "evidence": "COBR decided that there needed to be further, more stringent measures, and you will recall the household isolation for 14 days, reduced contact advice, over 70s particularly must ensure that they reduce contact.",
+      "source_location": "sentences_69-70",
+      "source_quote": "COBR decided that there needed to be further, more stringent measures, and you will recall the household isolation for 14 days, reduced contact advice, over 70s particularly must ensure that they reduce contact.",
+      "traceability_ok": true
+    },
+    {
+      "decision": "COBR decided to close schools from the 20th of March.",
+      "evidence": "On the 18th, COBR decided to close schools from the 20th.",
+      "source_location": "sentences_70-70",
+      "source_quote": "On the 18th, COBR decided to close schools from the 20th.",
+      "traceability_ok": true
+    }
+  ]
+}

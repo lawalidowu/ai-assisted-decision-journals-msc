@@ -62,7 +62,15 @@ All source material came from the public Inquiry archive. The study did not use 
 
 ## 5.4 Conditions for responsible development and scaling
 
-Future development should follow the order of the risks already visible in the results. Inter-rater validation comes first, because both the n = 50 rubrics and the n = 60 framework and faithfulness codes need evidence of stability beyond a single reviewer. Discourse- and speaker-aware checks on journal validity should follow, because the no × high pattern points to artefact-type confusion rather than missing quotes alone. Stronger page-level provenance would then improve audit against published PDFs. Controls for candidate-summary faithfulness are needed before generated wording is treated as an evidence layer. Confidence signals should be recalibrated toward journal validity rather than evidence strength alone. Periodic coding-consistency review is advisable if mapping work expands. Only after those layers are strengthened does wider corpus expansion make methodological sense. Interface, product and deployment work come last: web tools, dependency networks, actionability scoring, live inquiry support and staff deployment all presuppose a validated candidate set and institutional governance that this dissertation does not design.
+Future development should follow one governing principle: trustworthiness before scale. The sequence below follows the risks already visible in the results.
+
+Inter-rater validation comes first. Both the n = 50 Rubric A/B assessments and the n = 60 framework and faithfulness codes currently depend on one reviewer; stability beyond that reviewer must be established before scaling interpretive claims.
+
+Discourse- and speaker-aware checks on journal validity should follow, because the no × high pattern in the n = 50 sample points to artefact-type confusion rather than missing quotes alone. Stronger page-level provenance would then improve audit against published PDFs.
+
+Controls for candidate-statement faithfulness are needed before generated wording is treated as an evidence layer. Confidence signals should be recalibrated toward journal validity rather than evidence strength alone, because confidence here related more closely to the latter. Periodic coding-consistency review is advisable if framework-mapping work expands.
+
+Only after those validation layers are strengthened does wider corpus expansion make methodological sense; expanding earlier would scale existing weaknesses. Interface, product and deployment work come last: web tools, dependency networks, actionability scoring, live inquiry support and staff deployment all presuppose a validated candidate set and institutional governance that this dissertation does not design.
 
 That order also states the responsible-use conclusion of the supplementary n = 60 analysis. The pilot is suitable as feasibility evidence when its purposive sampling, single-reviewer limits and non-representativeness of the 414-entry set are kept explicit. Broader scaling should wait for stronger independent human validation and planned review capacity. Generated decision statements should not become the evidential basis.
 

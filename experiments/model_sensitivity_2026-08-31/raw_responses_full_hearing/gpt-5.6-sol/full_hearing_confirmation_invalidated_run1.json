@@ -1,0 +1,52 @@
+{
+  "model_requested": "gpt-5.6-sol",
+  "endpoint": "chat.completions",
+  "reasoning_effort": "none",
+  "temperature": "omitted_api_default",
+  "timestamp_utc": "2026-08-31T07:13:53.471624+00:00",
+  "hearing_logs": {
+    "transcript-of-module-2-public-hearing-on-01-december-2023": {
+      "wall_seconds": 210.5,
+      "total_candidates_pre_span_filter": 43,
+      "chunk_log_summary": {
+        "pre_dedupe": 43,
+        "post_dedupe": 43,
+        "duplicates_removed": 0
+      },
+      "api_calls_this_hearing": 94
+    },
+    "transcript-of-module-2-public-hearing-on-28-november-2023": {
+      "wall_seconds": 354.84,
+      "total_candidates_pre_span_filter": 2,
+      "chunk_log_summary": {
+        "pre_dedupe": 2,
+        "post_dedupe": 2,
+        "duplicates_removed": 0
+      },
+      "api_calls_this_hearing": 212
+    },
+    "transcript-of-module-2-public-hearing-on-30-november-2023": {
+      "wall_seconds": 310.28,
+      "total_candidates_pre_span_filter": 0,
+      "chunk_log_summary": {
+        "pre_dedupe": 0,
+        "post_dedupe": 0,
+        "duplicates_removed": 0
+      },
+      "api_calls_this_hearing": 181
+    }
+  },
+  "per_excerpt_span_candidate_counts": {
+    "excerpt_005": 0,
+    "excerpt_006": 0,
+    "excerpt_001": 0,
+    "excerpt_002": 0,
+    "excerpt_003": 0,
+    "excerpt_004": 0
+  },
+  "span_filtered_candidates_total": 0,
+  "manual_decisions_recovered": 0,
+  "returned_model_snapshots": [
+    "gpt-5.6-sol"
+  ]
+}

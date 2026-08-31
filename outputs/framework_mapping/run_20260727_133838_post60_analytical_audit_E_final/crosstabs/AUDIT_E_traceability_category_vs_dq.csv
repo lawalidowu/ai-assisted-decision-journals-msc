@@ -1,0 +1,9 @@
+traceability_category,dq_outcome,count,percentage_of_total
+exact_or_near_verbatim,mapped,5,8.3% (5/60)
+exact_or_near_verbatim,unmapped,3,5.0% (3/60)
+materially_unsupported_or_altered,mapped,12,20.0% (12/60)
+materially_unsupported_or_altered,unmapped,8,13.3% (8/60)
+substantively_faithful_paraphrase,mapped,15,25.0% (15/60)
+substantively_faithful_paraphrase,unmapped,10,16.7% (10/60)
+traceability_false,mapped,5,8.3% (5/60)
+traceability_false,unmapped,2,3.3% (2/60)

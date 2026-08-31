@@ -1,0 +1,13 @@
+statement_type,jee_outcome,count,percentage_of_total
+enacted_or_authorised_decision,mapped,3,5.0% (3/60)
+enacted_or_authorised_decision,unmapped,6,10.0% (6/60)
+evidence_or_information_statement,unmapped,2,3.3% (2/60)
+implementation_statement,mapped,4,6.7% (4/60)
+implementation_statement,unmapped,11,18.3% (11/60)
+insufficient_evidence,unmapped,2,3.3% (2/60)
+procedural_or_inquiry,unmapped,11,18.3% (11/60)
+proposed_decision,unmapped,2,3.3% (2/60)
+recommendation,mapped,3,5.0% (3/60)
+recommendation,unmapped,8,13.3% (8/60)
+retrospective_judgement,mapped,1,1.7% (1/60)
+retrospective_judgement,unmapped,7,11.7% (7/60)

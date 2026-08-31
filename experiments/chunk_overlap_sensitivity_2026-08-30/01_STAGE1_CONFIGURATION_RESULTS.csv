@@ -1,0 +1,13 @@
+configuration,chunk_size,overlap,manual_decisions_recovered,manual_decisions_total,manual_recall_pct,candidate_total,candidates_per_excerpt_mean,candidates_per_recovered_manual,traceable_candidates,traceability_pct,unmatched_candidates,pre_dedupe_candidates,duplicate_removed,duplicate_pct,api_calls,prompt_tokens,completion_tokens,total_tokens,wall_seconds,estimated_usd,invalid_config
+w5_o1,5,1,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,13,7767,491,8258,13.35,0.0015,False
+w5_o2,5,2,3,6,50.0,6,1.0,2.0,5,83.3,2,6,0,0.0,15,9318,710,10028,12.35,0.0018,False
+w5_o3,5,3,4,6,66.7,9,1.5,2.25,7,77.8,2,9,0,0.0,19,11929,1105,13034,17.3,0.0025,False
+w7_o1,7,1,1,6,16.7,2,0.33,2.0,2,100.0,1,2,0,0.0,11,7172,235,7407,6.61,0.0012,False
+w7_o2,7,2,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,12,7942,500,8442,9.33,0.0015,False
+w7_o3,7,3,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,12,8274,492,8766,8.98,0.0015,False
+w9_o1,9,1,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,8,5844,495,6339,7.73,0.0012,False
+w9_o2,9,2,2,6,33.3,2,0.33,1.0,1,50.0,0,2,0,0.0,8,5861,259,6120,5.31,0.001,False
+w9_o3,9,3,0,6,0.0,0,0.0,0,0,0.0,0,0,0,0.0,8,6157,8,6165,3.76,0.0009,False
+w11_o1,11,1,3,6,50.0,4,0.67,1.33,3,75.0,1,4,0,0.0,8,5989,508,6497,7.29,0.0012,False
+w11_o2,11,2,2,6,33.3,3,0.5,1.5,1,33.3,0,3,0,0.0,8,6083,393,6476,7.7,0.0011,False
+w11_o3,11,3,3,6,50.0,4,0.67,1.33,3,75.0,1,5,1,20.0,8,6129,634,6763,8.72,0.0013,False

@@ -1,0 +1,50 @@
+{
+  "configuration": "w11_o2",
+  "metrics": {
+    "configuration": "w11_o2",
+    "chunk_size": 11,
+    "overlap": 2,
+    "manual_decisions_recovered": 2,
+    "manual_decisions_total": 6,
+    "manual_recall_pct": 33.3,
+    "candidate_total": 3,
+    "candidates_per_excerpt_mean": 0.5,
+    "candidates_per_recovered_manual": 1.5,
+    "traceable_candidates": 1,
+    "traceability_pct": 33.3,
+    "unmatched_candidates": 0,
+    "pre_dedupe_candidates": 3,
+    "duplicate_removed": 0,
+    "duplicate_pct": 0.0,
+    "api_calls": 8,
+    "prompt_tokens": 6083,
+    "completion_tokens": 393,
+    "total_tokens": 6476,
+    "wall_seconds": 7.7,
+    "estimated_usd": 0.0011,
+    "invalid_config": false
+  },
+  "candidates": [
+    {
+      "decision": "An ambitious package of measures to prevent transmission to and within groups disproportionately impacted by COVID-19 was agreed upon.",
+      "evidence": "The committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "source_location": "sentences_19-20",
+      "source_quote": "At the 29 October meeting of COVID-O, the committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "traceability_ok": false
+    },
+    {
+      "decision": "An ambitious package of measures to prevent transmission to and within groups disproportionately impacted by COVID-19 was agreed.",
+      "evidence": "The committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "source_location": "sentence_10",
+      "source_quote": "At the 29 October meeting of COVID-O, the committee agreed to an ambitious package of measures to prevent transmission to and within groups that have been disproportionately impacted by COVID-19, focusing in particular on ethnic minority communities.",
+      "traceability_ok": false
+    },
+    {
+      "decision": "Departments were asked for a more ambitious package to prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "evidence": "The Prime Minister and CDL also asked departments, in slower time, for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "source_location": "sentence_10",
+      "source_quote": "The Prime Minister and CDL also asked departments, in slower time, for a more ambitious package that can prevent disproportionate impacts from COVID-19 for people with disabilities.",
+      "traceability_ok": true
+    }
+  ]
+}

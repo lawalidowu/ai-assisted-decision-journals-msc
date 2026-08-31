@@ -1,0 +1,7 @@
+model,repetition,chunk_size,overlap,temperature,manual_decisions_recovered,manual_decisions_total,manual_recall_pct,candidate_total,traceable_candidates,traceability_pct,unmatched_candidates,pre_dedupe_candidates,duplicate_removed,parse_schema_failures,api_runtime_failures,api_calls,prompt_tokens,completion_tokens,total_tokens,wall_seconds,estimated_usd,returned_model_snapshots
+gpt-4o-mini,1,7,2,0,3,6,50.0,5,3,60.0,1,6,1,0,0,12,7942,772,8714,12.49,0.0017,gpt-4o-mini-2024-07-18
+gpt-4o-mini,2,7,2,0,3,6,50.0,4,3,75.0,1,4,0,0,0,12,7942,497,8439,8.88,0.0015,gpt-4o-mini-2024-07-18
+gpt-4o-mini,3,7,2,0,3,6,50.0,4,3,75.0,1,4,0,0,0,12,7942,508,8450,10.2,0.0015,gpt-4o-mini-2024-07-18
+gpt-4o,1,7,2,0,0,6,0.0,0,0,0.0,0,0,0,0,0,12,7942,12,7954,6.29,0.02,gpt-4o-2024-08-06
+gpt-4o,2,7,2,0,1,6,16.7,1,0,0.0,0,1,0,0,0,12,7942,141,8083,7.06,0.0213,gpt-4o-2024-08-06
+gpt-4o,3,7,2,0,2,6,33.3,2,1,50.0,0,2,0,0,0,12,7942,264,8206,9.64,0.0225,gpt-4o-2024-08-06

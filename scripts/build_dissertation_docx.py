@@ -16,11 +16,10 @@ import re
 from pathlib import Path
 
 from docx import Document
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
-from docx.enum.text import WD_LINE_SPACING
 
 HEADING_STYLES = {
     1: "Heading 1",
@@ -58,6 +57,13 @@ CHAPTER_FILES = [
 
 ABSTRACT_FILE = DISS / "ABSTRACT.md"
 REFERENCES_FILE = DISS / "REFERENCES.md"
+
+# EEEM004 handbook body text: Times New Roman 11 pt, 1.5 line spacing.
+BODY_FONT_PT = 11
+HEADING_FONT_PT = 12
+TABLE_CAPTION_FONT_PT = 12
+FIGURE_CAPTION_FONT_PT = 11
+BODY_LINE_SPACING = WD_LINE_SPACING.ONE_POINT_FIVE
 
 # Explicit figure markers in markdown — insert image + one caption only (no duplicate body text)
 FIGURE_MARKERS: dict[str, tuple[str, str]] = {
@@ -160,11 +166,12 @@ def clear_paragraph_numbering(paragraph) -> None:
 
 
 def format_paragraph(paragraph, *, heading: bool = False) -> None:
+    font_pt = Pt(HEADING_FONT_PT if heading else BODY_FONT_PT)
     for run in paragraph.runs:
         run.font.name = "Times New Roman"
-        run.font.size = Pt(12)
+        run.font.size = font_pt
     pf = paragraph.paragraph_format
-    pf.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    pf.line_spacing_rule = BODY_LINE_SPACING
     pf.space_after = Pt(0)
     pf.widow_control = True
     if heading:
@@ -172,10 +179,11 @@ def format_paragraph(paragraph, *, heading: bool = False) -> None:
 
 
 def format_caption(paragraph, *, figure: bool = False) -> None:
-    """Apply consistent black Times New Roman caption formatting (not Heading blue)."""
+    """Table headings: TNR 12 pt centred (handbook). Figure captions: TNR 11 pt centred."""
+    caption_pt = FIGURE_CAPTION_FONT_PT if figure else TABLE_CAPTION_FONT_PT
     for run in paragraph.runs:
         run.font.name = "Times New Roman"
-        run.font.size = Pt(10)
+        run.font.size = Pt(caption_pt)
         run.font.bold = False
         run.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
     pf = paragraph.paragraph_format
@@ -183,10 +191,26 @@ def format_caption(paragraph, *, figure: bool = False) -> None:
     pf.space_before = Pt(6)
     pf.space_after = Pt(8)
     pf.widow_control = True
-    if figure:
-        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    else:
-        paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+
+def patch_handbook_body_styles(doc: Document) -> None:
+    """Apply EEEM004 handbook body formatting to template styles used for prose."""
+    for style_name in ("Body Text", "Normal"):
+        try:
+            style = doc.styles[style_name]
+        except KeyError:
+            continue
+        style.font.name = "Times New Roman"
+        style.font.size = Pt(BODY_FONT_PT)
+        style.paragraph_format.line_spacing_rule = BODY_LINE_SPACING
+    try:
+        ref_style = doc.styles["Reference"]
+        ref_style.font.name = "Times New Roman"
+        ref_style.font.size = Pt(BODY_FONT_PT)
+        ref_style.paragraph_format.line_spacing_rule = BODY_LINE_SPACING
+    except KeyError:
+        pass
 
 
 def disable_document_hyphenation(doc: Document) -> None:
@@ -243,7 +267,7 @@ def add_section_323_operational_definition_runs(paragraph, quote: str) -> None:
         run = paragraph.add_run(plain)
         run.italic = True
         run.font.name = "Times New Roman"
-        run.font.size = Pt(12)
+        run.font.size = Pt(BODY_FONT_PT)
         return
 
     # Build runs from the authorised plain text, bold-italic only on the three phrases.
@@ -257,26 +281,26 @@ def add_section_323_operational_definition_runs(paragraph, quote: str) -> None:
             run.bold = False
             run.italic = True
             run.font.name = "Times New Roman"
-            run.font.size = Pt(12)
+            run.font.size = Pt(BODY_FONT_PT)
         run = paragraph.add_run(phrase)
         run.bold = True
         run.italic = True
         run.font.name = "Times New Roman"
-        run.font.size = Pt(12)
+        run.font.size = Pt(BODY_FONT_PT)
         remaining = remaining[idx + len(phrase) :]
     if remaining:
         run = paragraph.add_run(remaining)
         run.bold = False
         run.italic = True
         run.font.name = "Times New Roman"
-        run.font.size = Pt(12)
+        run.font.size = Pt(BODY_FONT_PT)
 
 
 def add_runs_plain(paragraph, text: str) -> None:
     """Body text: strip Markdown emphasis markers; do not apply global bold."""
     run = paragraph.add_run(strip_markdown_emphasis(text))
     run.font.name = "Times New Roman"
-    run.font.size = Pt(12)
+    run.font.size = Pt(BODY_FONT_PT)
 
 
 def resolve_style(doc: Document, name: str, fallback: str = "Normal") -> str:
@@ -465,12 +489,6 @@ def add_markdown_table(
         pass
 
     last_row_idx = len(table.rows) - 1
-    compact = bool(header_label) and (
-        header_label.startswith("Table A.")
-        or header_label.startswith("Table B.")
-        or header_label.startswith("Table C.")
-        or header_label.startswith("Table 4.")
-    )
     for i, row in enumerate(table.rows):
         tr_pr = row._tr.get_or_add_trPr()
         if tr_pr.find(qn("w:cantSplit")) is None:
@@ -491,10 +509,7 @@ def add_markdown_table(
                     paragraph.paragraph_format.widow_control = True
                     for run in paragraph.runs:
                         run.font.name = "Times New Roman"
-                        if compact:
-                            run.font.size = Pt(10 if header_label.startswith("Table 4.") else 9)
-                        else:
-                            run.font.size = Pt(11)
+                        run.font.size = Pt(BODY_FONT_PT)
                     # Keep compact methods tables together where practicable.
                     if keep_whole_table and i < last_row_idx:
                         paragraph.paragraph_format.keep_with_next = True
@@ -654,7 +669,7 @@ def render_markdown(
                 add_section_323_operational_definition_runs(p, quote)
             else:
                 # Pre-micro-closeout behaviour: one italic run; markers stripped.
-                # format_paragraph below restores Times New Roman 12 pt (Appendix A).
+                # format_paragraph below restores Times New Roman 11 pt (Appendix A).
                 run = p.add_run(strip_markdown_emphasis(quote))
                 run.italic = True
             format_paragraph(p)
@@ -733,7 +748,7 @@ def build_docx(output: Path) -> None:
     clear_style_numbering(doc)
     style = doc.styles["Normal"]
     style.font.name = "Times New Roman"
-    style.font.size = Pt(12)
+    style.font.size = Pt(BODY_FONT_PT)
 
     add_paragraph(doc, "Dissertation draft — AI-assisted decision journaling from public inquiry transcripts: a UK COVID-19 Inquiry case study", style="Title")
     add_paragraph(doc, "[Paste Surrey title page and declaration from sample PDF]", style="Normal")

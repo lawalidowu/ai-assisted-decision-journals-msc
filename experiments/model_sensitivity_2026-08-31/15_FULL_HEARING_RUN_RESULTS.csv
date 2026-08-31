@@ -1,0 +1,2 @@
+model,run_status,endpoint,reasoning_effort,temperature,manual_decisions_recovered,manual_decisions_total,manual_recall_pct,span_filtered_candidates_total,traceable_candidates,traceability_pct,parse_schema_failures,api_runtime_failures,api_calls,prompt_tokens,completion_tokens,reasoning_tokens_total,total_tokens,wall_seconds,returned_model_snapshots,recovered_decision_keys
+gpt-5.6-terra,VALID_COMPLETE,chat.completions,none,omitted_api_default,2,6,33.3,3,3,100.0,0,0,487,828535,5799,0,834334,421.54,gpt-5.6-terra,excerpt_001:m1; excerpt_002:m2

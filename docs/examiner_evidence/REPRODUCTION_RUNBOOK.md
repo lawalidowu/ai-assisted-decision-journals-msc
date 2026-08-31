@@ -1,4 +1,6 @@
-# Reproduction runbook
+# Reproduction runbook (compact)
+
+> **Primary guide:** [`docs/REPRODUCIBILITY_GUIDE.md`](../REPRODUCIBILITY_GUIDE.md) — full pipeline order, dissertation claim index, supplementary experiments, and adaptation notes for new researchers. This page is a short offline command checklist.
 
 **Goal:** Inspect and validate the **frozen** dissertation evidence chain offline.  
 **Never** regenerate the 414-entry journal to verify historical claims.

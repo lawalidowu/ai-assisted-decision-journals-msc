@@ -8,7 +8,7 @@
 
 This chapter reports the evaluation outcomes for the Module 2 pilot. The findings are organised by sample: the fixed reference dataset of candidate decision-journal entries (n = 414), the stratified dual-rubric validation (n = 50), and the supplementary preparedness and Decision Quality pilot (n = 60). Figure 3.1 summarises the corresponding workflow.
 
-The eight-transcript extraction produced 414 candidate entries, of which 351/414 (84.8%) passed mechanical source-quote traceability. In the stratified n = 50 validation sample, the most frequent Rubric A × Rubric B cell was no × high, 21/50 (42%): the quoted passage strongly supported the generated statement, but the item did not meet the operational journal definition. Automated confidence aligned more closely with evidence strength than with journal validity.
+The eight-transcript extraction produced 414 candidate entries, of which 351/414 (84.8%) passed mechanical source-quote traceability. In the stratified n = 50 validation sample, the most common pattern was candidates whose quotations strongly supported the generated statement but which did not meet the decision-journal definition: 21/50 items (42%). This corresponds to the Rubric A = No / Rubric B = High cell, written no × high. The pattern is better understood as source-supported extraction of the wrong content type, rather than as weak quote support or simply hallucination, and shows that source-supported extraction and journal suitability are different problems. This proportion applies only to the n = 50 sample and is not an estimate for all 414 candidates. Automated confidence aligned more closely with evidence strength than with journal validity.
 
 Exploratory clustering organised the 414 candidates into 20 groups for navigation, not verification. In the purposive n = 60 pilot, an observable Decision Quality element was found more often than a defensible Joint External Evaluation (JEE) mapping: 37/60 versus 11/60. The most frequent combined outcome in that pilot was observable Decision Quality without a defensible JEE mapping, 26/60 (43.3%). Candidate-decision wording was not always reliable enough to serve as evidence: 8/60 were exact or near-verbatim, 25/60 substantively faithful paraphrases, 20/60 materially unsupported or altered, and 7/60 non-traceable. All sample-specific findings apply only to the stated denominator.
 
@@ -67,18 +67,20 @@ Non-destructive review flags were applied using the rules defined in Chapter 3 S
 
 Human validation on a stratified sample of fifty entries (Chapter 3 Section 3.7) rated Rubric A (valid decision-journal entry?) and Rubric B (strength of quote-to-decision support?) blind to automated confidence scores.
 
-Figure 4.9 shows the Rubric A × Rubric B cross-tabulation. In the stratified n = 50 sample, the most frequent cross-tabulation cell was no × high (21/50, 42%). Clean yes × high entries accounted for 11/50 (22%). The remaining cells were no × medium (11/50), no × low (1/50), unclear × high (5/50) and unclear × medium (1/50). Marginally, Rubric A comprised 11 yes, 33 no and 6 unclear; Rubric B comprised 37 high, 12 medium and 1 low. High evidence strength was therefore common, but journal suitability was not.
+The cross-tabulation is used to examine whether candidates with strong quote support are also valid journal entries. In the stratified n = 50 sample, strong quote support did not guarantee journal validity, so evidence strength and journal validity must be interpreted separately.
+
+Figure 4.9 shows the Rubric A × Rubric B cross-tabulation. The most frequent cell was no × high (21/50, 42%), consistent with source-supported extraction of the wrong content type rather than weak quote support. Clean yes × high entries accounted for 11/50 (22%). The remaining cells were no × medium (11/50), no × low (1/50), unclear × high (5/50) and unclear × medium (1/50). Marginally, Rubric A comprised 11 yes, 33 no and 6 unclear; Rubric B comprised 37 high, 12 medium and 1 low. All proportions apply only to this n = 50 sample.
 
 [[FIGURE:4.9]]
 
-After human rating, two automated confidence signals were compared with Rubric B (Table 4.3). Linear weighted kappa treats adjacent disagreements as less severe than disagreements across the full evidence-strength scale. Neither signal showed sufficient agreement to replace human judgement on journal inclusion. When automated confidence was high, only about one in four items were Rubric A = yes, which is consistent with confidence tracking evidence strength better than journal validity.
+After human rating, two automated confidence signals were compared with Rubric B (Table 4.3). Linear weighted kappa treats adjacent disagreements as less severe than disagreements across the full evidence-strength scale. The rule baseline reached 80% exact agreement with Rubric B (linear weighted κ = 0.48) and the LLM second pass 76% (κ = 0.39). Neither signal was treated as a substitute for human judgement, particularly for determining journal inclusion. When automated confidence was high, only about one in four items were Rubric A = yes, which is consistent with confidence tracking evidence strength better than journal validity.
 
 | Signal | Exact agreement | Linear weighted κ |
 |--------|-----------------|-------------------|
 | Rule baseline | 80% | 0.48 |
 | LLM second pass | 76% | 0.39 |
 
-An exploratory discourse-tag analysis on the same fifty items assigned all 21 no × high cases to non-policy inquiry-discourse tags. Fourteen of the fifty items remained unclassified where applicable. The genre-blindness reading is exploratory; the tags were not a validated classifier or a causal analysis.
+To investigate what type of inquiry content lay behind the no × high pattern, an exploratory discourse-tag analysis was run on the same fifty items. All 21 no × high cases were assigned non-policy inquiry-discourse tags. Fourteen of the fifty items remained unclassified where applicable. The genre-blindness reading is exploratory; the tags were not a validated classifier and no causal mechanism was established.
 
 ---
 
@@ -94,9 +96,9 @@ Figure 4.10 shows the distribution of group sizes. The largest groups provide st
 
 ## 4.7 Supplementary preparedness and Decision Quality findings (n = 60)
 
-The supplementary pilot applied JEE preparedness and Decision Quality categories to a purposive sample of 60 records (Chapter 3 Section 3.9). The sample is not statistically representative of the 414 candidates, and no inferential statistics were used. Validated source passages, rather than generated decision wording, were the evidential basis for framework interpretation.
+The n = 60 pilot addresses a different question from the n = 50 candidate-validation analysis in Section 4.5. Rather than assessing journal validity or evidence strength, this supplementary purposive pilot examines whether validated source passages can support structured interpretation through Joint External Evaluation (JEE) preparedness and Decision Quality frameworks, and whether generated candidate statements remain faithful to those passages (Chapter 3 Section 3.9). The sample is not statistically representative of the 414 candidates, and no inferential statistics were used. Framework assignments were based on validated source passages; generated candidate statements were not treated as authoritative evidence when they diverged from the source.
 
-Table 4.4 reports the framework-mapping outcomes. JEE mapping was assigned for 11/60 records (18.3%). The remaining outcomes were no_mapping (16/60, 26.7%), insufficient_evidence (22/60, 36.7%) and procedural or inquiry content (11/60, 18.3%). These last two outcomes are different: no_mapping means the passage was understood but did not support a preparedness capacity, whereas insufficient_evidence means the available excerpt was too thin to decide. An observable Decision Quality element was recorded for 37/60 records (61.7%). The most frequent combined outcome in this purposive 60-record pilot was an observable Decision Quality element without a defensible JEE mapping, 26/60 (43.3%).
+Table 4.4 reports the framework-mapping outcomes for this purposive n = 60 sample only. JEE mapping was assigned for 11/60 records (18.3%). The remaining outcomes were no_mapping (16/60, 26.7%), insufficient_evidence (22/60, 36.7%) and procedural or inquiry content (11/60, 18.3%). These last two outcomes are different: no_mapping means the passage was understood but did not support a preparedness capacity, whereas insufficient_evidence means the available excerpt was too thin to decide. An observable Decision Quality element was recorded for 37/60 records (61.7%). The most frequent combined outcome in this purposive 60-record pilot was an observable Decision Quality element without a defensible JEE mapping, 26/60 (43.3%).
 
 | Result family | Outcome | Count | Percentage |
 |---------------|---------|------:|-----------:|
@@ -109,13 +111,13 @@ Table 4.4 reports the framework-mapping outcomes. JEE mapping was assigned for 1
 
 *Note. The four JEE rows partition the n = 60 sample. The Decision Quality and combined rows overlap with those JEE outcomes and should not be added to the JEE total.*
 
-Decision Quality elements describe features visible in a decision passage, such as framing, values or commitment to follow through. JEE mapping requires evidence of a specific preparedness capacity. An observable Decision Quality element does not mean that the underlying decision was good, and a JEE mapping does not demonstrate adequate preparedness performance.
+Decision Quality elements describe features visible in a decision passage, such as framing, values or commitment to follow through. JEE mapping requires evidence of a specific preparedness capacity. An observable Decision Quality element does not mean that the underlying decision was good, and a JEE mapping does not demonstrate adequate preparedness performance. The counts do not show that one framework is universally better than the other; they describe what could be identified in this purposive sample.
 
 Among the 11 JEE-mapped records, Infection prevention and control (R4) occurred in 3/11 (27.3%), while IHR coordination, National IHR Focal Point functions and advocacy (P3), Surveillance (D2), and Risk communication and community engagement (R5) each occurred in 2/11 (18.2%). Those shares should not be overinterpreted given the small mapped denominator. Among the 37 Decision Quality-mapped records, the primary elements were commitment to follow through (22/37, 59.5%), helpful frame (8/37, 21.6%), clear values (6/37, 16.2%) and useful information (1/37, 2.7%).
 
 Source-level traceability was available for 53/60 records (88.3%). That figure records the availability of a traceable source passage. It does not establish that the generated decision statement faithfully represented that passage.
 
-Table 4.5 reports the candidate-statement faithfulness classifications. Generated decision statements were not treated as authoritative evidence. Of the 60 candidate decisions, 8 were exact or near-verbatim representations of their source passages and 25 were judged to be substantively faithful paraphrases. Twenty introduced materially unsupported or altered meaning despite retaining a traceable source passage, while 7 were classified as non-traceable (`Traceability=False`). Framework interpretation therefore relied on the validated source passage rather than the generated decision statement. These categories were assigned by a single reviewer and should be interpreted as a structured feasibility assessment rather than an independently validated estimate of model error.
+Table 4.5 reports the candidate-statement faithfulness classifications. Generated decision statements were not treated as authoritative evidence. Of the 60 candidate decisions, 8 were exact or near-verbatim representations of their source passages and 25 were judged to be substantively faithful paraphrases. Twenty introduced materially unsupported or altered meaning despite retaining a traceable source passage, while 7 were classified as non-traceable (`Traceability=False`). Where generated wording and source meaning differed, framework interpretation relied on the validated source passage rather than the generated decision statement. These categories were assigned by a single reviewer and should be interpreted as a structured feasibility assessment rather than an independently validated estimate of model error.
 
 | Classification | Count | Percentage |
 |----------------|------:|-----------:|
@@ -124,7 +126,7 @@ Table 4.5 reports the candidate-statement faithfulness classifications. Generate
 | Materially unsupported or altered | 20/60 | 33.3% |
 | Non-traceable (`Traceability=False`) | 7/60 | 11.7% |
 
-The pilot used single-reviewer adjudication supported by AI-assisted source-integrity and consistency audits. Six proposed corrections received interactive confirmation; 52 records retained earlier coding without a new record-by-record review; and 2 records met the predefined automatic-clear rule. Further review-provenance detail is provided in Appendix B and retained in the project repository.
+The pilot used single-reviewer adjudication supported by AI-assisted source-integrity and consistency audits. Six proposed corrections received interactive confirmation; 52 records retained earlier coding without a new record-by-record review; and 2 records met the predefined automatic-clear rule. The n = 60 findings are supplementary exploratory evidence only; they do not estimate prevalence across all 414 candidates or establish automated policy judgement. Further review-provenance detail is provided in Appendix B and retained in the project repository.
 
 ---
 

@@ -1,0 +1,18 @@
+{
+  "model_requested": "gpt-5.6-sol",
+  "run_label": "retry1",
+  "run_status": "INCOMPLETE_NOT_INTERPRETABLE_EXECUTION_FAILURE",
+  "run_valid": false,
+  "interpretation_permitted": false,
+  "termination_reason": "Retry did not complete within experiment time window; process terminated after extended runtime without producing a complete confirmation output.",
+  "retry_started_utc": "2026-08-31T07:39:33.231Z",
+  "retry_terminated_utc": "2026-08-31T08:29:00.000Z",
+  "approximate_runtime_minutes": 50,
+  "partial_outputs_preserved": true,
+  "notes": [
+    "Initial Sol run preserved separately as full_hearing_confirmation_invalidated_run1.json (365/487 API failures).",
+    "This retry produced no final span-filtered recovery metrics and must not be used as a recovery datapoint.",
+    "No third Sol attempt was made per protocol."
+  ],
+  "invalidated_run_reference": "raw_responses_full_hearing/gpt-5.6-sol/full_hearing_confirmation_invalidated_run1.json"
+}
